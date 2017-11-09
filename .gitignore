@@ -1,11 +1,7 @@
+stackoverflow/
 .idea/
-
 target/
-
 .classpath
-
 .project
-
 index/
-
 *.iml
