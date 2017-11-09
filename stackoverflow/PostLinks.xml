@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<postlinks>
+  <row Id="68" CreationDate="2017-05-18T01:08:32.233" PostId="91" RelatedPostId="45" LinkTypeId="1" />
+  <row Id="199" CreationDate="2017-05-22T14:51:27.550" PostId="193" RelatedPostId="153" LinkTypeId="1" />
+  <row Id="490" CreationDate="2017-06-01T07:54:39.567" PostId="318" RelatedPostId="316" LinkTypeId="1" />
+  <row Id="540" CreationDate="2017-06-02T08:15:25.103" PostId="150" RelatedPostId="361" LinkTypeId="1" />
+  <row Id="678" CreationDate="2017-06-04T23:25:12.173" PostId="449" RelatedPostId="402" LinkTypeId="1" />
+  <row Id="841" CreationDate="2017-06-07T08:08:25.347" PostId="522" RelatedPostId="488" LinkTypeId="1" />
+  <row Id="907" CreationDate="2017-06-07T16:10:47.377" PostId="15" RelatedPostId="418" LinkTypeId="1" />
+  <row Id="960" CreationDate="2017-06-08T07:21:27.027" PostId="567" RelatedPostId="559" LinkTypeId="1" />
+  <row Id="1238" CreationDate="2017-06-12T10:58:49.043" PostId="650" RelatedPostId="646" LinkTypeId="1" />
+  <row Id="1309" CreationDate="2017-06-13T12:36:21.717" PostId="650" RelatedPostId="646" LinkTypeId="3" />
+  <row Id="1320" CreationDate="2017-06-13T13:06:11.010" PostId="693" RelatedPostId="687" LinkTypeId="1" />
+  <row Id="1321" CreationDate="2017-06-13T13:14:32.560" PostId="687" RelatedPostId="693" LinkTypeId="1" />
+  <row Id="1425" CreationDate="2017-06-14T17:09:49.490" PostId="731" RelatedPostId="567" LinkTypeId="1" />
+  <row Id="1623" CreationDate="2017-06-20T07:26:24.903" PostId="807" RelatedPostId="453" LinkTypeId="1" />
+  <row Id="1678" CreationDate="2017-06-21T09:15:38.190" PostId="847" RelatedPostId="798" LinkTypeId="1" />
+  <row Id="1752" CreationDate="2017-06-23T12:02:38.777" PostId="882" RelatedPostId="361" LinkTypeId="1" />
+  <row Id="1798" CreationDate="2017-06-24T18:00:12.117" PostId="45" RelatedPostId="885" LinkTypeId="1" />
+  <row Id="1799" CreationDate="2017-06-24T18:16:49.600" PostId="899" RelatedPostId="885" LinkTypeId="1" />
+  <row Id="1810" CreationDate="2017-06-24T18:24:57.810" PostId="45" RelatedPostId="899" LinkTypeId="1" />
+  <row Id="1925" CreationDate="2017-06-28T11:19:21.197" PostId="920" RelatedPostId="923" LinkTypeId="1" />
+  <row Id="1941" CreationDate="2017-06-28T16:15:06.267" PostId="935" RelatedPostId="361" LinkTypeId="1" />
+  <row Id="2217" CreationDate="2017-07-08T14:24:13.377" PostId="1019" RelatedPostId="1018" LinkTypeId="1" />
+  <row Id="3339" CreationDate="2017-07-13T09:50:46.760" PostId="1018" RelatedPostId="1019" LinkTypeId="1" />
+  <row Id="3389" CreationDate="2017-07-14T15:28:17.340" PostId="2068" RelatedPostId="2036" LinkTypeId="1" />
+  <row Id="3663" CreationDate="2017-07-18T19:13:21.800" PostId="2083" RelatedPostId="565" LinkTypeId="1" />
+  <row Id="3701" CreationDate="2017-07-19T09:01:59.070" PostId="2098" RelatedPostId="2022" LinkTypeId="1" />
+  <row Id="4016" CreationDate="2017-07-25T11:29:14.473" PostId="2131" RelatedPostId="2127" LinkTypeId="1" />
+  <row Id="4018" CreationDate="2017-07-25T11:42:24.153" PostId="2127" RelatedPostId="2131" LinkTypeId="3" />
+  <row Id="4103" CreationDate="2017-07-26T16:14:42.983" PostId="66" RelatedPostId="367" LinkTypeId="1" />
+  <row Id="4114" CreationDate="2017-07-26T20:50:10.633" PostId="2163" RelatedPostId="2131" LinkTypeId="1" />
+  <row Id="4432" CreationDate="2017-08-01T11:16:46.743" PostId="2191" RelatedPostId="2179" LinkTypeId="3" />
+  <row Id="4524" CreationDate="2017-08-02T10:17:32.017" PostId="2199" RelatedPostId="2140" LinkTypeId="1" />
+  <row Id="4533" CreationDate="2017-08-02T11:48:59.337" PostId="2199" RelatedPostId="2140" LinkTypeId="3" />
+  <row Id="5036" CreationDate="2017-08-08T11:07:54.597" PostId="2242" RelatedPostId="2036" LinkTypeId="1" />
+  <row Id="5775" CreationDate="2017-08-22T10:48:35.683" PostId="779" RelatedPostId="2356" LinkTypeId="1" />
+  <row Id="5798" CreationDate="2017-08-22T19:43:37.373" PostId="2359" RelatedPostId="202" LinkTypeId="1" />
+</postlinks>

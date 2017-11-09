@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tags>
+  <row Id="1" TagName="human-genome" Count="9" />
+  <row Id="2" TagName="storage" Count="2" />
+  <row Id="4" TagName="hgp" Count="1" ExcerptPostId="7" WikiPostId="6" />
+  <row Id="5" TagName="dna" Count="9" ExcerptPostId="189" WikiPostId="188" />
+  <row Id="6" TagName="proteins" Count="17" />
+  <row Id="8" TagName="atc" Count="1" />
+  <row Id="9" TagName="ukbiobank" Count="1" />
+  <row Id="10" TagName="drugs" Count="3" />
+  <row Id="11" TagName="ontology" Count="2" ExcerptPostId="2286" WikiPostId="2285" />
+  <row Id="12" TagName="nlp" Count="1" />
+  <row Id="13" TagName="fasta" Count="22" ExcerptPostId="31" WikiPostId="30" />
+  <row Id="14" TagName="fastq" Count="15" ExcerptPostId="2233" WikiPostId="2232" />
+  <row Id="15" TagName="sam" Count="8" />
+  <row Id="16" TagName="hashing" Count="1" ExcerptPostId="210" WikiPostId="209" />
+  <row Id="17" TagName="k-mer" Count="9" ExcerptPostId="208" WikiPostId="207" />
+  <row Id="18" TagName="algorithms" Count="2" />
+  <row Id="19" TagName="annotation" Count="13" />
+  <row Id="20" TagName="ensembl" Count="6" ExcerptPostId="61" WikiPostId="60" />
+  <row Id="21" TagName="refseq" Count="4" />
+  <row Id="22" TagName="gencode" Count="1" />
+  <row Id="23" TagName="docking" Count="2" />
+  <row Id="24" TagName="bam" Count="27" ExcerptPostId="464" WikiPostId="463" />
+  <row Id="25" TagName="bed" Count="11" ExcerptPostId="185" WikiPostId="184" />
+  <row Id="26" TagName="reference" Count="1" />
+  <row Id="27" TagName="alignment" Count="18" ExcerptPostId="471" WikiPostId="470" />
+  <row Id="28" TagName="reads" Count="3" />
+  <row Id="30" TagName="scrnaseq" Count="4" ExcerptPostId="728" WikiPostId="727" />
+  <row Id="33" TagName="nanopore" Count="19" ExcerptPostId="473" WikiPostId="472" />
+  <row Id="34" TagName="transcriptome" Count="9" ExcerptPostId="139" WikiPostId="138" />
+  <row Id="35" TagName="genome" Count="17" />
+  <row Id="36" TagName="assembly" Count="11" />
+  <row Id="38" TagName="rna-seq" Count="48" ExcerptPostId="2190" WikiPostId="2189" />
+  <row Id="39" TagName="disease-model" Count="1" />
+  <row Id="40" TagName="codon-models" Count="1" />
+  <row Id="41" TagName="positive-selection" Count="2" />
+  <row Id="42" TagName="hyphy" Count="1" />
+  <row Id="43" TagName="busted" Count="1" />
+  <row Id="44" TagName="r" Count="48" ExcerptPostId="72" WikiPostId="71" />
+  <row Id="45" TagName="rpkm" Count="1" />
+  <row Id="46" TagName="genotyping" Count="2" />
+  <row Id="47" TagName="gatk" Count="2" />
+  <row Id="48" TagName="freebayes" Count="1" />
+  <row Id="49" TagName="platypus" Count="1" />
+  <row Id="50" TagName="multi-sample" Count="1" />
+  <row Id="51" TagName="iclip" Count="1" />
+  <row Id="52" TagName="statistics" Count="11" />
+  <row Id="53" TagName="phylogeny" Count="7" />
+  <row Id="54" TagName="cladistics" Count="1" />
+  <row Id="55" TagName="snp" Count="6" />
+  <row Id="56" TagName="ngs" Count="22" ExcerptPostId="183" WikiPostId="182" />
+  <row Id="58" TagName="normalization" Count="9" ExcerptPostId="246" WikiPostId="245" />
+  <row Id="59" TagName="variant-calling" Count="12" />
+  <row Id="60" TagName="terminology" Count="4" />
+  <row Id="61" TagName="bootstrap-analysis" Count="1" />
+  <row Id="62" TagName="crispr" Count="2" />
+  <row Id="63" TagName="versioning" Count="1" />
+  <row Id="64" TagName="reproducibility" Count="1" ExcerptPostId="214" WikiPostId="213" />
+  <row Id="65" TagName="data-management" Count="4" />
+  <row Id="66" TagName="git" Count="2" ExcerptPostId="212" WikiPostId="211" />
+  <row Id="67" TagName="biomart" Count="6" />
+  <row Id="68" TagName="bwa" Count="9" ExcerptPostId="2193" WikiPostId="2192" />
+  <row Id="69" TagName="genomics" Count="5" />
+  <row Id="70" TagName="blat" Count="1" />
+  <row Id="71" TagName="blast" Count="13" />
+  <row Id="72" TagName="nucleotide-models" Count="1" />
+  <row Id="73" TagName="gc-content" Count="1" />
+  <row Id="81" TagName="de-bruijn" Count="2" />
+  <row Id="82" TagName="gse" Count="2" ExcerptPostId="179" WikiPostId="178" />
+  <row Id="83" TagName="obitools" Count="1" />
+  <row Id="84" TagName="linux" Count="4" ExcerptPostId="248" WikiPostId="247" />
+  <row Id="85" TagName="parallel" Count="1" />
+  <row Id="86" TagName="bioconductor" Count="18" ExcerptPostId="181" WikiPostId="180" />
+  <row Id="87" TagName="deseq2" Count="8" />
+  <row Id="88" TagName="machine-learning" Count="3" />
+  <row Id="89" TagName="cancer" Count="9" />
+  <row Id="90" TagName="samtools" Count="11" ExcerptPostId="475" WikiPostId="474" />
+  <row Id="92" TagName="homology-modelling" Count="1" />
+  <row Id="93" TagName="chip-seq" Count="6" />
+  <row Id="94" TagName="macs2" Count="1" />
+  <row Id="95" TagName="kegg" Count="2" />
+  <row Id="96" TagName="orthology" Count="1" />
+  <row Id="97" TagName="database" Count="27" />
+  <row Id="98" TagName="data-retrieval" Count="1" />
+  <row Id="99" TagName="vcf" Count="13" ExcerptPostId="187" WikiPostId="186" />
+  <row Id="100" TagName="snv" Count="2" />
+  <row Id="101" TagName="public-databases" Count="13" />
+  <row Id="102" TagName="variants" Count="9" />
+  <row Id="103" TagName="structural-variation" Count="7" />
+  <row Id="104" TagName="long-reads" Count="7" />
+  <row Id="105" TagName="modelling" Count="4" />
+  <row Id="106" TagName="networks" Count="9" />
+  <row Id="107" TagName="threshold" Count="1" />
+  <row Id="108" TagName="schema" Count="1" />
+  <row Id="109" TagName="sample-database" Count="1" />
+  <row Id="110" TagName="genome-sequencing" Count="3" />
+  <row Id="113" TagName="technical-replicates" Count="1" />
+  <row Id="114" TagName="protein-structure" Count="13" />
+  <row Id="115" TagName="mpileup" Count="2" />
+  <row Id="116" TagName="classification" Count="1" />
+  <row Id="118" TagName="software-recommendation" Count="19" />
+  <row Id="119" TagName="canu" Count="2" />
+  <row Id="120" TagName="repeat" Count="1" />
+  <row Id="121" TagName="encode" Count="2" />
+  <row Id="122" TagName="gistic" Count="1" />
+  <row Id="123" TagName="cnv" Count="1" />
+  <row Id="124" TagName="snp6" Count="1" />
+  <row Id="125" TagName="report" Count="1" />
+  <row Id="126" TagName="pathway" Count="4" />
+  <row Id="128" TagName="mauve" Count="1" />
+  <row Id="129" TagName="structural" Count="1" />
+  <row Id="130" TagName="estimation" Count="1" />
+  <row Id="131" TagName="cell-line" Count="5" />
+  <row Id="132" TagName="star" Count="2" />
+  <row Id="133" TagName="pysam" Count="3" />
+  <row Id="134" TagName="multi-omics" Count="2" />
+  <row Id="135" TagName="data-request" Count="1" />
+  <row Id="136" TagName="motifs" Count="3" />
+  <row Id="137" TagName="conservation" Count="1" />
+  <row Id="138" TagName="minion" Count="5" ExcerptPostId="432" WikiPostId="431" />
+  <row Id="139" TagName="sequencing" Count="11" />
+  <row Id="140" TagName="yield" Count="1" />
+  <row Id="141" TagName="barcode" Count="2" />
+  <row Id="142" TagName="adapter" Count="1" />
+  <row Id="143" TagName="trim" Count="1" />
+  <row Id="144" TagName="trimming" Count="3" />
+  <row Id="145" TagName="clipping" Count="1" />
+  <row Id="146" TagName="wgs" Count="3" />
+  <row Id="147" TagName="chimeric-rna" Count="1" />
+  <row Id="148" TagName="metagenome" Count="8" />
+  <row Id="149" TagName="centrifuge" Count="1" />
+  <row Id="150" TagName="biopython" Count="16" />
+  <row Id="151" TagName="smalt" Count="1" />
+  <row Id="152" TagName="differential-expression" Count="12" />
+  <row Id="153" TagName="phosphoproteomics" Count="1" />
+  <row Id="154" TagName="array-cgh" Count="2" />
+  <row Id="155" TagName="exome" Count="3" />
+  <row Id="156" TagName="gwas" Count="4" />
+  <row Id="157" TagName="imputation" Count="2" />
+  <row Id="158" TagName="gtools" Count="1" />
+  <row Id="159" TagName="maf" Count="1" />
+  <row Id="160" TagName="qc" Count="2" />
+  <row Id="161" TagName="liftover" Count="2" />
+  <row Id="163" TagName="hg18" Count="1" />
+  <row Id="165" TagName="read-mapping" Count="16" ExcerptPostId="576" WikiPostId="575" />
+  <row Id="166" TagName="reference-genome" Count="9" />
+  <row Id="167" TagName="quality-control" Count="3" />
+  <row Id="168" TagName="data-download" Count="2" />
+  <row Id="169" TagName="impute2" Count="2" />
+  <row Id="170" TagName="computation" Count="2" />
+  <row Id="171" TagName="repeat-elements" Count="5" />
+  <row Id="172" TagName="htslib" Count="1" />
+  <row Id="173" TagName="pdb" Count="7" ExcerptPostId="535" WikiPostId="534" />
+  <row Id="174" TagName="wes" Count="1" />
+  <row Id="175" TagName="contamination" Count="1" />
+  <row Id="177" TagName="admixture" Count="1" />
+  <row Id="178" TagName="transposable-elements" Count="1" />
+  <row Id="179" TagName="pacbio" Count="2" />
+  <row Id="180" TagName="shell" Count="2" />
+  <row Id="183" TagName="ebseq" Count="2" />
+  <row Id="184" TagName="rsem" Count="2" />
+  <row Id="185" TagName="benchmarking" Count="5" />
+  <row Id="186" TagName="hidden-markov-models" Count="1" />
+  <row Id="187" TagName="sequence-analysis" Count="5" />
+  <row Id="192" TagName="clustering" Count="2" />
+  <row Id="193" TagName="unsupervised" Count="1" />
+  <row Id="194" TagName="snap" Count="1" />
+  <row Id="195" TagName="archive" Count="1" />
+  <row Id="197" TagName="sbs" Count="1" />
+  <row Id="198" TagName="hts" Count="2" />
+  <row Id="199" TagName="spark" Count="1" />
+  <row Id="200" TagName="bedtools" Count="4" />
+  <row Id="201" TagName="flow-cytometry" Count="1" />
+  <row Id="202" TagName="gaussian" Count="1" />
+  <row Id="203" TagName="fluorescence" Count="1" />
+  <row Id="204" TagName="rna" Count="4" />
+  <row Id="206" TagName="scaffold" Count="3" />
+  <row Id="210" TagName="indel" Count="5" ExcerptPostId="904" WikiPostId="903" />
+  <row Id="211" TagName="consensus" Count="1" />
+  <row Id="212" TagName="subset" Count="2" />
+  <row Id="213" TagName="text" Count="3" />
+  <row Id="214" TagName="crispr-cas9" Count="1" />
+  <row Id="215" TagName="edger" Count="2" />
+  <row Id="217" TagName="ancestry" Count="1" />
+  <row Id="218" TagName="personal-genomics" Count="1" />
+  <row Id="219" TagName="gene" Count="17" />
+  <row Id="220" TagName="conversion" Count="3" />
+  <row Id="221" TagName="snakemake" Count="2" />
+  <row Id="222" TagName="api" Count="3" />
+  <row Id="223" TagName="methylation" Count="6" />
+  <row Id="224" TagName="microarray" Count="3" ExcerptPostId="539" WikiPostId="538" />
+  <row Id="225" TagName="documentation" Count="1" />
+  <row Id="227" TagName="homer" Count="1" />
+  <row Id="228" TagName="sambamba" Count="1" />
+  <row Id="231" TagName="identifiers" Count="5" />
+  <row Id="232" TagName="quantification" Count="2" />
+  <row Id="233" TagName="sequence-homology" Count="5" />
+  <row Id="234" TagName="file-formats" Count="24" />
+  <row Id="235" TagName="format-conversion" Count="11" />
+  <row Id="236" TagName="gff3" Count="8" ExcerptPostId="615" WikiPostId="614" />
+  <row Id="237" TagName="gene-ontology" Count="1" ExcerptPostId="2288" WikiPostId="2287" />
+  <row Id="238" TagName="gaf" Count="1" />
+  <row Id="239" TagName="read-alignment" Count="2" />
+  <row Id="240" TagName="taxonomy" Count="2" />
+  <row Id="241" TagName="amova" Count="1" />
+  <row Id="242" TagName="sequence-annotation" Count="3" />
+  <row Id="243" TagName="rna-structure" Count="3" />
+  <row Id="244" TagName="thermodynamics" Count="1" />
+  <row Id="245" TagName="biophysics" Count="1" />
+  <row Id="246" TagName="rna-alignment" Count="3" />
+  <row Id="247" TagName="deeptools" Count="2" />
+  <row Id="248" TagName="bigwig" Count="4" />
+  <row Id="249" TagName="metagene" Count="1" />
+  <row Id="250" TagName="isoform" Count="2" />
+  <row Id="251" TagName="filtering" Count="2" />
+  <row Id="252" TagName="gtf" Count="5" ExcerptPostId="617" WikiPostId="616" />
+  <row Id="253" TagName="10x-genomics" Count="3" />
+  <row Id="254" TagName="rna-splicing" Count="3" />
+  <row Id="255" TagName="mass-spectrometry" Count="1" />
+  <row Id="256" TagName="phylogenetics" Count="3" />
+  <row Id="257" TagName="rvtests" Count="1" />
+  <row Id="258" TagName="covariate-analysis" Count="1" />
+  <row Id="262" TagName="interactions" Count="4" />
+  <row Id="263" TagName="bioawk" Count="2" />
+  <row Id="264" TagName="scf" Count="1" />
+  <row Id="265" TagName="abi" Count="1" />
+  <row Id="266" TagName="staden" Count="1" />
+  <row Id="267" TagName="mmcif" Count="1" />
+  <row Id="268" TagName="3d-structure" Count="3" />
+  <row Id="269" TagName="cigar" Count="2" />
+  <row Id="270" TagName="visualization" Count="5" />
+  <row Id="271" TagName="genome-browser" Count="2" />
+  <row Id="272" TagName="radseq" Count="1" />
+  <row Id="274" TagName="performance" Count="1" />
+  <row Id="275" TagName="albacore" Count="1" />
+  <row Id="276" TagName="workflow-management" Count="1" />
+  <row Id="277" TagName="best-practice" Count="2" />
+  <row Id="280" TagName="python" Count="16" ExcerptPostId="2209" WikiPostId="2208" />
+  <row Id="281" TagName="homework" Count="1" />
+  <row Id="282" TagName="granges" Count="1" />
+  <row Id="283" TagName="antibiotics" Count="1" />
+  <row Id="284" TagName="open-data" Count="1" />
+  <row Id="285" TagName="combat" Count="1" />
+  <row Id="286" TagName="perl" Count="2" />
+  <row Id="287" TagName="gnomad" Count="1" />
+  <row Id="288" TagName="bowtie2" Count="2" />
+  <row Id="289" TagName="fcs" Count="1" />
+  <row Id="290" TagName="pasa" Count="1" />
+  <row Id="291" TagName="coreutils" Count="1" />
+  <row Id="292" TagName="selectvariants" Count="1" />
+  <row Id="293" TagName="pfam" Count="1" />
+  <row Id="294" TagName="domains" Count="1" />
+  <row Id="295" TagName="simulated-data" Count="4" />
+  <row Id="297" TagName="codon" Count="1" />
+  <row Id="298" TagName="reactome" Count="1" />
+  <row Id="299" TagName="velvet" Count="1" />
+  <row Id="300" TagName="data-mining" Count="3" />
+  <row Id="301" TagName="medips" Count="1" />
+  <row Id="302" TagName="medip-seq" Count="1" />
+  <row Id="303" TagName="dnasp" Count="1" />
+  <row Id="304" TagName="software-installation" Count="2" />
+  <row Id="305" TagName="bioanalyzer" Count="1" />
+  <row Id="306" TagName="sequence-alignment" Count="4" />
+  <row Id="307" TagName="human" Count="1" />
+  <row Id="308" TagName="illumina" Count="3" />
+  <row Id="310" TagName="mapq" Count="1" />
+  <row Id="311" TagName="strandedness" Count="1" />
+  <row Id="312" TagName="featurecounts" Count="1" />
+  <row Id="313" TagName="coverage" Count="2" />
+  <row Id="315" TagName="csv" Count="1" />
+  <row Id="316" TagName="preprocessing" Count="1" />
+  <row Id="318" TagName="next-generation" Count="1" />
+  <row Id="319" TagName="annovar" Count="1" />
+  <row Id="320" TagName="gsea" Count="1" />
+  <row Id="321" TagName="ucsc" Count="1" />
+  <row Id="322" TagName="biostrings" Count="1" />
+  <row Id="324" TagName="1000-genomes" Count="1" />
+  <row Id="325" TagName="exac" Count="1" />
+  <row Id="326" TagName="esp6500" Count="1" />
+  <row Id="327" TagName="grch38" Count="1" />
+  <row Id="328" TagName="centromere" Count="1" />
+  <row Id="329" TagName="mappability" Count="1" />
+  <row Id="331" TagName="fast5" Count="1" />
+  <row Id="332" TagName="molecular-genetics" Count="1" />
+  <row Id="335" TagName="go" Count="2" />
+  <row Id="336" TagName="go-enrichment" Count="1" />
+  <row Id="337" TagName="seurat" Count="1" />
+  <row Id="338" TagName="10x" Count="1" />
+  <row Id="339" TagName="single-cell" Count="1" />
+</tags>

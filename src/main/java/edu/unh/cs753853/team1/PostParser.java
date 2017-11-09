@@ -97,7 +97,8 @@ public class PostParser {
                                     post.viewCount = Integer.parseInt(attribute.getValue());
                                     break;
                                 case "Body":
-                                    post.postBody = attribute.getValue();
+                                    String html = attribute.getValue();
+                                    post.postBody = html.replaceAll("\\<.*?>","");
                                     break;
                                 case "OwnerUserId":
                                     post.ownerUserId= Integer.parseInt(attribute.getValue());
@@ -127,22 +128,21 @@ public class PostParser {
                                     post.favoriteCount = Integer.parseInt(attribute.getValue());
                                     break;
                                 default:
-                                    System.out.println("Invalid <row... /> tag in posts.xml");
                                     break;
                             }
                         }
                     }
+                    continue;
+                }
+                // If the event signals the end of a tag
+                if(event.isEndElement()) {
+                    // Get the event
+                    EndElement endElement = event.asEndElement();
 
-                    // If the event signals the end of a tag
-                    if(event.isEndElement()) {
-                        // Get the event
-                        EndElement endElement = event.asEndElement();
-
-                        // If the name of the tag that just ended is "row"
-                        if(endElement.getName().getLocalPart().equals("row")) {
-                            // Add the current Post object to the list
-                            posts.add(post);
-                        }
+                    // If the name of the tag that just ended is "row"
+                    if(endElement.getName().getLocalPart().equals("row")) {
+                        // Add the current Post object to the list
+                        posts.add(post);
                     }
                 }
             }
