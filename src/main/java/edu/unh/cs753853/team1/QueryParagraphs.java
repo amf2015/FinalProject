@@ -33,6 +33,8 @@ import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
+import javax.xml.XMLConstants;
+
 class StackOverflowDump {
 	List<Post> post;
 	HashMap<String, Tag> tag;
@@ -71,8 +73,7 @@ public class QueryParagraphs {
 
 	private StackOverflowDump indexDump(String dumpDir) throws IOException {
 	    StackOverflowDump dmp = new StackOverflowDump();
-		Directory indexdir = FSDirectory.open((new File(INDEX_DIRECTORY))
-				.toPath());
+		Directory indexdir = FSDirectory.open((new File(INDEX_DIRECTORY)).toPath());
 		IndexWriterConfig conf = new IndexWriterConfig(new StandardAnalyzer());
 		conf.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
 		IndexWriter iw = new IndexWriter(indexdir, conf);
