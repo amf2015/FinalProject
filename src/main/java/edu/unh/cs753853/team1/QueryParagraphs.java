@@ -50,10 +50,14 @@ public class QueryParagraphs {
 		IndexWriterConfig conf = new IndexWriterConfig(new StandardAnalyzer());
 		conf.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
 		IndexWriter iw = new IndexWriter(indexdir, conf);
+
+		// Create a Parser for our Post
 		PostParser postParser = new PostParser();
+		// Read post.xml file and parse it into a list of posts
 		List<Post> postlist = postParser.readPosts("stackoverflow/Posts.xml");
 		for(Post post: postlist)
 		{
+			// Indexes all the posts that are questions
 			// postTypeId of 1 signifies the post is a question
 			if(post.postTypeId == 1) {
 				this.indexPara(iw, post);
@@ -70,13 +74,17 @@ public class QueryParagraphs {
 		indexType.setStored(true);
 		indexType.setStoreTermVectors(true);
 
+		// Save post: Id, Score, AnswerCount, Title, Body
 		postdoc.add(new StringField("postid", Integer.toString(postInfo.postId), Field.Store.YES));
+		postdoc.add(new StringField("postscore", Integer.toString(postInfo.score), Field.Store.YES));
+		postdoc.add(new StringField("postanswers", Integer.toString(postInfo.answerCount), Field.Store.YES));
 		postdoc.add(new Field("posttitle", postInfo.postTitle, indexType));
 		postdoc.add(new Field("postbody", postInfo.postBody, indexType));
-		postdoc.add(new StringField("postscore", Integer.toString(postInfo.score), Field.Store.YES));
 
+		// Output for testing
 		System.out.println("(" + postInfo.score + ") " +postInfo.postId + ": " + postInfo.postTitle);
 		System.out.println();
+		// End output for testing
 
 		iw.addDocument(postdoc);
 	}

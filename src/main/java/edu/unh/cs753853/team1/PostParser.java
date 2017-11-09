@@ -19,7 +19,7 @@ class Post {
     public int favoriteCount;
     public int commentCount;
     public int answerCount;
-    public String tags;
+    public String tags[];
     public String postTitle;
     public String lastActivityDate;
     public String lastEditDate;
@@ -36,6 +36,11 @@ class Post {
 
 public class PostParser {
 
+    /**
+     * Reads all <row ... /> in <posts>...</posts> and parses them into a Post object
+     * @param postsFile the posts.xml file from the stack overflow dump
+     * @return List<Post>
+     */
     @SuppressWarnings("unchecked")
     public List<Post> readPosts(String postsFile) {
         // Create a list to store the posts we read from the xml file
@@ -116,7 +121,12 @@ public class PostParser {
                                     post.postTitle = attribute.getValue();
                                     break;
                                 case "Tags":
-                                    post.tags = attribute.getValue();
+                                    String rawTags = attribute.getValue();
+                                    post.tags = rawTags.split("><");
+                                    for(int i = 0; i < post.tags.length; i++)
+                                    {
+                                        post.tags[i] = post.tags[i].replace("<", "").replace(">", "");
+                                    }
                                     break;
                                 case "AnswerCount":
                                     post.answerCount = Integer.parseInt(attribute.getValue());
@@ -135,6 +145,7 @@ public class PostParser {
                             }
                         }
                     }
+                    // Go to the next event
                     continue;
                 }
                 // If the event signals the end of a tag
