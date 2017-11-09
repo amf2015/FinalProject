@@ -6,9 +6,6 @@ target/
 
 .project
 
+index/
+
 *.iml
-*.cfe
-*.cfs
-*.si
-index/segments_2
-*.lock
