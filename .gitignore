@@ -7,3 +7,8 @@ target/
 .project
 
 *.iml
+*.cfe
+*.cfs
+*.si
+index/segments_2
+*.lock
