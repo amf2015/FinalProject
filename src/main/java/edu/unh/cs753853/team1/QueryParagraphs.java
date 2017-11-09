@@ -34,10 +34,29 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
 class StackOverflowDump {
-	public List<Post> post;
-	public HashMap<String, Tag> tag;
-	public HashMap<Integer, User> user;
-	public HashMap<Integer, Vote> vote;
+	List<Post> post;
+	HashMap<String, Tag> tag;
+	HashMap<Integer, User> user;
+	HashMap<Integer, Vote> vote;
+
+	void linkTags()
+	{
+		if(tag == null || post == null)
+		{
+			System.out.println("Either this.tag or this.post is null, cannot link");
+			return;
+		}
+
+		for(Post p: post) {
+		    if(p.tagList == null)
+		    	continue;
+
+			p.tagMap = new HashMap<>();
+			for(String t: p.tagList) {
+				p.tagMap.put(t, tag.get(t));
+			}
+		}
+	}
 }
 
 public class QueryParagraphs {
@@ -76,6 +95,8 @@ public class QueryParagraphs {
 
 		TagParser tagParser = new TagParser();
 		dmp.tag = tagParser.readTags(dumpDir + "Tags.xml");
+
+		dmp.linkTags();
 
 		iw.close();
 

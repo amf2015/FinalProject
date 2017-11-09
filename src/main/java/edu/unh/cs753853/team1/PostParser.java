@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
@@ -21,6 +22,7 @@ class Post {
     public int answerCount;
     public String tagList[];
     public String tags;
+    public HashMap<String, Tag> tagMap;
     public String postTitle;
     public String lastActivityDate;
     public String lastEditDate;
