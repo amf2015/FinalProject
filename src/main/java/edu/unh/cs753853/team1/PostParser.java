@@ -19,7 +19,8 @@ class Post {
     public int favoriteCount;
     public int commentCount;
     public int answerCount;
-    public String tags[];
+    public String tagList[];
+    public String tags;
     public String postTitle;
     public String lastActivityDate;
     public String lastEditDate;
@@ -122,10 +123,11 @@ public class PostParser {
                                     break;
                                 case "Tags":
                                     String rawTags = attribute.getValue();
-                                    post.tags = rawTags.split("><");
-                                    for(int i = 0; i < post.tags.length; i++)
+                                    post.tags = rawTags.replace("<", "").replace(">", " ");
+                                    post.tagList = rawTags.split("><");
+                                    for(int i = 0; i < post.tagList.length; i++)
                                     {
-                                        post.tags[i] = post.tags[i].replace("<", "").replace(">", "");
+                                        post.tagList[i] = post.tagList[i].replace("<", "").replace(">", "");
                                     }
                                     break;
                                 case "AnswerCount":

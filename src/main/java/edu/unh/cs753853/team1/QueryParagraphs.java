@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -32,6 +33,13 @@ import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
+class StackOverflowDump {
+	public List<Post> post;
+	public HashMap<String, Tag> tag;
+	public HashMap<Integer, User> user;
+	public HashMap<Integer, Vote> vote;
+}
+
 public class QueryParagraphs {
 
 	private IndexSearcher is = null;
@@ -44,7 +52,8 @@ public class QueryParagraphs {
 	static final private String Cbor_OUTLINE = "test200.cbor/train.test200.cbor.outlines";
 	static final private String OUTPUT_DIR = "output";
 
-	private void indexAllParagraphs() throws IOException {
+	private StackOverflowDump indexDump(String dumpDir) throws IOException {
+	    StackOverflowDump dmp = new StackOverflowDump();
 		Directory indexdir = FSDirectory.open((new File(INDEX_DIRECTORY))
 				.toPath());
 		IndexWriterConfig conf = new IndexWriterConfig(new StandardAnalyzer());
@@ -54,20 +63,27 @@ public class QueryParagraphs {
 		// Create a Parser for our Post
 		PostParser postParser = new PostParser();
 		// Read post.xml file and parse it into a list of posts
-		List<Post> postlist = postParser.readPosts("stackoverflow/Posts.xml");
+		List<Post> postlist = postParser.readPosts(dumpDir + "Posts.xml");
 		for(Post post: postlist)
 		{
 			// Indexes all the posts that are questions
 			// postTypeId of 1 signifies the post is a question
 			if(post.postTypeId == 1) {
-				this.indexPara(iw, post);
+				this.indexPost(iw, post);
 			}
 		}
+		dmp.post = postlist;
+
+		TagParser tagParser = new TagParser();
+		dmp.tag = tagParser.readTags(dumpDir + "Tags.xml");
+
 		iw.close();
+
+		return dmp;
 	}
 	
 
-	private void indexPara(IndexWriter iw, Post postInfo) throws IOException {
+	private void indexPost(IndexWriter iw, Post postInfo) throws IOException {
 		Document postdoc = new Document();
 		FieldType indexType = new FieldType();
 		indexType.setIndexOptions(IndexOptions.DOCS_AND_FREQS);
@@ -231,7 +247,7 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			q.indexAllParagraphs();
+			StackOverflowDump dmp = q.indexDump("stackoverflow/");
 
 			System.out.println("main: need to reimplement ranking functions to take \n\t\t parsed xml objects");
 			/*

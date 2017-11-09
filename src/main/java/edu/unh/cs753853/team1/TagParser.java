@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
@@ -24,9 +25,9 @@ class Tag {
 public class TagParser {
 
     @SuppressWarnings("unchecked")
-    public List<Tag> readTags(String tagsFile) {
+    public HashMap<String, Tag> readTags(String tagsFile) {
         // Create a list to store the tags we read from the xml file
-        List<Tag> tags = new ArrayList<>();
+        HashMap<String, Tag> tags = new HashMap<>();
 
         // Catch: FileNotFoundException, XMLStreamException
         try {
@@ -77,7 +78,6 @@ public class TagParser {
                                     tag.tagId = Integer.parseInt(attribute.getValue());
                                     break;
                                 default:
-                                    System.out.println("Invalid <row... /> tag in tags.xml");
                                     break;
                             }
                         }
@@ -92,7 +92,7 @@ public class TagParser {
                     // If the name of the tag that just ended is "row"
                     if (endElement.getName().getLocalPart().equals("row")) {
                         // Add the current Tag object to the list
-                        tags.add(tag);
+                        tags.put(tag.tagName, tag);
                     }
                 }
             }
