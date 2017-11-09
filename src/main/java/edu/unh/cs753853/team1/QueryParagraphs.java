@@ -76,7 +76,7 @@ public class QueryParagraphs {
 		postdoc.add(new StringField("postscore", Integer.toString(postInfo.score), Field.Store.YES));
 
 		System.out.println(postInfo.postId + ": " + postInfo.postTitle);
-		System.out.println("\t" + postInfo.postBody.substring(0, (postInfo.postBody.length() > 150 ? 150 : postInfo.postBody.length())));
+		System.out.println("\t" + postInfo.postBody);
 		System.out.println("Score: " + postInfo.score);
 		System.out.println();
 
