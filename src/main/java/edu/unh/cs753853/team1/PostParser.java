@@ -127,6 +127,9 @@ public class PostParser {
                                 case "FavoriteCount":
                                     post.favoriteCount = Integer.parseInt(attribute.getValue());
                                     break;
+                                case "Score":
+                                    post.score = Integer.parseInt(attribute.getValue());
+                                    break;
                                 default:
                                     break;
                             }
