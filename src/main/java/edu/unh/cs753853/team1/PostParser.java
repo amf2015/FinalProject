@@ -19,11 +19,11 @@ class Post {
     public int favoriteCount;
     public int commentCount;
     public int answerCount;
-    public String tags[];
+    public String tags;
     public String postTitle;
     public String lastActivityDate;
     public String lastEditDate;
-    public int LastEditorUserId;
+    public int lastEditorUserId;
     public int ownerUserId;
     public String postBody;
     public int viewCount;
@@ -35,41 +35,120 @@ class Post {
 }
 
 public class PostParser {
+
+    @SuppressWarnings("unchecked")
     public List<Post> readPosts(String postsFile) {
+        // Create a list to store the posts we read from the xml file
         List<Post> posts = new ArrayList<>();
+
+        // Catch: FileNotFoundException, XMLStreamException
         try {
+            // Create an xml input instance
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
+            // Open an input stream for our posts file
             InputStream in = new FileInputStream(postsFile);
+            // Get an event reader for our posts.xml input stream
             XMLEventReader eventReader = inputFactory.createXMLEventReader(in);
 
+            // Temporarily holds our Post object before it is inserted into the list
             Post post = null;
 
+            // While we still have XML events to read
             while (eventReader.hasNext()) {
+                // Get the next event
                 XMLEvent event = eventReader.nextEvent();
 
+                // If our event signals the start of a tag
                 if (event.isStartElement())
                 {
+                    // Keep track of the tag
                     StartElement startElement = event.asStartElement();
 
+                    // If the tags name is "row"
                     if(startElement.getName().getLocalPart().equals("row")) {
+                        // Create a new blank Post object
                         post = new Post();
 
+                        // Get an iterator over all attributes in the tag
                         Iterator<Attribute> attributes = startElement.getAttributes();
+
+                        // While there are still attributes to process
                         while(attributes.hasNext()) {
+                            // Get the next attribute and its name
                             Attribute attribute = attributes.next();
-                            if(attribute.getName().toString().equals("Id")) {
-                                post.postId = Integer.parseInt(attribute.getValue());
-                            } else if(attribute.getName().toString().equals("PostTypeId")) {
-                                post.postTypeId = Integer.parseInt(attribute.getValue());
-                            } else if(attribute.getName().toString().equals("AcceptedAnswerId")) {
-                                post.acceptedAnswerId = Integer.parseInt(attribute.getValue());
-                            } else if(attribute.getName().toString().equals("CreationDate")) {
-                                post.creationDate = 
+                            String attrName = attribute.getName().toString();
+
+                            // Check for known attribute names and place value in appropriate
+                            //  slot in Post object
+                            switch(attrName) {
+                                case "Id":
+                                    post.postId = Integer.parseInt(attribute.getValue());
+                                    break;
+                                case "PostTypeId":
+                                    post.postTypeId = Integer.parseInt(attribute.getValue());
+                                    break;
+                                case "AcceptedAnswerId":
+                                    post.acceptedAnswerId = Integer.parseInt(attribute.getValue());
+                                    break;
+                                case "CreationDate":
+                                    post.creationDate = attribute.getValue();
+                                    break;
+                                case "ViewCount":
+                                    post.viewCount = Integer.parseInt(attribute.getValue());
+                                    break;
+                                case "Body":
+                                    post.postBody = attribute.getValue();
+                                    break;
+                                case "OwnerUserId":
+                                    post.ownerUserId= Integer.parseInt(attribute.getValue());
+                                    break;
+                                case "LastEditorUserId":
+                                    post.lastEditorUserId = Integer.parseInt(attribute.getValue());
+                                    break;
+                                case "LastEditDate":
+                                    post.lastEditDate = attribute.getValue();
+                                    break;
+                                case "LastActivityDate":
+                                    post.lastActivityDate = attribute.getValue();
+                                    break;
+                                case "Title":
+                                    post.postTitle = attribute.getValue();
+                                    break;
+                                case "Tags":
+                                    post.tags = attribute.getValue();
+                                    break;
+                                case "AnswerCount":
+                                    post.answerCount = Integer.parseInt(attribute.getValue());
+                                    break;
+                                case "CommentCount":
+                                    post.commentCount = Integer.parseInt(attribute.getValue());
+                                    break;
+                                case "FavoriteCount":
+                                    post.favoriteCount = Integer.parseInt(attribute.getValue());
+                                    break;
+                                default:
+                                    System.out.println("Invalid <row... /> tag in posts.xml");
+                                    break;
                             }
+                        }
+                    }
+
+                    // If the event signals the end of a tag
+                    if(event.isEndElement()) {
+                        // Get the event
+                        EndElement endElement = event.asEndElement();
+
+                        // If the name of the tag that just ended is "row"
+                        if(endElement.getName().getLocalPart().equals("row")) {
+                            // Add the current Post object to the list
+                            posts.add(post);
                         }
                     }
                 }
             }
+        } catch(FileNotFoundException | XMLStreamException e) {
+            e.printStackTrace();
         }
+        return posts;
     }
 }
