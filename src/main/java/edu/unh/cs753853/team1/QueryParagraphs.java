@@ -75,8 +75,7 @@ public class QueryParagraphs {
 		postdoc.add(new Field("postbody", postInfo.postBody, indexType));
 		postdoc.add(new StringField("postscore", Integer.toString(postInfo.score), Field.Store.YES));
 
-		System.out.println(postInfo.postId + ": " + postInfo.postTitle);
-		System.out.println("\tScore: " + postInfo.score);
+		System.out.println("(" + postInfo.score + ") " +postInfo.postId + ": " + postInfo.postTitle);
 		System.out.println();
 
 		iw.addDocument(postdoc);
