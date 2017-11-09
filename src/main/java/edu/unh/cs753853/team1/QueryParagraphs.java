@@ -67,8 +67,6 @@ public class QueryParagraphs {
 
 	// directory structure..
 	static final String INDEX_DIRECTORY = "index";
-	static final private String Cbor_FILE = "test200.cbor/train.test200.cbor.paragraphs";
-	static final private String Cbor_OUTLINE = "test200.cbor/train.test200.cbor.outlines";
 	static final private String OUTPUT_DIR = "output";
 
 	private StackOverflowDump indexDump(String dumpDir) throws IOException {
@@ -91,11 +89,14 @@ public class QueryParagraphs {
 				this.indexPost(iw, post);
 			}
 		}
+		// add posts list to our dmp object
 		dmp.post = postlist;
 
+		// get our tags and add them to the dmp object
 		TagParser tagParser = new TagParser();
 		dmp.tag = tagParser.readTags(dumpDir + "Tags.xml");
 
+		// Link posts to tags that they contain
 		dmp.linkTags();
 
 		iw.close();
@@ -118,10 +119,6 @@ public class QueryParagraphs {
 		postdoc.add(new Field("posttitle", postInfo.postTitle, indexType));
 		postdoc.add(new Field("postbody", postInfo.postBody, indexType));
 
-		// Output for testing
-		System.out.println("(" + postInfo.score + ") " +postInfo.postId + ": " + postInfo.postTitle);
-		System.out.println();
-		// End output for testing
 
 		iw.addDocument(postdoc);
 	}
