@@ -114,17 +114,17 @@ public class UserParser {
                             }
                         }
                     }
+                    continue;
+                }
+                // If the event signals the end of a tag
+                if (event.isEndElement()) {
+                    // Get the event
+                    EndElement endElement = event.asEndElement();
 
-                    // If the event signals the end of a tag
-                    if (event.isEndElement()) {
-                        // Get the event
-                        EndElement endElement = event.asEndElement();
-
-                        // If the name of the tag that just ended is "row"
-                        if (endElement.getName().getLocalPart().equals("row")) {
-                            // Add the current User object to the list
-                            users.add(user);
-                        }
+                    // If the name of the tag that just ended is "row"
+                    if (endElement.getName().getLocalPart().equals("row")) {
+                        // Add the current User object to the list
+                        users.add(user);
                     }
                 }
             }

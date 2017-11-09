@@ -86,17 +86,17 @@ public class VoteParser {
                             }
                         }
                     }
+                    continue;
+                }
+                // If the event signals the end of a tag
+                if (event.isEndElement()) {
+                    // Get the event
+                    EndElement endElement = event.asEndElement();
 
-                    // If the event signals the end of a tag
-                    if (event.isEndElement()) {
-                        // Get the event
-                        EndElement endElement = event.asEndElement();
-
-                        // If the name of the tag that just ended is "row"
-                        if (endElement.getName().getLocalPart().equals("row")) {
-                            // Add the current Vote object to the list
-                            votes.add(vote);
-                        }
+                    // If the name of the tag that just ended is "row"
+                    if (endElement.getName().getLocalPart().equals("row")) {
+                        // Add the current Vote object to the list
+                        votes.add(vote);
                     }
                 }
             }
