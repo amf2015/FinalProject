@@ -46,7 +46,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				  <version>2.2</version>
+				<version>2.2</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -57,12 +57,6 @@
 							<archive>
 								<manifest>
 									<mainClass>edu.unh.cs753853.team1.QueryParagraphs</mainClass>
-                                    <configuration>
-										<jvmargs>
-											<jvmarg>-DtotalEntitySizeLimit=0</jvmarg>
-											<jvmarg>-Djdk.xml.totalEntitySizeLimit=0</jvmarg>
-										</jvmargs>
-									</configuration>
 								</manifest>
 							</archive>
 							<descriptorRefs>
@@ -71,6 +65,16 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<compilerArguments>
+						<arg>-DtotalEntitySizeLimit=0</arg>
+						<arg>-Djdk.cml.totalEntitySizeLimit=0</arg>
+					</compilerArguments>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
