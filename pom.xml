@@ -57,6 +57,10 @@
 							<archive>
 								<manifest>
 									<mainClass>edu.unh.cs753853.team1.QueryParagraphs</mainClass>
+									<jvmargs>
+										<jvmarg>-DtotalEntitySizeLimit=0</jvmarg>
+										<jvmarg>-Djdk.xml.totalEntitySizeLimit=0</jvmarg>
+									</jvmargs>
 								</manifest>
 							</archive>
 							<descriptorRefs>
