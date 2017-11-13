@@ -55,7 +55,6 @@ public class PostParser {
         try {
             // Create an xml input instance
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
-            inputFactory.setProperty()
             // Open an input stream for our posts file
             InputStream in = new FileInputStream(postsFile);
             // Get an event reader for our posts.xml input stream
