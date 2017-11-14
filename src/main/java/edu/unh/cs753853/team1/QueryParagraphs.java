@@ -120,6 +120,8 @@ public class QueryParagraphs {
 		postdoc.add(new Field("posttitle", postInfo.postTitle, indexType));
 		postdoc.add(new Field("postbody", postInfo.postBody, indexType));
 
+		System.out.print(postInfo.postId + " ");
+
 		iw.addDocument(postdoc);
 	}
 
