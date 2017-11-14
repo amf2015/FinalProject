@@ -79,6 +79,8 @@ class PostHandler extends DefaultHandler {
             if(posts == null)
                 posts = new ArrayList<>();
             posts.add(post);
+            if(posts.size() % 1000 == 0)
+                System.out.print(".");
         }
     }
 
