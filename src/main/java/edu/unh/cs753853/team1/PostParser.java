@@ -80,8 +80,9 @@ class PostHandler extends DefaultHandler {
         if (qName.equals("row")) {
             if(posts == null)
                 posts = new ArrayList<>();
-            if(post.postTypeId == 1)
-            posts.add(post);
+            if(post.postTypeId == 1) {
+                posts.add(post);
+            }
             if(posts.size() % 50000 == 0)
                 System.out.print(".");
             if(posts.size() % 1000000 == 0)
