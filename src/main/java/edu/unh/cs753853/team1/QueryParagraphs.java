@@ -266,7 +266,7 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			StackOverflowDump dmp = q.indexDump("stackoverflow/");
+			StackOverflowDump dmp = q.indexDump("stackoverflow/cs_stackoverflow/");
 
 			System.out.println("main: need to reimplement ranking functions to take \n\t\t parsed xml objects");
 			/*
