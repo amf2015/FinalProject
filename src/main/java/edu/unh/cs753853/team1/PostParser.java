@@ -152,7 +152,6 @@ public class PostParser {
                         }
                     }
                     // Go to the next event
-                    System.out.print(post.postId);
                     continue;
                 }
                 // If the event signals the end of a tag
