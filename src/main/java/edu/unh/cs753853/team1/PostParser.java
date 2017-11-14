@@ -45,11 +45,15 @@ class PostHandler extends DefaultHandler {
             throws SAXException {
 
         if (qName.equals("row")) {
+
             post = new Post();
+            post.postTypeId = getInt(attributes, "PostTypeId");
+            if(post.postTypeId != 1)
+                return;
+
             // Check for known attribute names and place value in appropriate
             //  slot in Post object
             post.postId = getInt(attributes, "Id");
-            post.postTypeId = getInt(attributes, "PostTypeId");
             post.acceptedAnswerId = getInt(attributes, "AcceptedAnswerId");
             post.creationDate = getString(attributes, "CreationDate");
             post.viewCount = getInt(attributes, "ViewCount");
