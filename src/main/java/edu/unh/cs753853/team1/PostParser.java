@@ -17,15 +17,11 @@ import org.xml.sax.helpers.DefaultHandler;
 
 class Post {
     int favoriteCount;
-    int commentCount;
     int answerCount;
     String tagList[];
     String tags;
     HashMap<String, Tag> tagMap;
     String postTitle;
-    String lastActivityDate;
-    String lastEditDate;
-    int lastEditorUserId;
     int ownerUserId;
     String postBody;
     int viewCount;
@@ -48,8 +44,10 @@ class PostHandler extends DefaultHandler {
 
             post = new Post();
             post.postTypeId = getInt(attributes, "PostTypeId");
-            if(post.postTypeId != 1)
+            if(post.postTypeId != 1) {
+                post = null;
                 return;
+            }
 
             // Check for known attribute names and place value in appropriate
             //  slot in Post object
@@ -60,9 +58,6 @@ class PostHandler extends DefaultHandler {
             String html = getString(attributes, "Body");
             post.postBody = html.replaceAll("\\<.*?>", "");
             post.ownerUserId = getInt(attributes, "OwnerUserId");
-            post.lastEditorUserId = getInt(attributes, "LastEditorUserId");
-            post.lastEditDate = getString(attributes, "lastEditDate");
-            post.lastActivityDate = getString(attributes, "LasActivityDate");
             post.postTitle = getString(attributes, "Title");
             String rawTags = getString(attributes, "Tags");
             post.tags = rawTags.replace("<", "").replace(">", " ");
@@ -71,7 +66,6 @@ class PostHandler extends DefaultHandler {
                 post.tagList[i] = post.tagList[i].replace("<", "").replace(">", "");
             }
             post.answerCount = getInt(attributes, "AnswerCount");
-            post.commentCount = getInt(attributes, "CommentCount");
             post.favoriteCount = getInt(attributes, "FavoriteCount");
             post.score = getInt(attributes, "Score");
         }
@@ -82,7 +76,7 @@ class PostHandler extends DefaultHandler {
         if (qName.equals("row")) {
             if(posts == null)
                 posts = new ArrayList<>();
-            if(post.postTypeId != 1)
+            if(post == null)
                 return;
 
             posts.add(post);
