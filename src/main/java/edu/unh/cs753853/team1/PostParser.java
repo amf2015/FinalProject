@@ -163,6 +163,7 @@ public class PostParser {
                     if(endElement.getName().getLocalPart().equals("row")) {
                         // Add the current Post object to the list
                         posts.add(post);
+                        System.out.print(post.postId + " ");
                     }
                 }
             }

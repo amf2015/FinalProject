@@ -72,7 +72,6 @@ public class QueryParagraphs {
 	static final private String OUTPUT_DIR = "output";
 
 	private StackOverflowDump indexDump(String dumpDir) throws IOException {
-	    System.setProperty(XMLConstants.FEATURE_SECURE_PROCESSING, "false");
 	    StackOverflowDump dmp = new StackOverflowDump();
 		Directory indexdir = FSDirectory.open((new File(INDEX_DIRECTORY)).toPath());
 		IndexWriterConfig conf = new IndexWriterConfig(new StandardAnalyzer());
