@@ -47,11 +47,13 @@ class PostHandler extends DefaultHandler {
         if (qName.equals("row")) {
 
             post = new Post();
+            post.postTypeId = getInt(attributes, "PostTypeId");
+            if(post.postTypeId != 1)
+                return;
 
             // Check for known attribute names and place value in appropriate
             //  slot in Post object
             post.postId = getInt(attributes, "Id");
-            post.postTypeId = getInt(attributes, "PostTypeId");
             post.acceptedAnswerId = getInt(attributes, "AcceptedAnswerId");
             post.creationDate = getString(attributes, "CreationDate");
             post.viewCount = getInt(attributes, "ViewCount");
@@ -80,14 +82,13 @@ class PostHandler extends DefaultHandler {
         if (qName.equals("row")) {
             if(posts == null)
                 posts = new ArrayList<>();
-            if(post.postTypeId == 1) {
-                posts.add(post);
-            } else {
+            if(post.postTypeId != 1)
                 return;
-            }
-            if(posts.size() % 50000 == 0)
+
+            posts.add(post);
+            if(posts.size() % 10000 == 0)
                 System.out.print(".");
-            if(posts.size() % 1000000 == 0)
+            if(posts.size() % 100000 == 0)
                 System.out.println(" # " + posts.size() + "");
         }
     }
