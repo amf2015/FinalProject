@@ -79,10 +79,10 @@ class PostHandler extends DefaultHandler {
             if(posts == null)
                 posts = new ArrayList<>();
             posts.add(post);
-            if(posts.size() % 10000 == 0)
+            if(posts.size() % 50000 == 0)
                 System.out.print(".");
-            if(posts.size() % 100000 == 0)
-                System.out.println("(" + posts.size() + " parsed so far)");
+            if(posts.size() % 1000000 == 0)
+                System.out.println(" # " + posts.size() + "");
         }
     }
 
