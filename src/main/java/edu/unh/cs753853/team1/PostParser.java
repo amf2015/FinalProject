@@ -111,12 +111,6 @@ class PostHandler extends DefaultHandler {
             return "";
         return attr.getValue(value);
     }
-
-    private String valueOrDefault(String value, String def) {
-        if(value == null)
-            return def;
-        return value;
-    }
 }
 
 public class PostParser {
