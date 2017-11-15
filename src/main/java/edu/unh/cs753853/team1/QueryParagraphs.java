@@ -7,6 +7,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -63,20 +65,22 @@ class StackOverflowDump {
 
 public class QueryParagraphs {
 
-	private IndexSearcher is = null;
-	private QueryParser qp = null;
+	private IndexSearcher indexSearcher = null;
+	private QueryParser queryParser = null;
 	private boolean customScore = false;
 
 	// directory structure..
 	static final String INDEX_DIRECTORY = "index";
 	static final private String OUTPUT_DIR = "output";
+	
+	private ArrayList<String> queries;
 
 	private StackOverflowDump indexDump(String dumpDir) throws IOException {
 	    StackOverflowDump dmp = new StackOverflowDump();
 		Directory indexdir = FSDirectory.open((new File(INDEX_DIRECTORY)).toPath());
 		IndexWriterConfig conf = new IndexWriterConfig(new StandardAnalyzer());
 		conf.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
-		IndexWriter iw = new IndexWriter(indexdir, conf);
+		IndexWriter writer = new IndexWriter(indexdir, conf);
 
 		// Create a Parser for our Post
 		PostParser postParser = new PostParser();
@@ -87,7 +91,7 @@ public class QueryParagraphs {
 			// Indexes all the posts that are questions
 			// postTypeId of 1 signifies the post is a question
 			if(post.postTypeId == 1) {
-				this.indexPost(iw, post);
+				this.indexPost(writer, post);
 			}
 		}
 		// add posts list to our dmp object
@@ -95,18 +99,26 @@ public class QueryParagraphs {
 
 		// get our tags and add them to the dmp object
 		TagParser tagParser = new TagParser();
+//		System.out.println(dumpDir + "Tags.xml");
 		dmp.tag = tagParser.readTags(dumpDir + "Tags.xml");
 
 		// Link posts to tags that they contain
 		dmp.linkTags();
 
-		iw.close();
+		writer.close();
 
 		return dmp;
 	}
 	
+	private void addQuery(String q) {
+		if(queries == null) {
+			queries = new ArrayList<>();
+		}
+		queries.add(q);
+	}
+	
 
-	private void indexPost(IndexWriter iw, Post postInfo) throws IOException {
+	private void indexPost(IndexWriter writer, Post postInfo) throws IOException {
 		Document postdoc = new Document();
 		FieldType indexType = new FieldType();
 		indexType.setIndexOptions(IndexOptions.DOCS_AND_FREQS);
@@ -121,68 +133,51 @@ public class QueryParagraphs {
 		postdoc.add(new Field("postbody", postInfo.postBody, indexType));
 
 
-		iw.addDocument(postdoc);
+		writer.addDocument(postdoc);
 	}
 
+	
 	/*
-	private void rankParas(Data.Page page, int n, String filename)
+	 * dump
+	 * max results per query
+	 * write results to filename
+	 */
+	private void rankPosts(StackOverflowDump dump, int max, String filename)
 			throws IOException, ParseException {
-		if (is == null) {
-			is = new IndexSearcher(DirectoryReader.open(FSDirectory
+		
+		if (indexSearcher == null) {
+			indexSearcher = new IndexSearcher(DirectoryReader.open(FSDirectory
 					.open((new File(INDEX_DIRECTORY).toPath()))));
 		}
-
-		if (customScore) {
-			SimilarityBase mySimiliarity = new SimilarityBase() {
-				protected float score(BasicStats stats, float freq, float docLen) {
-					return freq;
-				}
-
-				@Override
-				public String toString() {
-					return null;
-				}
-			};
-			is.setSimilarity(mySimiliarity);
+		if (queryParser == null) {
+			queryParser = new QueryParser("postbody", new StandardAnalyzer());
 		}
 
-		if (qp == null) {
-			qp = new QueryParser("parabody", new StandardAnalyzer());
-		}
-
+		
 		Query q;
 		TopDocs tds;
 		ScoreDoc[] retDocs;
-
-	//	System.out.println("Query: " + page.getPageName());
-		q = qp.parse(page.getPageName());
-
-		tds = is.search(q, n);
-		retDocs = tds.scoreDocs;
-		Document d;
-		ArrayList<String> runStringsForPage = new ArrayList<String>();
-		String method = "lucene-score";
-		if (customScore)
-			method = "custom-score";
-		for (int i = 0; i < retDocs.length; i++) {
-			d = is.doc(retDocs[i].doc);
+		ArrayList<String> runStrings = new ArrayList<String>();
 		
-
-			// runFile string format $queryId Q0 $paragraphId $rank $score
-			// $teamname-$methodname
-			String runFileString = page.getPageId() + " Q0 "
-					+ d.getField("paraid").stringValue() + " " + i + " "
-					+ tds.scoreDocs[i].score + " team1-" + method;
-			runStringsForPage.add(runFileString);
+		while(queries.size() > 0) {
+			String tmpQ = queries.remove(queries.size()-1);
+			q = queryParser.parse(tmpQ);
+			tds = indexSearcher.search(q, max);
+			retDocs = tds.scoreDocs;
+			
+			Document d;
+			
+			for (int i = 0; i < retDocs.length; i++) {
+				d = indexSearcher.doc(retDocs[i].doc);
+				String runFileString = tmpQ + " Q0 "
+						+ d.getField("posttitle").stringValue() + " " + i + " "
+						+ tds.scoreDocs[i].score + " team1-" + "method";
+				runStrings.add(runFileString);
+			}
 		}
+		writeRunfile(filename, runStrings);
 
-		FileWriter fw = new FileWriter(QueryParagraphs.OUTPUT_DIR + "/"
-				+ filename, true);
-		for (String runString : runStringsForPage)
-			fw.write(runString + "\n");
-		fw.close();
 	}
-	*/
 
 	/*
 	private ArrayList<Data.Page> getPageListFromPath(String path) {
@@ -249,14 +244,20 @@ public class QueryParagraphs {
 
 	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
 		String fullpath = OUTPUT_DIR + "/" + filename;
-		try (FileWriter runfile = new FileWriter(new File(fullpath))) {
-			for (String line : runfileStrings) {
-				runfile.write(line + "\n");
+		
+		PrintWriter writer;
+		try {
+			writer = new PrintWriter(fullpath, "UTF-8");
+			for (String runString : runfileStrings) {
+				writer.write(runString + "\n");
 			}
-
-			runfile.close();
-		} catch (IOException e) {
-			System.out.println("Could not open " + fullpath);
+			writer.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 
@@ -266,9 +267,18 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			StackOverflowDump dmp = q.indexDump("stackoverflow/cs_stackoverflow/");
-
-			System.out.println("main: need to reimplement ranking functions to take \n\t\t parsed xml objects");
+			StackOverflowDump dmp = q.indexDump("stackoverflow/");
+			// add query phrases
+			q.addQuery("DNA");
+			q.addQuery("parsing");
+			
+//			System.out.println("main: need to reimplement ranking functions to take \n\t\t parsed xml objects");
+			try {
+				q.rankPosts(dmp, 20, "rankOutput");
+			} catch(ParseException e) {
+				e.printStackTrace();
+			}
+			
 			/*
 			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);
 			tfidf_bnn_bnn.doScoring();
