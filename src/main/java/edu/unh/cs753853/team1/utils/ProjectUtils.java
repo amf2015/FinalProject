@@ -21,6 +21,7 @@ public class ProjectUtils {
 	public static Gson gson;
 
 	// Utils functions
+
 	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
 		String fullpath = ProjectConfig.OUTPUT_DIRECTORY + "/" + filename;
 		try (FileWriter runfile = new FileWriter(new File(fullpath))) {

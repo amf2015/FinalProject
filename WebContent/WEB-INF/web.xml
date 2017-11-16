@@ -5,17 +5,6 @@
     version="3.0">
 	<display-name>FinalProject</display-name>
 
-<!-- 	<servlet>
-		<servlet-name>jersey-serlvet</servlet-name>
-		<servlet-class>
-                     com.sun.jersey.spi.container.servlet.ServletContainer
-                </servlet-class>
-	<init-param>
-		     <param-name>com.sun.jersey.config.property.packages</param-name>
-		     <param-value>edu.unh.cs753853.team1.agents</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
-	</servlet> -->
 	<servlet>
 		<servlet-name>jersey-serlvet</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
@@ -34,7 +23,7 @@
 	
 <listener>  
     <listener-class>
-        edu.unh.cs753853.team1.AppInitialise
+        edu.unh.cs753853.team1.InitialiseAPP
     </listener-class>
 </listener>
 </web-app>

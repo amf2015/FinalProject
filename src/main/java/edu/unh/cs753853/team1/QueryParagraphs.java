@@ -28,7 +28,7 @@ import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 
-class StackOverflowDump {
+class StackOverflowDump1 {
 	List<Post> post;
 	HashMap<String, Tag> tag;
 	HashMap<Integer, User> user;
@@ -62,8 +62,8 @@ public class QueryParagraphs {
 	static final String INDEX_DIRECTORY = ProjectConfig.INDEX_DIRECTORY;
 	static final private String OUTPUT_DIR = ProjectConfig.OUTPUT_DIRECTORY;
 
-	private StackOverflowDump indexDump(String dumpDir) throws IOException {
-		StackOverflowDump dmp = new StackOverflowDump();
+	private StackOverflowDump1 indexDump(String dumpDir) throws IOException {
+		StackOverflowDump1 dmp = new StackOverflowDump1();
 		Directory indexdir = FSDirectory.open((new File(INDEX_DIRECTORY)).toPath());
 		IndexWriterConfig conf = new IndexWriterConfig(new StandardAnalyzer());
 		conf.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
@@ -201,7 +201,7 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			StackOverflowDump dmp = q.indexDump("stackoverflow/");
+			StackOverflowDump1 dmp = q.indexDump("stackoverflow/");
 
 			System.out.println("main: need to reimplement ranking functions to take \n\t\t parsed xml objects");
 			/*
