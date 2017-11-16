@@ -5,7 +5,7 @@
   <groupId>edu.unh.cs753853.team1</groupId>
   <artifactId>FinalProject-Team1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>FinalProject-Team1</name>
   <url>http://maven.apache.org</url>
@@ -30,6 +30,11 @@
   	<dependency>  <!-- libraries your code depends on -->
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-core</artifactId>
+			<version>6.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analyzers-common</artifactId>
 			<version>6.6.0</version>
 		</dependency>
 
