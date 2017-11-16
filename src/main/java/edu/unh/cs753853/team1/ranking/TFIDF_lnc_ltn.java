@@ -1,4 +1,4 @@
-package edu.unh.cs753853.team1;
+package edu.unh.cs753853.team1.ranking;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -11,6 +11,8 @@ import org.apache.lucene.search.*;
 import org.apache.lucene.search.similarities.BasicStats;
 import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
+
+import edu.unh.cs753853.team1.DocumentResults;
 
 import java.io.*;
 import java.util.*;
