@@ -92,7 +92,7 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			Dump dmp = q.indexDump(ProjectConfig.STACK_DIRECTORY + "/cs_stackoverflow/");
+			Dump dmp = q.indexDump( "stackoverflow/cs_stackoverflow/");
 
 			// Gets a list of question titles to use as test queries
 			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
