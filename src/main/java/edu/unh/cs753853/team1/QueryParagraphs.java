@@ -46,10 +46,10 @@ public class QueryParagraphs {
 		IndexWriterConfig conf = new IndexWriterConfig(new StandardAnalyzer());
 		conf.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
 		IndexWriter iw = new IndexWriter(indexdir, conf);
+		System.out.println(dumpDir);
 
 		// Create a Parser for our Post
 		PostParser postParser = new PostParser();
-		System.out.println(dumpDir);
 		// Read post.xml file and parse it into a list of posts
 		List<Post> postlist = postParser.readPosts(dumpDir + "Posts.xml");
 		HashMap<Integer, Post> postById = new HashMap<>();
