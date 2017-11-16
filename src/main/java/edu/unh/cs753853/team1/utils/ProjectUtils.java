@@ -8,10 +8,14 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.TimeZone;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import edu.unh.cs753853.team1.entities.Dump;
+import edu.unh.cs753853.team1.entities.Post;
 
 public class ProjectUtils {
 	public static final String df = "yyyy-MM-dd";
@@ -82,5 +86,15 @@ public class ProjectUtils {
 			gson = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
 		}
 		return gson;
+	}
+
+	public static ArrayList<String> getTestQueries(Dump dmp)
+	{
+		ArrayList<Post> posts = dmp.getPosts();
+		ArrayList<String> postTitles = new ArrayList<>();
+		for(Post post: posts) {
+			postTitles.add(post.postTitle);
+		}
+		return postTitles;
 	}
 }
