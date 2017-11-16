@@ -44,17 +44,6 @@ public class LanguageMode_BL {
 	static private Integer docNum = 100;
 	static private String TEAM_METHOD = "Team1-Bigram";
 
-	// public static void main(String[] args) throws IOException {
-	// // String str = "This is a test string! TEXt";
-	// // ArrayList<String> list = analyzeByBigram(str);
-	// // System.out.println(list);
-	//
-	// HashMap<String, Float> map = new HashMap<String, Float>();
-	// map = getRankedDocuments("power nap benefits");
-	// System.out.println(map);
-	//
-	// }
-
 	private static IndexReader getInedexReader(String path) throws IOException {
 		return DirectoryReader.open(FSDirectory.open((new File(path).toPath())));
 	}

@@ -26,6 +26,7 @@ import edu.unh.cs753853.team1.entities.User;
 import edu.unh.cs753853.team1.entities.Vote;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
+import edu.unh.cs753853.team1.utils.ProjectConfig;
 
 class StackOverflowDump {
 	List<Post> post;
@@ -58,8 +59,8 @@ public class QueryParagraphs {
 	private boolean customScore = false;
 
 	// directory structure..
-	static final String INDEX_DIRECTORY = "index";
-	static final private String OUTPUT_DIR = "output";
+	static final String INDEX_DIRECTORY = ProjectConfig.INDEX_DIRECTORY;
+	static final private String OUTPUT_DIR = ProjectConfig.OUTPUT_DIRECTORY;
 
 	private StackOverflowDump indexDump(String dumpDir) throws IOException {
 		StackOverflowDump dmp = new StackOverflowDump();
