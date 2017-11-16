@@ -96,6 +96,10 @@ public class QueryParagraphs {
 
 			// Gets a list of question titles to use as test queries
 			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
+			for(String query: queries)
+			{
+				System.out.println(query);
+			}
 
 			System.out.println("main: need to reimplement ranking functions to take \n\t\t parsed xml objects");
 			/*
