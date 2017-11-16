@@ -94,7 +94,7 @@ public class QueryParagraphs {
 		try {
 			String XMLDirectory = ProjectConfig.STACK_DIRECTORY;
 			if(args[0] != null)
-				XMLDirectory += args[0];
+				XMLDirectory = XMLDirectory + args[0];
 
 			Dump dmp = q.indexDump(XMLDirectory);
 
