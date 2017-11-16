@@ -49,6 +49,7 @@ public class QueryParagraphs {
 
 		// Create a Parser for our Post
 		PostParser postParser = new PostParser();
+		System.out.println(dumpDir);
 		// Read post.xml file and parse it into a list of posts
 		List<Post> postlist = postParser.readPosts(dumpDir + "Posts.xml");
 		HashMap<Integer, Post> postById = new HashMap<>();
