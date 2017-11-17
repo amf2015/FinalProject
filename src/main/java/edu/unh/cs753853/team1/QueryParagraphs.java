@@ -1,10 +1,7 @@
 package edu.unh.cs753853.team1;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,14 +9,12 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.FieldType;
 import org.apache.lucene.document.StringField;
-import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexOptions;
 import org.apache.lucene.index.IndexWriter;
@@ -30,53 +25,34 @@ import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
-import org.apache.lucene.search.similarities.BasicStats;
-import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
-import javax.xml.XMLConstants;
+import edu.unh.cs753853.team1.entities.Dump;
+import edu.unh.cs753853.team1.entities.Post;
+import edu.unh.cs753853.team1.entities.Tag;
+import edu.unh.cs753853.team1.entities.User;
+import edu.unh.cs753853.team1.entities.Vote;
+import edu.unh.cs753853.team1.parser.PostParser;
+import edu.unh.cs753853.team1.parser.TagParser;
+import edu.unh.cs753853.team1.utils.ProjectConfig;
+import edu.unh.cs753853.team1.utils.ProjectUtils;
 
-class StackOverflowDump {
-	List<Post> post;
-	HashMap<String, Tag> tag;
-	HashMap<Integer, User> user;
-	HashMap<Integer, Vote> vote;
-
-	void linkTags()
-	{
-		if(tag == null || post == null)
-		{
-			System.out.println("Either this.tag or this.post is null, cannot link");
-			return;
-		}
-
-		for(Post p: post) {
-		    if(p.tagList == null)
-		    	continue;
-
-			p.tagMap = new HashMap<>();
-			for(String t: p.tagList) {
-				p.tagMap.put(t, tag.get(t));
-			}
-		}
-	}
-}
 
 public class QueryParagraphs {
 
-	private IndexSearcher indexSearcher = null;
-	private QueryParser queryParser = null;
-	private boolean customScore = false;
+
+	private IndexSearcher is = null;
+	private QueryParser qp = null;
 
 	// directory structure..
-	static final String INDEX_DIRECTORY = "index";
-	static final private String OUTPUT_DIR = "output";
+	static final String INDEX_DIRECTORY = ProjectConfig.INDEX_DIRECTORY;
+	static final private String OUTPUT_DIR = ProjectConfig.OUTPUT_DIRECTORY;
 	
 	private ArrayList<String> queries;
 
-	private StackOverflowDump indexDump(String dumpDir) throws IOException {
-	    StackOverflowDump dmp = new StackOverflowDump();
+	private Dump indexDump(String dumpDir) throws IOException {
+		Dump dmp = new Dump();
 		Directory indexdir = FSDirectory.open((new File(INDEX_DIRECTORY)).toPath());
 		IndexWriterConfig conf = new IndexWriterConfig(new StandardAnalyzer());
 		conf.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
@@ -86,36 +62,29 @@ public class QueryParagraphs {
 		PostParser postParser = new PostParser();
 		// Read post.xml file and parse it into a list of posts
 		List<Post> postlist = postParser.readPosts(dumpDir + "Posts.xml");
-		for(Post post: postlist)
-		{
+		HashMap<Integer, Post> postById = new HashMap<>();
+		for (Post post : postlist) {
 			// Indexes all the posts that are questions
 			// postTypeId of 1 signifies the post is a question
-			if(post.postTypeId == 1) {
+
+			if (post.postTypeId == 1) {
 				this.indexPost(writer, post);
+				postById.put(post.postId, post);
 			}
 		}
 		// add posts list to our dmp object
-		dmp.post = postlist;
+		dmp.addPosts(postById);
 
 		// get our tags and add them to the dmp object
 		TagParser tagParser = new TagParser();
-//		System.out.println(dumpDir + "Tags.xml");
-		dmp.tag = tagParser.readTags(dumpDir + "Tags.xml");
 
-		// Link posts to tags that they contain
-		dmp.linkTags();
+		dmp.addTags(tagParser.readTags(dumpDir + "Tags.xml"));
 
 		writer.close();
 
 		return dmp;
 	}
 	
-	private void addQuery(String q) {
-		if(queries == null) {
-			queries = new ArrayList<>();
-		}
-		queries.add(q);
-	}
 	
 
 	private void indexPost(IndexWriter writer, Post postInfo) throws IOException {
@@ -135,22 +104,29 @@ public class QueryParagraphs {
 
 		writer.addDocument(postdoc);
 	}
-
+	
+	
+	void addQuery(String s) {
+		if(queries == null) {
+			queries = new ArrayList<String>();
+		}
+		queries.add(s);
+	}
 	
 	/*
 	 * dump
 	 * max results per query
 	 * write results to filename
 	 */
-	private void rankPosts(StackOverflowDump dump, int max, String filename)
-			throws IOException, ParseException {
+	private void rankPosts(Dump dump, int max, String filename)
+			throws IOException {
 		
-		if (indexSearcher == null) {
-			indexSearcher = new IndexSearcher(DirectoryReader.open(FSDirectory
+		if (is == null) {
+			is = new IndexSearcher(DirectoryReader.open(FSDirectory
 					.open((new File(INDEX_DIRECTORY).toPath()))));
 		}
-		if (queryParser == null) {
-			queryParser = new QueryParser("postbody", new StandardAnalyzer());
+		if (qp == null) {
+			qp = new QueryParser("postbody", new StandardAnalyzer());
 		}
 
 		
@@ -161,18 +137,23 @@ public class QueryParagraphs {
 		
 		while(queries.size() > 0) {
 			String tmpQ = queries.remove(queries.size()-1);
-			q = queryParser.parse(tmpQ);
-			tds = indexSearcher.search(q, max);
-			retDocs = tds.scoreDocs;
-			
-			Document d;
-			
-			for (int i = 0; i < retDocs.length; i++) {
-				d = indexSearcher.doc(retDocs[i].doc);
-				String runFileString = tmpQ + " Q0 "
-						+ d.getField("posttitle").stringValue() + " " + i + " "
-						+ tds.scoreDocs[i].score + " team1-" + "method";
-				runStrings.add(runFileString);
+			try {
+				q = qp.parse(tmpQ);
+				tds = is.search(q, max);
+				retDocs = tds.scoreDocs;
+				
+				Document d;
+				
+				for (int i = 0; i < retDocs.length; i++) {
+					d = is.doc(retDocs[i].doc);
+					String runFileString = tmpQ + " Q0 "
+							+ d.getField("posttitle").stringValue() + " " + i + " "
+							+ tds.scoreDocs[i].score + " team1-" + "method";
+					runStrings.add(runFileString);
+				}
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 		}
 		writeRunfile(filename, runStrings);
@@ -267,38 +248,38 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			StackOverflowDump dmp = q.indexDump("stackoverflow/");
-			// add query phrases
-			q.addQuery("DNA");
-			q.addQuery("parsing");
+			String XMLDirectory = ProjectConfig.STACK_DIRECTORY;
+			if(args[0] != null)
+			    XMLDirectory += args[0];
+
+			Dump dmp = q.indexDump(XMLDirectory);
+
+			// Gets a list of question titles to use as test queries
+			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
 			
-//			System.out.println("main: need to reimplement ranking functions to take \n\t\t parsed xml objects");
-			try {
+//			try {
 				q.rankPosts(dmp, 20, "rankOutput");
-			} catch(ParseException e) {
-				e.printStackTrace();
-			}
-			
+//			} 
+
 			/*
-			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);
-			tfidf_bnn_bnn.doScoring();
-
-			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(pagelist, 100);
-			tfidf_lnc_ltn.dumpScoresTo(OUTPUT_DIR + "/tfidf_lnc_ltn.run");
-
-			System.out.println("Run LanguageMode_UL...");
-			UnigramLanguageModel UL_ranking = new UnigramLanguageModel(pagelist, 100);
-			q.writeRunfile("U-L.run", UL_ranking.getResults());
-
-			// UJM
-			System.out.println("Run LanguageMode_UJM...");
-			LanguageModel_UJM UJM_ranking = new LanguageModel_UJM(pagelist, 100);
-			q.writeRunfile("UJM.run", UJM_ranking.getResults());
-
-			// UDS
-			System.out.println("Run LanguageMode_UDS...");
-			LanguageModel_UDS UDS_ranking = new LanguageModel_UDS(pagelist);
-			*/
+			 * TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);
+			 * tfidf_bnn_bnn.doScoring();
+			 * 
+			 * TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(pagelist, 100);
+			 * tfidf_lnc_ltn.dumpScoresTo(OUTPUT_DIR + "/tfidf_lnc_ltn.run");
+			 * 
+			 * System.out.println("Run LanguageMode_UL...");
+			 * UnigramLanguageModel UL_ranking = new
+			 * UnigramLanguageModel(pagelist, 100); q.writeRunfile("U-L.run",
+			 * UL_ranking.getResults());
+			 * 
+			 * // UJM System.out.println("Run LanguageMode_UJM...");
+			 * LanguageModel_UJM UJM_ranking = new LanguageModel_UJM(pagelist,
+			 * 100); q.writeRunfile("UJM.run", UJM_ranking.getResults());
+			 * 
+			 * // UDS System.out.println("Run LanguageMode_UDS...");
+			 * LanguageModel_UDS UDS_ranking = new LanguageModel_UDS(pagelist);
+			 */
 
 		} catch (IOException e) {
 			e.printStackTrace();
