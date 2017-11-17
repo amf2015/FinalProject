@@ -46,7 +46,6 @@ public class QueryParagraphs {
 		IndexWriterConfig conf = new IndexWriterConfig(new StandardAnalyzer());
 		conf.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
 		IndexWriter iw = new IndexWriter(indexdir, conf);
-		System.out.println(dumpDir);
 
 		// Create a Parser for our Post
 		PostParser postParser = new PostParser();
@@ -93,7 +92,7 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			Dump dmp = q.indexDump( "stackoverflow/cs_stackoverflow/");
+			Dump dmp = q.indexDump( "stackoverflow/");
 
 			// Gets a list of question titles to use as test queries
 			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
