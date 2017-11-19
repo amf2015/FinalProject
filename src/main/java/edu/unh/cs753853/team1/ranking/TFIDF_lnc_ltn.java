@@ -186,6 +186,7 @@ public class TFIDF_lnc_ltn {
         for(Map.Entry<String, ArrayList<DocumentResult>> results: queryResults.entrySet())
         {
             String query = results.getKey();
+            System.out.println("Writing results for " + query);
             ArrayList<DocumentResult> list = results.getValue();
             for(int i = 0; i < list.size(); i++)
             {
