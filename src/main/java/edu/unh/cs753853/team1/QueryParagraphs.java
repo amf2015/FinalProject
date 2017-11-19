@@ -101,7 +101,6 @@ public class QueryParagraphs {
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 100);
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/lnc-ltn.run");
 
-			System.out.println("main: need to reimplement ranking functions to take \n\t\t parsed xml objects");
 			/*
 			 * TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);
 			 * tfidf_bnn_bnn.doScoring();
