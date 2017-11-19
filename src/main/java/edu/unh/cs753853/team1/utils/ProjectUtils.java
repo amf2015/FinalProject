@@ -114,15 +114,19 @@ public class ProjectUtils {
 	    ArrayList<String> qrelsOutput = new ArrayList<>();
 		Scanner input = new Scanner(System.in);
 
+		System.out.println(queries.size() + " number of queries to check");
+		int queryNum = 0;
 		for(String query: queries) {
 
 			System.out.println();
-			System.out.println("Query: " + query);
+			System.out.println("Q[" + queryNum++ + "/" + queries.size() + "]: " + query);
+			System.out.println("==========================================================");
 			for(DocumentResult result: results.get(query))
 			{
-				System.out.println("\"" + dmp.getPostById(result.getId()).postTitle + "\"");
-				System.out.print("(0 or 1):");
+				System.out.println("[" + result.getId() + "] \"" + dmp.getPostById(result.getId()).postTitle + "\"");
+				System.out.print("\t (0 or 1)$ ");
 				int relevance = input.nextInt();
+				System.out.println();
 				String qrelStr = query + " 0 " + result.getId() + " " + relevance;
 				qrelsOutput.add(qrelStr);
 			}
