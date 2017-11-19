@@ -124,7 +124,7 @@ public class ProjectUtils {
 			for(DocumentResult result: results.get(query))
 			{
 				System.out.println("[" + result.getId() + "] \"" + dmp.getPostById(result.getId()).postTitle + "\"");
-				System.out.print("\t (0 or 1)$ ");
+				System.out.print("  (0/1):");
 				int relevance = input.nextInt();
 				System.out.println();
 				String qrelStr = query + " 0 " + result.getId() + " " + relevance;
