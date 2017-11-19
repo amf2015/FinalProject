@@ -8,7 +8,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
 import java.util.TimeZone;
 
 import com.google.gson.Gson;
@@ -16,6 +20,7 @@ import com.google.gson.GsonBuilder;
 
 import edu.unh.cs753853.team1.entities.Dump;
 import edu.unh.cs753853.team1.entities.Post;
+import edu.unh.cs753853.team1.ranking.DocumentResult;
 
 public class ProjectUtils {
 	public static final String df = "yyyy-MM-dd";
@@ -96,5 +101,27 @@ public class ProjectUtils {
 			postTitles.add(post.postTitle);
 		}
 		return postTitles;
+	}
+
+	public static ArrayList<String> relevanceInputTool(HashMap<String, ArrayList<DocumentResult>> results, Dump dmp) {
+	    Set<String> queries = results.keySet();
+	    ArrayList<String> qrelsOutput = new ArrayList<>();
+		Scanner input = new Scanner(System.in);
+
+		for(String query: queries) {
+
+			System.out.println();
+			System.out.println("Query: " + query);
+			for(DocumentResult result: results.get(query))
+			{
+				System.out.println("\"" + dmp.getPostById(result.getId()).postTitle + "\"");
+				System.out.print("(0 or 1):");
+				int relevance = input.nextInt();
+				String qrelStr = query + " 0 " + result.getId() + " " + relevance;
+				qrelsOutput.add(qrelStr);
+			}
+			System.out.println("}]");
+		}
+		return qrelsOutput;
 	}
 }

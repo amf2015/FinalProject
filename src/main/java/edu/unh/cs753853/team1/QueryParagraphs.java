@@ -105,16 +105,7 @@ public class QueryParagraphs {
 			System.out.println("Finished writing file.");
 
 			HashMap<String, ArrayList<DocumentResult>> results = tfidf_lnc_ltn.getQueryResults();
-
-			for(String query: queries) {
-				System.out.println("[Query: " + query + "]");
-				System.out.println("[Results: {");
-				for(DocumentResult result: results.get(query))
-				{
-					System.out.println("\t[" + result.getRank() + ": " + dmp.getPostById(result.getId()).postTitle + "]");
-				}
-				System.out.println("}]");
-			}
+			ArrayList<String> qrelInformation = ProjectUtils.relevanceInputTool(results, dmp);
 
 
 			/*
