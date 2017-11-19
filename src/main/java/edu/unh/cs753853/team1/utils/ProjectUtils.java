@@ -114,7 +114,7 @@ public class ProjectUtils {
 	    ArrayList<String> qrelsOutput = new ArrayList<>();
 		Scanner input = new Scanner(System.in);
 
-		System.out.println(queries.size() + " number of queries to check");
+		System.out.println("\n" + queries.size() + " number of queries to check");
 		int queryNum = 0;
 		for(String query: queries) {
 

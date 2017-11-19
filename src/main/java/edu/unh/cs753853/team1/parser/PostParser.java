@@ -110,7 +110,7 @@ public class PostParser {
 			System.out.println("Starting parse of " + postsFile + "...");
 			postParser.parse(inputFile, handler);
 			posts = handler.getPosts();
-			System.out.println("Parsing done.\n Parsed " + posts.size() + " posts");
+			System.out.println("\nParsing done.\n Parsed " + posts.size() + " posts");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
