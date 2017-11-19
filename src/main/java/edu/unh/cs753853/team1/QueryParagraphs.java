@@ -28,6 +28,7 @@ import edu.unh.cs753853.team1.entities.User;
 import edu.unh.cs753853.team1.entities.Vote;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
+import edu.unh.cs753853.team1.ranking.DocumentResult;
 import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
@@ -98,8 +99,21 @@ public class QueryParagraphs {
 
 			// Gets a list of question titles to use as test queries
 			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
-			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 100);
+			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/lnc-ltn.run");
+
+			HashMap<String, ArrayList<DocumentResult>> results = tfidf_lnc_ltn.getQueryResults();
+
+			for(String query: queries) {
+				System.out.println("[Query: " + query + "]");
+				System.out.println("[Results: {");
+				for(DocumentResult result: results.get(query))
+				{
+					System.out.println("\t[" + result.getRank() + ": " + dmp.getPostById(result.getId()).postTitle + "]");
+				}
+				System.out.println("}]");
+			}
+
 
 			/*
 			 * TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);

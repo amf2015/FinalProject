@@ -172,6 +172,8 @@ public class TFIDF_lnc_ltn {
                 current.setRank(rankCount);
                 docResults.add(current);
                 rankCount++;
+                if(rankCount >= numDocs)
+                    break;
             }
 
             // Map our Documents and scores to the corresponding query
@@ -194,6 +196,11 @@ public class TFIDF_lnc_ltn {
         runfileWriter.close();
 
 
+    }
+
+    public HashMap<String, ArrayList<DocumentResult>> getQueryResults()
+    {
+        return this.queryResults;
     }
 
 
