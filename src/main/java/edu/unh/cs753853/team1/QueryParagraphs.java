@@ -98,6 +98,7 @@ public class QueryParagraphs {
 			Dump dmp = q.indexDump( "stackoverflow/cs_stackoverflow/");
 
 			// Gets a list of question titles to use as test queries
+			System.out.println("before writing file.");
 			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/lnc-ltn.run");
