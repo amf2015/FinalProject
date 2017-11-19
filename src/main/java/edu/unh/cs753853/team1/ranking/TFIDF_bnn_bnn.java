@@ -1,18 +1,13 @@
 package edu.unh.cs753853.team1.ranking;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.*;
 import org.apache.lucene.search.similarities.BasicStats;
 import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
-
-import edu.unh.cs753853.team1.DocumentResults;
 
 import java.io.*;
 import java.util.*;
@@ -66,7 +61,7 @@ public class TFIDF_bnn_bnn {
 	private int numDocs = 100;
 		
 	// map of queries to document results with scores
-	HashMap<Query, ArrayList<DocumentResults> > queryResults;
+	HashMap<Query, ArrayList<DocumentResult> > queryResults;
 	
 	
 	// directory  structure..
