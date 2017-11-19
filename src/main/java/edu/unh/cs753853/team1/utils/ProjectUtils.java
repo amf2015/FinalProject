@@ -20,6 +20,7 @@ import com.google.gson.GsonBuilder;
 
 import edu.unh.cs753853.team1.entities.Dump;
 import edu.unh.cs753853.team1.entities.Post;
+import edu.unh.cs753853.team1.entities.Tag;
 import edu.unh.cs753853.team1.ranking.DocumentResult;
 
 public class ProjectUtils {
@@ -95,12 +96,12 @@ public class ProjectUtils {
 
 	public static ArrayList<String> getTestQueries(Dump dmp)
 	{
-		ArrayList<Post> posts = dmp.getPosts();
-		ArrayList<String> postTitles = new ArrayList<>();
-		for(Post post: posts) {
-			postTitles.add(post.postTitle);
+		ArrayList<Tag> tags = dmp.getTags();
+		ArrayList<String> tagNames = new ArrayList<>();
+		for(Tag tag: tags) {
+			tagNames.add(tag.tagName);
 		}
-		return postTitles;
+		return tagNames;
 	}
 
 	public static ArrayList<String> relevanceInputTool(HashMap<String, ArrayList<DocumentResult>> results, Dump dmp) {
