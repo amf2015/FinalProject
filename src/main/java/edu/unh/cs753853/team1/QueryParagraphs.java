@@ -15,6 +15,7 @@ import org.apache.lucene.document.StringField;
 import org.apache.lucene.index.IndexOptions;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.store.Directory;
@@ -27,6 +28,7 @@ import edu.unh.cs753853.team1.entities.User;
 import edu.unh.cs753853.team1.entities.Vote;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
+import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
 
@@ -92,14 +94,12 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			Dump dmp = q.indexDump( "stackoverflow/cs_stackoverflow/");
+			Dump dmp = q.indexDump( "stackoverflow/");
 
 			// Gets a list of question titles to use as test queries
 			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
-			for(String query: queries)
-			{
-				System.out.println(query);
-			}
+			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 100);
+			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/lnc-ltn.run");
 
 			System.out.println("main: need to reimplement ranking functions to take \n\t\t parsed xml objects");
 			/*
@@ -122,7 +122,7 @@ public class QueryParagraphs {
 			 * LanguageModel_UDS UDS_ranking = new LanguageModel_UDS(pagelist);
 			 */
 
-		} catch (IOException e) {
+		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
 	}

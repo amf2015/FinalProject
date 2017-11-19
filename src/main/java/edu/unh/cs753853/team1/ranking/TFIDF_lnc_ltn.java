@@ -43,7 +43,7 @@ public class TFIDF_lnc_ltn {
     private HashMap<String, ArrayList<DocumentResult>> queryResults;
 
 
-    TFIDF_lnc_ltn(ArrayList<String> pl, int n) throws ParseException, IOException
+    public TFIDF_lnc_ltn(ArrayList<String> pl, int n) throws ParseException, IOException
     {
 
         numDocs = n; // Get the (max) number of documents to return
@@ -93,7 +93,6 @@ public class TFIDF_lnc_ltn {
             PriorityQueue<DocumentResult> docQueue = new PriorityQueue<>(new ResultComparator());
             ArrayList<DocumentResult> docResults = new ArrayList<>();
 
-            Query q = parser.parse(page);                 // The full query containing all terms
 
             for(String term: page.split(" "))
             {   // For every word in page name...
@@ -189,7 +188,7 @@ public class TFIDF_lnc_ltn {
             for(int i = 0; i < list.size(); i++)
             {
                 DocumentResult dr = list.get(i);
-                runfileWriter.write(query + " Q0" + dr.getId() + " " + dr.getRank() + " " + dr.getScore() + " team1-TFIDF_lnc_ltn");
+                runfileWriter.write(query + " Q0 " + dr.getId() + " " + dr.getRank() + " " + dr.getScore() + " team1-TFIDF_lnc_ltn\n");
             }
         }
         runfileWriter.close();
