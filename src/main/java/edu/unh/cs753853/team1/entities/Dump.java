@@ -34,6 +34,7 @@ public class Dump {
                     tagToPost.put(t, new ArrayList<>());
                 }
                 tagToPost.get(t).add(p);
+                System.out.println(t + ": " + p.postTitle);
             }
         }
     }
