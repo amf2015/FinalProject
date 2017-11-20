@@ -99,11 +99,7 @@ public class ProjectUtils {
 		ArrayList<Tag> tags = dmp.getTags();
 		ArrayList<String> tagNames = new ArrayList<>();
 		for(Tag tag: tags) {
-			String parts[] = tag.tagName.split("-");
-			String tagName = "";
-			for(String part: parts) {
-				tagName = tagName + " " + part;
-			}
+		    String tagName = tag.tagName.replace("", "-");
 			tagNames.add(tagName);
 		}
 		return tagNames;
@@ -117,6 +113,7 @@ public class ProjectUtils {
 		int queryNum = 0;
 		for(String query: queries) {
 		    System.out.println("[" + queryNum + "/" + queries.size() + "]");
+		    queryNum++;
 		    String fixedQuery = query.replace(" ", "-");
 			ArrayList<Post> relevantPosts = dmp.getPostsWithTag(fixedQuery);
 			if(relevantPosts == null)
