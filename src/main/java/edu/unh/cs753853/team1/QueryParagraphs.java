@@ -99,32 +99,15 @@ public class QueryParagraphs {
 
 			// Use our tags as test queries
 			ArrayList<String> queries = dmp.getReadableTagNames();
+
+			// Limit returned posts to 30
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/lnc-ltn.run");
 
-			HashMap<String, ArrayList<DocumentResult>> results = tfidf_lnc_ltn.getQueryResults();
-
+			// Generate relevance information based on tags
+			// 	all posts that have a specific tag should be marked as
+			//  relevant given a search query which is that tag
 			ProjectUtils.writeQrelsFile(queries, dmp, "tags");
-
-			/*
-			 * TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);
-			 * tfidf_bnn_bnn.doScoring();
-			 * 
-			 * TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(pagelist, 100);
-			 * tfidf_lnc_ltn.dumpScoresTo(OUTPUT_DIR + "/tfidf_lnc_ltn.run");
-			 * 
-			 * System.out.println("Run LanguageMode_UL...");
-			 * UnigramLanguageModel UL_ranking = new
-			 * UnigramLanguageModel(pagelist, 100); q.writeRunfile("U-L.run",
-			 * UL_ranking.getResults());
-			 * 
-			 * // UJM System.out.println("Run LanguageMode_UJM...");
-			 * LanguageModel_UJM UJM_ranking = new LanguageModel_UJM(pagelist,
-			 * 100); q.writeRunfile("UJM.run", UJM_ranking.getResults());
-			 * 
-			 * // UDS System.out.println("Run LanguageMode_UDS...");
-			 * LanguageModel_UDS UDS_ranking = new LanguageModel_UDS(pagelist);
-			 */
 
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();

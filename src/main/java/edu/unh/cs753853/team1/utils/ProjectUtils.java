@@ -94,25 +94,32 @@ public class ProjectUtils {
 		return gson;
 	}
 
-	public static void writeQrelsFile(ArrayList<String> queries, Dump dmp, String filename) {
+	public static void writeQrelsFile(ArrayList<String> queries, Dump dmp, String descriptor) {
+	    // Array to hold our final output
 	    ArrayList<String> qrelsOutput = new ArrayList<>();
 
-		int queryNum = 0;
+	    // For every query which should be a tag
 		for(String query: queries) {
-			System.out.println("[" + queryNum + "/" + queries.size() + "]");
-			queryNum++;
+			// Make sure our tag is the same as represented in memory
 			String fixedQuery = query.replace(" ", "-");
+			// Get all postIds which are tagged with the given tag
 			ArrayList<String> relevantPosts = dmp.getPostsWithTag(fixedQuery);
+
+			// If we have no posts that are relevant, continue to the next query
 			if (relevantPosts == null) {
 				continue;
             }
+            // For every postId that is relevant
 			for(String p: relevantPosts)
 			{
+			    // create a qrel-line indicating relevance of 1
 				String qrelStr = query + " 0 " + p + " 1";
+				// add to final output
 				qrelsOutput.add(qrelStr);
 			}
 		}
 
-		writeToFile(filename + ".qrels", qrelsOutput);
+		// Write all qrel-lines to the descriptor with .qrels extension
+		writeToFile(descriptor + ".qrels", qrelsOutput);
 	}
 }
