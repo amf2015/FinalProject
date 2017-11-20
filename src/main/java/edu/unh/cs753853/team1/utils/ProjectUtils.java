@@ -31,7 +31,7 @@ public class ProjectUtils {
 	public static Gson gson;
 
 	// Utils functions
-	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
+	public static void writeToFile(String filename, ArrayList<String> runfileStrings) {
 		String fullpath = ProjectConfig.OUTPUT_DIRECTORY + "/" + filename;
 		try (FileWriter runfile = new FileWriter(new File(fullpath))) {
 			for (String line : runfileStrings) {
@@ -94,22 +94,9 @@ public class ProjectUtils {
 		return gson;
 	}
 
-	public static ArrayList<String> getTestQueries(Dump dmp)
-	{
-		ArrayList<Tag> tags = dmp.getTags();
-		ArrayList<String> tagNames = new ArrayList<>();
-		for(Tag tag: tags) {
-		    String tagName = tag.tagName.replace("-", " ");
-			tagNames.add(tagName);
-		}
-		return tagNames;
-	}
-
-	public static ArrayList<String> getRelevanceStrings(HashMap<String, ArrayList<DocumentResult>> results, Dump dmp) {
-	    Set<String> queries = results.keySet();
+	public static void writeQrelsFile(ArrayList<String> queries, Dump dmp, String filename) {
 	    ArrayList<String> qrelsOutput = new ArrayList<>();
 
-		System.out.println("\n" + queries.size() + " queries to check");
 		int queryNum = 0;
 		for(String query: queries) {
 			System.out.println("[" + queryNum + "/" + queries.size() + "]");
@@ -117,7 +104,6 @@ public class ProjectUtils {
 			String fixedQuery = query.replace(" ", "-");
 			ArrayList<String> relevantPosts = dmp.getPostsWithTag(fixedQuery);
 			if (relevantPosts == null) {
-			    System.out.println("null for " + fixedQuery);
 				continue;
             }
 			for(String p: relevantPosts)
@@ -126,7 +112,7 @@ public class ProjectUtils {
 				qrelsOutput.add(qrelStr);
 			}
 		}
-		System.out.println("\nFinished checking queries.");
-		return qrelsOutput;
+
+		writeToFile(filename + ".qrels", qrelsOutput);
 	}
 }

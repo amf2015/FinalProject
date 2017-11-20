@@ -97,13 +97,14 @@ public class QueryParagraphs {
 		try {
 			Dump dmp = q.indexDump( "stackoverflow/cs_stackoverflow/");
 
-			// Gets a list of question titles to use as test queries
-			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
+			// Use our tags as test queries
+			ArrayList<String> queries = dmp.getReadableTagNames();
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/lnc-ltn.run");
 
 			HashMap<String, ArrayList<DocumentResult>> results = tfidf_lnc_ltn.getQueryResults();
-			ArrayList<String> qrelInformation = ProjectUtils.getRelevanceStrings(results, dmp);
+
+			ProjectUtils.writeQrelsFile(queries, dmp, "tags");
 
 			/*
 			 * TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);

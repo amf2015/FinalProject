@@ -75,6 +75,23 @@ public class Dump {
         return tagList;
     }
 
+    public ArrayList<String> getRawTagNames() {
+		ArrayList<String> tagNames = new ArrayList<>();
+		for(Tag tag: this.getTags()) {
+			tagNames.add(tag.tagName);
+		}
+		return tagNames;
+    }
+
+    public ArrayList<String> getReadableTagNames() {
+        ArrayList<String> tagNames = new ArrayList<>();
+        for(Tag tag: this.getTags()) {
+            String tagName = tag.tagName.replace("-", " ");
+            tagNames.add(tagName);
+        }
+        return tagNames;
+    }
+
     public ArrayList<User> getUsers()
     {
         ArrayList<User> userList = new ArrayList<>(user.values());
