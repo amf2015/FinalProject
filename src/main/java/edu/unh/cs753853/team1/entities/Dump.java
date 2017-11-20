@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.Map;
 
 public class Dump {
-    HashMap<Integer, Post> post;
-    HashMap<String, Tag> tag;
-    HashMap<Integer, User> user;
-    HashMap<Integer, Vote> vote;
-    HashMap<String, ArrayList<Post>> tagToPost;
+    private HashMap<Integer, Post> post;
+    private HashMap<String, Tag> tag;
+    private HashMap<Integer, User> user;
+    private HashMap<Integer, Vote> vote;
+    private HashMap<String, ArrayList<String>> tagToPost;
 
     public Dump() {
         tagToPost = new HashMap<>();
@@ -33,8 +33,8 @@ public class Dump {
                 if(!tagToPost.containsKey(t)) {
                     tagToPost.put(t, new ArrayList<>());
                 }
-                ArrayList<Post> posts = tagToPost.get(t);
-                posts.add(p);
+                ArrayList<String> posts = tagToPost.get(t);
+                posts.add(Integer.toString(p.postId));
                 tagToPost.put(t, posts);
             }
         }
@@ -105,7 +105,7 @@ public class Dump {
         return this.post.get(postId);
     }
 
-    public ArrayList<Post> getPostsWithTag(String tagName) {
+    public ArrayList<String> getPostsWithTag(String tagName) {
         return tagToPost.get(tagName);
     }
 }

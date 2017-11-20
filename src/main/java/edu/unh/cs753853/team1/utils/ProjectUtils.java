@@ -115,12 +115,12 @@ public class ProjectUtils {
 		    System.out.println("[" + queryNum + "/" + queries.size() + "]");
 		    queryNum++;
 		    String fixedQuery = query.replace(" ", "-");
-			ArrayList<Post> relevantPosts = dmp.getPostsWithTag(fixedQuery);
+			ArrayList<String> relevantPosts = dmp.getPostsWithTag(fixedQuery);
 			if(relevantPosts == null)
 				continue;
-			for(Post p: relevantPosts)
+			for(String p: relevantPosts)
 			{
-				String qrelStr = query + " 0 " + p.postId + " 1";
+				String qrelStr = query + " 0 " + p + " 1";
 				qrelsOutput.add(qrelStr);
 			}
 		}
