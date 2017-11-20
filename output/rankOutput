@@ -1,0 +1,25 @@
+parsing Q0 What kind of "gff" format does bioawk parse? 0 6.123562 team1-method
+parsing Q0 How to calculate overall reference coverage with MUMmer? 1 5.1943145 team1-method
+parsing Q0 Is there a way to retrieve several SAM fields faster than `samtools view | cut -f`? 2 4.2328563 team1-method
+parsing Q0 Are there any databases of templates for common bioinformatic file formats? 3 2.76865 team1-method
+parsing Q0 Retrieve exact co-ordinates of where a read matches a sequence, from its alignment 4 1.4044594 team1-method
+DNA Q0 how is the DNA Integrity Number (DIN) calculated in Bioanalyzer/TapeStation? 0 5.1477833 team1-method
+DNA Q0 Greedy Motif Search Using Probability Matrices 1 4.128635 team1-method
+DNA Q0 Tumor purity/contamination/admixture estimation 2 4.0637884 team1-method
+DNA Q0 What are some good practices to follow during EPIC DNA methylation data analysis? 3 4.0637884 team1-method
+DNA Q0 How can I find the relevant pathway map from gene-gene or protein-protein interaction list? 4 4.0637884 team1-method
+DNA Q0 How to quickly determine mutations in a read of a sam file? 5 3.8044388 team1-method
+DNA Q0 How accurate are human DNA datasets sequenced by Human Genome Project? 6 3.4044623 team1-method
+DNA Q0 Compare alignment quality of multiple sequencing runs aligned against the same reference genome 7 3.4044623 team1-method
+DNA Q0 State of the art in predicting Translation Initiation Sites 8 3.4044623 team1-method
+DNA Q0 Protein folding problem model for quantum computers? 9 3.4044623 team1-method
+DNA Q0 what percentage of the human genome is MAPQ=0? 10 3.4044623 team1-method
+DNA Q0 Software recommendations - DNA composition 11 3.4044623 team1-method
+DNA Q0 Is there a point in recalibration of scores for variant calling? 12 3.1250808 team1-method
+DNA Q0 Y Chromosome Aligned Reads in scATAC-seq data from a female-derived cell line? 13 3.1250808 team1-method
+DNA Q0 Improve a reference genome with sequencing data 14 2.7743025 team1-method
+DNA Q0 What Ensembl genome version should I use for alignments? (e.g. toplevel.fa vs. primary_assembly.fa) 15 2.7743025 team1-method
+DNA Q0 How to optimise core genome data for phylogenetic analysis [partition vs remove uninformative sites] 16 2.7743025 team1-method
+DNA Q0 Fasta Sequence Identifier format? 17 2.7743025 team1-method
+DNA Q0 Microbial diversity analysis using whole-genome metagenomic data 18 2.7743025 team1-method
+DNA Q0 Finding the location and unit length of repetitive sequences within a long read 19 2.4507499 team1-method
