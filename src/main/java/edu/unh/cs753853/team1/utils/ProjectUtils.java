@@ -112,12 +112,14 @@ public class ProjectUtils {
 		System.out.println("\n" + queries.size() + " queries to check");
 		int queryNum = 0;
 		for(String query: queries) {
-		    System.out.println("[" + queryNum + "/" + queries.size() + "]");
-		    queryNum++;
-		    String fixedQuery = query.replace(" ", "-");
+			System.out.println("[" + queryNum + "/" + queries.size() + "]");
+			queryNum++;
+			String fixedQuery = query.replace(" ", "-");
 			ArrayList<String> relevantPosts = dmp.getPostsWithTag(fixedQuery);
-			if(relevantPosts == null)
+			if (relevantPosts == null) {
+			    System.out.println("null for " + fixedQuery);
 				continue;
+            }
 			for(String p: relevantPosts)
 			{
 				String qrelStr = query + " 0 " + p + " 1";
