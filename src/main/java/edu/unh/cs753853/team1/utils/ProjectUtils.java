@@ -105,7 +105,7 @@ public class ProjectUtils {
 		return tagNames;
 	}
 
-	public static ArrayList<String> relevanceInputTool(HashMap<String, ArrayList<DocumentResult>> results, Dump dmp) {
+	public static ArrayList<String> getRelevanceStrings(HashMap<String, ArrayList<DocumentResult>> results, Dump dmp) {
 	    Set<String> queries = results.keySet();
 	    ArrayList<String> qrelsOutput = new ArrayList<>();
 

@@ -103,13 +103,7 @@ public class QueryParagraphs {
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/lnc-ltn.run");
 
 			HashMap<String, ArrayList<DocumentResult>> results = tfidf_lnc_ltn.getQueryResults();
-			ArrayList<String> qrelInformation = ProjectUtils.relevanceInputTool(results, dmp);
-
-			for(String s: qrelInformation) {
-				System.out.println(s);
-			}
-
-
+			ArrayList<String> qrelInformation = ProjectUtils.getRelevanceStrings(results, dmp);
 
 			/*
 			 * TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);
