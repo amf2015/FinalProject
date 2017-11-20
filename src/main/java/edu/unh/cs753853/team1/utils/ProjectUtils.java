@@ -99,7 +99,7 @@ public class ProjectUtils {
 		ArrayList<Tag> tags = dmp.getTags();
 		ArrayList<String> tagNames = new ArrayList<>();
 		for(Tag tag: tags) {
-		    String tagName = tag.tagName.replace("", "-");
+		    String tagName = tag.tagName.replace("-", " ");
 			tagNames.add(tagName);
 		}
 		return tagNames;
