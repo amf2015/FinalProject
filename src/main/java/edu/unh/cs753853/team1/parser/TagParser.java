@@ -89,7 +89,6 @@ public class TagParser {
 					if (endElement.getName().getLocalPart().equals("row")) {
 						// Add the current Tag object to the list
 						tags.put(tag.tagName, tag);
-						System.out.println(tag.tagName);
 					}
 				}
 			}

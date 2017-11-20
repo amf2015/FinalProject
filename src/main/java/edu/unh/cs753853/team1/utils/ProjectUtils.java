@@ -119,6 +119,8 @@ public class ProjectUtils {
 		    System.out.println("[" + queryNum + "/" + queries.size() + "]");
 		    String fixedQuery = query.replace(" ", "-");
 			ArrayList<Post> relevantPosts = dmp.getPostsWithTag(fixedQuery);
+			if(relevantPosts == null)
+				continue;
 			for(Post p: relevantPosts)
 			{
 				String qrelStr = query + " 0 " + p.postId + " 1";
