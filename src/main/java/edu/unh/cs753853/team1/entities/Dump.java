@@ -36,6 +36,8 @@ public class Dump {
                 ArrayList<String> posts = tagToPost.get(t);
                 posts.add(Integer.toString(p.postId));
                 tagToPost.put(t, posts);
+                if(tagToPost.get(t) == null)
+                    System.out.println("tagToPost for " + t + " is null");
             }
         }
     }
