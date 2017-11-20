@@ -105,6 +105,11 @@ public class QueryParagraphs {
 			HashMap<String, ArrayList<DocumentResult>> results = tfidf_lnc_ltn.getQueryResults();
 			ArrayList<String> qrelInformation = ProjectUtils.relevanceInputTool(results, dmp);
 
+			for(String s: qrelInformation) {
+				System.out.println(s);
+			}
+
+
 
 			/*
 			 * TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);

@@ -112,26 +112,19 @@ public class ProjectUtils {
 	public static ArrayList<String> relevanceInputTool(HashMap<String, ArrayList<DocumentResult>> results, Dump dmp) {
 	    Set<String> queries = results.keySet();
 	    ArrayList<String> qrelsOutput = new ArrayList<>();
-		Scanner input = new Scanner(System.in);
 
-		System.out.println("\n" + queries.size() + " number of queries to check");
+		System.out.println("\n" + queries.size() + " queries to check");
 		int queryNum = 0;
 		for(String query: queries) {
-
-			System.out.println();
-			System.out.println("Q[" + queryNum++ + "/" + queries.size() + "]: " + query);
-			System.out.println("==========================================================");
-			for(DocumentResult result: results.get(query))
+		    System.out.println("[" + queryNum + "/" + queries.size() + "]");
+			ArrayList<Post> relevantPosts = dmp.getPostsWithTag(query);
+			for(Post p: relevantPosts)
 			{
-				System.out.println("[" + result.getId() + "] \"" + dmp.getPostById(result.getId()).postTitle + "\"");
-				System.out.print("  (0/1):");
-				int relevance = input.nextInt();
-				System.out.println();
-				String qrelStr = query + " 0 " + result.getId() + " " + relevance;
+				String qrelStr = query + " 0 " + p.postId + " 1";
 				qrelsOutput.add(qrelStr);
 			}
-			System.out.println("}]");
 		}
+		System.out.println("\nFinished checking queries.");
 		return qrelsOutput;
 	}
 }

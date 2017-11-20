@@ -10,11 +10,16 @@ public class Dump {
     HashMap<String, Tag> tag;
     HashMap<Integer, User> user;
     HashMap<Integer, Vote> vote;
+    HashMap<String, ArrayList<Post>> tagToPost;
 
     private void linkTags() {
         if (tag == null || post == null) {
             System.out.println("Either this.tag or this.post is null, cannot link");
             return;
+        }
+
+        if(tagToPost == null) {
+            tagToPost = new HashMap<>();
         }
 
         for (Map.Entry<Integer, Post> postEntry : post.entrySet()) {
@@ -25,6 +30,10 @@ public class Dump {
             p.tagMap = new HashMap<>();
             for (String t : p.tagList) {
                 p.tagMap.put(t, tag.get(t));
+                if(!tagToPost.containsKey(t)) {
+                    tagToPost.put(t, new ArrayList<>());
+                }
+                tagToPost.get(t).add(p);
             }
         }
     }
@@ -92,5 +101,9 @@ public class Dump {
     public Post getPostById(int postId)
     {
         return this.post.get(postId);
+    }
+
+    public ArrayList<Post> getPostsWithTag(String tagName) {
+        return tagToPost.get(tagName);
     }
 }
