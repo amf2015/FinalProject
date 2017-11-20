@@ -33,7 +33,9 @@ public class Dump {
                 if(!tagToPost.containsKey(t)) {
                     tagToPost.put(t, new ArrayList<>());
                 }
-                tagToPost.get(t).add(p);
+                ArrayList<Post> posts = tagToPost.get(t);
+                posts.add(p);
+                tagToPost.put(t, posts);
             }
         }
     }
