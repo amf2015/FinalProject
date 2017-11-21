@@ -61,7 +61,7 @@ public class QueryParagraphs {
 		// Create a Parser for our Post
 		PostParser postParser = new PostParser();
 		// Read post.xml file and parse it into a list of posts
-		List<Post> postlist = postParser.readPosts(dumpDir + "Posts.xml");
+		List<Post> postlist = postParser.readPosts(dumpDir + "/Posts.xml");
 		HashMap<Integer, Post> postById = new HashMap<>();
 		for (Post post : postlist) {
 			// Indexes all the posts that are questions
@@ -78,7 +78,7 @@ public class QueryParagraphs {
 		// get our tags and add them to the dmp object
 		TagParser tagParser = new TagParser();
 
-		dmp.addTags(tagParser.readTags(dumpDir + "Tags.xml"));
+		dmp.addTags(tagParser.readTags(dumpDir + "/Tags.xml"));
 
 		writer.close();
 
@@ -249,8 +249,6 @@ public class QueryParagraphs {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
 			String XMLDirectory = ProjectConfig.STACK_DIRECTORY;
-			if(args[0] != null)
-			    XMLDirectory += args[0];
 
 			Dump dmp = q.indexDump(XMLDirectory);
 
@@ -258,7 +256,7 @@ public class QueryParagraphs {
 			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
 			
 //			try {
-				q.rankPosts(dmp, 20, "rankOutput");
+				//q.rankPosts(dmp, 20, "rankOutput");
 //			} 
 
 			/*
