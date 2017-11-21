@@ -113,7 +113,7 @@ public class ProjectUtils {
 			for(String p: relevantPosts)
 			{
 			    // create a qrel-line indicating relevance of 1
-				String qrelStr = query + " 0 " + p + " 1";
+				String qrelStr = fixedQuery + " 0 " + p + " 1";
 				// add to final output
 				qrelsOutput.add(qrelStr);
 			}
