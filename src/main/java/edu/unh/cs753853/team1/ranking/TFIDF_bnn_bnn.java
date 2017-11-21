@@ -102,12 +102,14 @@ public class TFIDF_bnn_bnn {
 				IndexReader reader = searcher.getIndexReader();
 
 				
-                float df = (reader.docFreq(query.getTerm()) == 0) ? 0 : 1;
+                //float df = (reader.docFreq(query.getTerm()) == 0) ? 0 : 1;
+				
+                float DF = (reader.docFreq(query.getTerm()) == 0) ? 1 : reader.docFreq(query.getTerm());
 				float qTF = 1; // boolean term frequency
 
-				float qdf = df;
+				float qdf = DF;
 				float qWeight = qTF * qdf;
-
+				
 				queryweights.put(query, qWeight);
 
 				// Get the topN documents that match our query
@@ -118,6 +120,8 @@ public class TFIDF_bnn_bnn {
 					Document doc = searcher.doc(tpd.scoreDocs[i].doc); // Get
 																		// the
 																		// document
+					
+				
 					int docId = Integer.parseInt(doc.get("postid"));
 					double score = tpd.scoreDocs[i].score
 							* queryweights.get(query); // Calculate TF-IDF for
@@ -138,11 +142,11 @@ public class TFIDF_bnn_bnn {
 			for (Map.Entry<Integer, Float> entry : scores.entrySet()) {
 				int docId = entry.getKey();
 				Float score = entry.getValue();
-
-				// Normalize the score
+				
+						
 				scores.put(docId, score);
-
-				DocumentResult docResult = new DocumentResult(docId, score);
+				
+			    DocumentResult docResult = new DocumentResult(docId, score);
 				docQueue.add(docResult);
 			}
 
