@@ -43,7 +43,6 @@ public class LanguageModel_BL {
 	static private QueryParser parser = null;
 	static private Integer docNum = 100;
 	static private String TEAM_METHOD = "Team1-Bigram";
-
 	/*
 	private static IndexReader getInedexReader(String path) throws IOException {
 		return DirectoryReader.open(FSDirectory.open((new File(path).toPath())));

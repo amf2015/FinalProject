@@ -8,7 +8,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
 import java.util.TimeZone;
 
 import com.google.gson.Gson;
@@ -16,6 +20,8 @@ import com.google.gson.GsonBuilder;
 
 import edu.unh.cs753853.team1.entities.Dump;
 import edu.unh.cs753853.team1.entities.Post;
+import edu.unh.cs753853.team1.entities.Tag;
+import edu.unh.cs753853.team1.ranking.DocumentResult;
 
 public class ProjectUtils {
 	public static final String df = "yyyy-MM-dd";
@@ -25,7 +31,7 @@ public class ProjectUtils {
 	public static Gson gson;
 
 	// Utils functions
-	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
+	public static void writeToFile(String filename, ArrayList<String> runfileStrings) {
 		String fullpath = ProjectConfig.OUTPUT_DIRECTORY + "/" + filename;
 		try (FileWriter runfile = new FileWriter(new File(fullpath))) {
 			for (String line : runfileStrings) {
@@ -88,13 +94,32 @@ public class ProjectUtils {
 		return gson;
 	}
 
-	public static ArrayList<String> getTestQueries(Dump dmp)
-	{
-		ArrayList<Post> posts = dmp.getPosts();
-		ArrayList<String> postTitles = new ArrayList<>();
-		for(Post post: posts) {
-			postTitles.add(post.postTitle);
+	public static void writeQrelsFile(ArrayList<String> queries, Dump dmp, String descriptor) {
+	    // Array to hold our final output
+	    ArrayList<String> qrelsOutput = new ArrayList<>();
+
+	    // For every query which should be a tag
+		for(String query: queries) {
+			// Make sure our tag is the same as represented in memory
+			String fixedQuery = query.replace(" ", "-");
+			// Get all postIds which are tagged with the given tag
+			ArrayList<String> relevantPosts = dmp.getPostsWithTag(fixedQuery);
+
+			// If we have no posts that are relevant, continue to the next query
+			if (relevantPosts == null) {
+				continue;
+            }
+            // For every postId that is relevant
+			for(String p: relevantPosts)
+			{
+			    // create a qrel-line indicating relevance of 1
+				String qrelStr = fixedQuery + " 0 " + p + " 1";
+				// add to final output
+				qrelsOutput.add(qrelStr);
+			}
 		}
-		return postTitles;
+
+		// Write all qrel-lines to the descriptor with .qrels extension
+		writeToFile(descriptor + ".qrels", qrelsOutput);
 	}
 }

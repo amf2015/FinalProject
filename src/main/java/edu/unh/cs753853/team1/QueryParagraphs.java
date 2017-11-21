@@ -35,6 +35,8 @@ import edu.unh.cs753853.team1.entities.User;
 import edu.unh.cs753853.team1.entities.Vote;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
+import edu.unh.cs753853.team1.ranking.DocumentResult;
+import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
 
@@ -248,38 +250,26 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			String XMLDirectory = ProjectConfig.STACK_DIRECTORY;
+			// Parse the .xml files from cs.stackexchange.com into a Dump Object
+			Dump cs_stackexchange = q.indexDump(ProjectConfig.CS_STACK_DIRECTORY);
 
-			Dump dmp = q.indexDump(XMLDirectory);
-
-			// Gets a list of question titles to use as test queries
-			ArrayList<String> queries = ProjectUtils.getTestQueries(dmp);
+			// Use our tags as test queries
+			ArrayList<String> cs_queries = cs_stackexchange.getReadableTagNames();
 			
 //			try {
 				//q.rankPosts(dmp, 20, "rankOutput");
 //			} 
 
-			/*
-			 * TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(pagelist, 100);
-			 * tfidf_bnn_bnn.doScoring();
-			 * 
-			 * TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(pagelist, 100);
-			 * tfidf_lnc_ltn.dumpScoresTo(OUTPUT_DIR + "/tfidf_lnc_ltn.run");
-			 * 
-			 * System.out.println("Run LanguageMode_UL...");
-			 * UnigramLanguageModel UL_ranking = new
-			 * UnigramLanguageModel(pagelist, 100); q.writeRunfile("U-L.run",
-			 * UL_ranking.getResults());
-			 * 
-			 * // UJM System.out.println("Run LanguageMode_UJM...");
-			 * LanguageModel_UJM UJM_ranking = new LanguageModel_UJM(pagelist,
-			 * 100); q.writeRunfile("UJM.run", UJM_ranking.getResults());
-			 * 
-			 * // UDS System.out.println("Run LanguageMode_UDS...");
-			 * LanguageModel_UDS UDS_ranking = new LanguageModel_UDS(pagelist);
-			 */
+			// Limit returned posts to 30
+			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(cs_queries, 30);
+			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/cs-lnc-ltn.run");
 
-		} catch (IOException e) {
+			// Generate relevance information based on tags
+			// 	all posts that have a specific tag should be marked as
+			//  relevant given a search query which is that tag
+			ProjectUtils.writeQrelsFile(cs_queries, cs_stackexchange, "tags");
+
+		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
 	}

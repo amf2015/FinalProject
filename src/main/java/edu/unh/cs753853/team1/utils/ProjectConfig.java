@@ -5,6 +5,7 @@ public class ProjectConfig {
 	public static String INDEX_DIRECTORY = "index";
 	public static String OUTPUT_DIRECTORY = "output";
 	public static String STACK_DIRECTORY = "stackoverflow";
+	public static String CS_STACK_DIRECTORY = "stackoverflow/cs_stackoverflow/";
 
 	// Method
 	public static String METHOD_BNN_BNN = "bnn_bnn";
