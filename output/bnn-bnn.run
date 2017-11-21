@@ -1,0 +1,3826 @@
+dnasp Q0 2031 0 2.0 team1-TFIDF_bnn_bnn
+clipping Q0 719 0 2.0 team1-TFIDF_bnn_bnn
+versioning Q0 112 0 2.0 team1-TFIDF_bnn_bnn
+benchmarking Q0 452 0 2.0 team1-TFIDF_bnn_bnn
+benchmarking Q0 120 1 2.0 team1-TFIDF_bnn_bnn
+gencode Q0 21 0 2.0 team1-TFIDF_bnn_bnn
+sbs Q0 422 0 2.0 team1-TFIDF_bnn_bnn
+csv Q0 1012 0 2.0 team1-TFIDF_bnn_bnn
+csv Q0 2174 1 2.0 team1-TFIDF_bnn_bnn
+bam Q0 449 0 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2302 1 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2173 2 2.0 team1-TFIDF_bnn_bnn
+bam Q0 253 3 2.0 team1-TFIDF_bnn_bnn
+bam Q0 508 4 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2363 5 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2106 6 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2101 7 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2036 8 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2163 9 2.0 team1-TFIDF_bnn_bnn
+bam Q0 1010 10 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2223 11 2.0 team1-TFIDF_bnn_bnn
+bam Q0 237 12 2.0 team1-TFIDF_bnn_bnn
+bam Q0 427 13 2.0 team1-TFIDF_bnn_bnn
+bam Q0 1002 14 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2088 15 2.0 team1-TFIDF_bnn_bnn
+bam Q0 678 16 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2149 17 2.0 team1-TFIDF_bnn_bnn
+bam Q0 36 18 2.0 team1-TFIDF_bnn_bnn
+bam Q0 611 19 2.0 team1-TFIDF_bnn_bnn
+bam Q0 608 20 2.0 team1-TFIDF_bnn_bnn
+bam Q0 414 21 2.0 team1-TFIDF_bnn_bnn
+bam Q0 157 22 2.0 team1-TFIDF_bnn_bnn
+bam Q0 27 23 2.0 team1-TFIDF_bnn_bnn
+bam Q0 280 24 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2131 25 2.0 team1-TFIDF_bnn_bnn
+bam Q0 531 26 2.0 team1-TFIDF_bnn_bnn
+bam Q0 402 27 2.0 team1-TFIDF_bnn_bnn
+bam Q0 401 28 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2318 29 2.0 team1-TFIDF_bnn_bnn
+bam Q0 462 30 2.0 team1-TFIDF_bnn_bnn
+bam Q0 525 31 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2316 32 2.0 team1-TFIDF_bnn_bnn
+bam Q0 908 33 2.0 team1-TFIDF_bnn_bnn
+bam Q0 587 34 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2119 35 2.0 team1-TFIDF_bnn_bnn
+bam Q0 135 36 2.0 team1-TFIDF_bnn_bnn
+bam Q0 134 37 2.0 team1-TFIDF_bnn_bnn
+bam Q0 453 38 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2051 39 2.0 team1-TFIDF_bnn_bnn
+bam Q0 2242 40 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 449 0 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 637 2 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 316 3 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2361 4 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 375 5 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 438 6 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2293 7 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 693 8 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2036 9 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 372 10 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 242 11 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 687 12 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 174 13 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2028 14 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 361 15 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 296 16 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2216 17 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 807 18 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 294 19 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 422 20 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 36 21 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2338 22 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 418 23 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 98 24 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2081 25 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 97 26 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 672 27 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 351 28 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 414 29 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 989 30 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 732 31 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2202 32 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 278 33 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2068 34 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2065 35 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 462 36 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 908 37 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 844 38 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 970 39 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 327 40 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2119 41 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 518 42 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 2051 43 2.0 team1-TFIDF_bnn_bnn
+sequencing Q0 899 44 2.0 team1-TFIDF_bnn_bnn
+mappability Q0 2293 0 2.0 team1-TFIDF_bnn_bnn
+mappability Q0 716 1 2.0 team1-TFIDF_bnn_bnn
+qc Q0 2065 0 2.0 team1-TFIDF_bnn_bnn
+qc Q0 317 1 2.0 team1-TFIDF_bnn_bnn
+qc Q0 253 2 2.0 team1-TFIDF_bnn_bnn
+qc Q0 92 3 2.0 team1-TFIDF_bnn_bnn
+qc Q0 458 4 2.0 team1-TFIDF_bnn_bnn
+qc Q0 327 5 2.0 team1-TFIDF_bnn_bnn
+qc Q0 2310 6 2.0 team1-TFIDF_bnn_bnn
+trim Q0 228 0 2.0 team1-TFIDF_bnn_bnn
+trim Q0 2119 1 2.0 team1-TFIDF_bnn_bnn
+imputation Q0 336 0 2.0 team1-TFIDF_bnn_bnn
+imputation Q0 317 1 2.0 team1-TFIDF_bnn_bnn
+rpkm Q0 66 0 2.0 team1-TFIDF_bnn_bnn
+scf Q0 692 0 2.0 team1-TFIDF_bnn_bnn
+positive selection Q0 628 0 2.0 team1-TFIDF_bnn_bnn
+positive selection Q0 798 1 2.0 team1-TFIDF_bnn_bnn
+positive selection Q0 62 2 2.0 team1-TFIDF_bnn_bnn
+positive selection Q0 989 3 2.0 team1-TFIDF_bnn_bnn
+positive selection Q0 716 4 2.0 team1-TFIDF_bnn_bnn
+positive selection Q0 761 5 2.0 team1-TFIDF_bnn_bnn
+api Q0 500 0 2.0 team1-TFIDF_bnn_bnn
+api Q0 1007 1 2.0 team1-TFIDF_bnn_bnn
+api Q0 623 2 2.0 team1-TFIDF_bnn_bnn
+api Q0 2062 3 2.0 team1-TFIDF_bnn_bnn
+api Q0 829 4 2.0 team1-TFIDF_bnn_bnn
+api Q0 892 5 2.0 team1-TFIDF_bnn_bnn
+api Q0 731 6 2.0 team1-TFIDF_bnn_bnn
+api Q0 933 7 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 769 0 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 317 1 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 508 2 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 951 3 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 1014 4 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 372 5 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 2131 6 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 627 7 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 943 8 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 110 9 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 237 10 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 264 11 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 2054 12 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 486 13 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 2149 14 2.0 team1-TFIDF_bnn_bnn
+filtering Q0 194 15 2.0 team1-TFIDF_bnn_bnn
+reactome Q0 230 0 2.0 team1-TFIDF_bnn_bnn
+reactome Q0 1007 1 2.0 team1-TFIDF_bnn_bnn
+adapter Q0 951 0 2.0 team1-TFIDF_bnn_bnn
+adapter Q0 297 1 2.0 team1-TFIDF_bnn_bnn
+adapter Q0 2215 2 2.0 team1-TFIDF_bnn_bnn
+adapter Q0 2119 3 2.0 team1-TFIDF_bnn_bnn
+bowtie2 Q0 945 0 2.0 team1-TFIDF_bnn_bnn
+bowtie2 Q0 2202 1 2.0 team1-TFIDF_bnn_bnn
+bowtie2 Q0 2054 2 2.0 team1-TFIDF_bnn_bnn
+bowtie2 Q0 308 3 2.0 team1-TFIDF_bnn_bnn
+bowtie2 Q0 322 4 2.0 team1-TFIDF_bnn_bnn
+amova Q0 583 0 2.0 team1-TFIDF_bnn_bnn
+radseq Q0 724 0 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 317 1 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2234 2 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 951 3 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 885 4 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 692 5 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2163 6 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 882 7 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 242 8 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2028 9 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 491 10 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 424 11 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 168 12 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2215 13 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 869 14 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2149 15 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 36 16 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 610 17 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2081 18 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 289 19 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 97 20 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 350 21 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 989 22 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2140 23 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2202 24 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2265 25 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2073 26 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 920 27 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 664 28 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 663 29 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2324 30 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2131 31 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 81 32 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 842 33 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 970 34 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 73 35 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 327 36 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 2054 37 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 708 38 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 899 39 2.0 team1-TFIDF_bnn_bnn
+quality control Q0 321 40 2.0 team1-TFIDF_bnn_bnn
+preprocessing Q0 2048 0 2.0 team1-TFIDF_bnn_bnn
+preprocessing Q0 2119 1 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 161 0 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 157 1 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 956 2 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 251 3 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 2170 4 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 266 5 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 2265 6 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 73 7 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 2165 8 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 884 9 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 561 10 2.0 team1-TFIDF_bnn_bnn
+documentation Q0 513 11 2.0 team1-TFIDF_bnn_bnn
+rvtests Q0 627 0 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 120 1 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 375 2 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 628 3 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 242 4 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 107 5 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 1001 6 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 2274 7 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 481 8 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 225 9 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 97 10 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 736 11 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 608 12 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 351 13 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 990 14 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 604 15 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 343 16 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 462 17 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 328 18 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 70 19 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 2117 20 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 709 21 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 195 22 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 322 23 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 449 24 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 702 25 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 318 26 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 316 27 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 442 28 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 2361 29 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 568 30 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 438 31 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 821 32 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 565 33 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 817 34 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 303 35 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 174 36 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 46 37 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 2216 38 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 168 39 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 807 40 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 36 41 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 418 42 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 2081 43 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 288 44 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 285 45 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 796 46 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 540 47 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 27 48 2.0 team1-TFIDF_bnn_bnn
+genome browser Q0 404 49 2.0 team1-TFIDF_bnn_bnn
+obitools Q0 150 0 2.0 team1-TFIDF_bnn_bnn
+docking Q0 12 0 2.0 team1-TFIDF_bnn_bnn
+metagenome Q0 306 0 2.0 team1-TFIDF_bnn_bnn
+metagenome Q0 951 1 2.0 team1-TFIDF_bnn_bnn
+metagenome Q0 2194 2 2.0 team1-TFIDF_bnn_bnn
+unsupervised Q0 395 0 2.0 team1-TFIDF_bnn_bnn
+10x Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+10x Q0 779 1 2.0 team1-TFIDF_bnn_bnn
+10x Q0 329 2 2.0 team1-TFIDF_bnn_bnn
+10x Q0 693 3 2.0 team1-TFIDF_bnn_bnn
+10x Q0 2356 4 2.0 team1-TFIDF_bnn_bnn
+snakemake Q0 2090 0 2.0 team1-TFIDF_bnn_bnn
+snakemake Q0 909 1 2.0 team1-TFIDF_bnn_bnn
+snakemake Q0 491 2 2.0 team1-TFIDF_bnn_bnn
+exac Q0 2289 0 2.0 team1-TFIDF_bnn_bnn
+exac Q0 842 1 2.0 team1-TFIDF_bnn_bnn
+exac Q0 73 2 2.0 team1-TFIDF_bnn_bnn
+exac Q0 933 3 2.0 team1-TFIDF_bnn_bnn
+isoform Q0 595 0 2.0 team1-TFIDF_bnn_bnn
+isoform Q0 2036 1 2.0 team1-TFIDF_bnn_bnn
+biomart Q0 2384 0 2.0 team1-TFIDF_bnn_bnn
+biomart Q0 2300 1 2.0 team1-TFIDF_bnn_bnn
+biomart Q0 939 2 2.0 team1-TFIDF_bnn_bnn
+biomart Q0 118 3 2.0 team1-TFIDF_bnn_bnn
+biomart Q0 741 4 2.0 team1-TFIDF_bnn_bnn
+schema Q0 196 0 2.0 team1-TFIDF_bnn_bnn
+schema Q0 565 1 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 453 0 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 702 1 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 251 2 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 695 3 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 886 4 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 2101 5 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 818 6 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 626 7 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 2289 8 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 945 9 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 303 10 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 361 11 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 168 12 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 2341 13 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 994 14 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 481 15 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 736 16 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 990 17 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 540 18 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 2259 19 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 336 20 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 2128 21 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 654 22 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 525 23 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 2059 24 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 2186 25 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 134 26 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 2373 27 2.0 team1-TFIDF_bnn_bnn
+1000 genomes Q0 901 28 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2241 0 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 703 1 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 1019 2 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2234 3 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 1018 4 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2298 5 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 314 6 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 441 7 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 505 8 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 567 9 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 886 10 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2165 11 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2356 12 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 372 13 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 51 14 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 687 15 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 559 16 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 238 17 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2346 18 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2282 19 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2088 20 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 165 21 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 29 22 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2140 23 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2329 24 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 857 25 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 153 26 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 278 27 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 21 28 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2321 29 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 909 30 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 524 31 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 779 32 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 777 33 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 584 34 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 456 35 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2375 36 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2310 37 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 774 38 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 2308 39 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 194 40 2.0 team1-TFIDF_bnn_bnn
+differential expression Q0 66 41 2.0 team1-TFIDF_bnn_bnn
+networks Q0 194 0 2.0 team1-TFIDF_bnn_bnn
+networks Q0 2059 1 2.0 team1-TFIDF_bnn_bnn
+networks Q0 2310 2 2.0 team1-TFIDF_bnn_bnn
+liftover Q0 2083 0 2.0 team1-TFIDF_bnn_bnn
+liftover Q0 303 1 2.0 team1-TFIDF_bnn_bnn
+liftover Q0 318 2 2.0 team1-TFIDF_bnn_bnn
+liftover Q0 837 3 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2049 0 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 702 1 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 765 2 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 892 3 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 1019 4 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 954 5 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 375 6 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 628 7 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 307 8 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 561 9 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 815 10 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2223 11 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2095 12 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 943 13 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 45 14 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2156 15 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 553 16 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 361 17 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2149 18 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 994 19 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 802 20 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 928 21 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 604 22 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 91 23 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2259 24 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 979 25 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 595 26 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 81 27 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2128 28 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2062 29 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 14 30 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2316 31 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 972 32 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2186 33 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 837 34 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 709 35 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 388 36 2.0 team1-TFIDF_bnn_bnn
+fasta Q0 2114 37 2.0 team1-TFIDF_bnn_bnn
+spark Q0 426 0 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 2049 0 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 703 1 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 350 2 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 731 3 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 314 4 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 282 5 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 1016 6 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 887 7 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 2324 8 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 2130 9 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 2321 10 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 2257 11 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 2128 12 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 558 13 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 553 14 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 584 15 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 2343 16 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 677 17 2.0 team1-TFIDF_bnn_bnn
+proteins Q0 2241 18 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 97 0 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 2204 1 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 540 2 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 951 3 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 375 4 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 885 5 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 242 6 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 752 7 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 942 8 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 174 9 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 46 10 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 361 11 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 73 12 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 326 13 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 452 14 2.0 team1-TFIDF_bnn_bnn
+assembly Q0 2145 15 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 254 1 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 765 2 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 2043 3 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 2298 4 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 761 5 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 505 6 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 1014 7 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 1012 8 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 242 9 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 751 10 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 2028 11 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 2282 12 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 1001 13 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 230 14 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 997 15 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 741 16 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 228 17 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 994 18 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 225 19 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 732 20 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 731 21 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 724 22 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 979 23 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 722 24 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 970 25 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 452 26 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 194 27 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 705 28 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 703 29 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 702 30 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 954 31 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 950 32 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 949 33 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 692 34 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 945 35 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 939 36 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 2216 37 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 935 38 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 159 39 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 2203 40 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 664 41 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 2199 42 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 149 43 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 143 44 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 654 45 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 650 46 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 135 47 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 646 48 2.0 team1-TFIDF_bnn_bnn
+sequence analysis Q0 388 49 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 2113 0 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 633 1 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 887 2 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 567 3 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 2289 4 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 2224 5 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 815 6 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 877 7 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 2156 8 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 2153 9 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 488 10 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 168 11 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 486 12 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 933 13 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 548 14 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 802 15 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 418 16 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 673 17 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 990 18 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 21 19 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 2194 20 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 842 21 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 777 22 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 388 23 2.0 team1-TFIDF_bnn_bnn
+public databases Q0 452 24 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 321 0 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 253 2 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 317 3 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 120 4 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 949 5 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 294 6 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 2149 7 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 2275 8 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 98 9 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 161 10 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 481 11 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 672 12 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 157 13 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 407 14 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 722 15 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 336 16 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 271 17 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 974 18 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 654 19 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 462 20 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 909 21 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 908 22 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 587 23 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 458 24 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 842 25 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 2377 26 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 329 27 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 73 28 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 264 29 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 452 30 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 899 31 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 195 32 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 2306 33 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 449 34 2.0 team1-TFIDF_bnn_bnn
+variant calling Q0 705 35 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2241 0 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 703 1 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 62 2 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2109 3 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 765 4 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 954 5 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 441 6 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 249 7 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 887 8 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 694 9 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 1014 10 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 693 11 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2164 12 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 500 13 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2356 14 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 627 15 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 434 16 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 306 17 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 750 18 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 46 19 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2092 20 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2090 21 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 361 22 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 935 23 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2078 24 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 29 25 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 411 26 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 91 27 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 278 28 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 722 29 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 914 30 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 908 31 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 779 32 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 395 33 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2186 34 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 266 35 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 777 36 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 584 37 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 838 38 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2310 39 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 453 40 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 708 41 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 388 42 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2051 43 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 195 44 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 771 45 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2242 46 2.0 team1-TFIDF_bnn_bnn
+cell line Q0 2177 47 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2306 0 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2174 1 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 892 2 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2361 3 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 951 4 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2230 5 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 882 7 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 242 8 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 561 9 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 1002 10 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 361 11 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2088 12 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 935 13 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 807 14 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2149 15 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 98 16 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2335 17 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 414 18 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 411 19 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 150 20 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 14 21 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2316 22 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2119 23 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 452 24 2.0 team1-TFIDF_bnn_bnn
+fastq Q0 2051 25 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 997 0 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 159 1 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 350 2 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 125 3 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 2140 4 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 2300 5 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 732 6 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 378 7 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 89 8 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 57 9 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 2259 10 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 782 11 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 877 12 2.0 team1-TFIDF_bnn_bnn
+codon models Q0 70 13 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 70 0 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 2106 1 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 314 2 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 664 3 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 2101 4 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 565 5 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 21 6 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 1012 7 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 2068 8 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 2036 9 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 462 10 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 2029 11 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 969 12 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 2088 13 2.0 team1-TFIDF_bnn_bnn
+annotation Q0 2343 14 2.0 team1-TFIDF_bnn_bnn
+molecular genetics Q0 2352 0 2.0 team1-TFIDF_bnn_bnn
+molecular genetics Q0 73 1 2.0 team1-TFIDF_bnn_bnn
+molecular genetics Q0 2361 2 2.0 team1-TFIDF_bnn_bnn
+molecular genetics Q0 568 3 2.0 team1-TFIDF_bnn_bnn
+molecular genetics Q0 583 4 2.0 team1-TFIDF_bnn_bnn
+molecular genetics Q0 150 5 2.0 team1-TFIDF_bnn_bnn
+molecular genetics Q0 869 6 2.0 team1-TFIDF_bnn_bnn
+molecular genetics Q0 452 7 2.0 team1-TFIDF_bnn_bnn
+molecular genetics Q0 2145 8 2.0 team1-TFIDF_bnn_bnn
+platypus Q0 73 0 2.0 team1-TFIDF_bnn_bnn
+centromere Q0 2293 0 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 254 1 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 125 2 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2298 3 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 761 4 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 505 5 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 1014 6 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 886 7 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2165 8 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 1012 9 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 372 10 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2163 11 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 627 12 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 242 13 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 112 14 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 751 15 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2028 16 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2282 17 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 1001 18 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 232 19 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 103 20 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 230 21 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2149 22 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 997 23 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 994 24 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 609 25 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2140 26 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 92 27 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 731 28 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2131 29 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2378 30 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 970 31 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 842 32 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 584 33 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 583 34 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 194 35 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 702 36 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 318 37 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 62 38 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 954 39 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 314 40 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2361 41 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 949 42 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 52 43 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 51 44 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2098 45 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2097 46 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 945 47 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 939 48 2.0 team1-TFIDF_bnn_bnn
+covariate analysis Q0 2346 49 2.0 team1-TFIDF_bnn_bnn
+star Q0 518 0 2.0 team1-TFIDF_bnn_bnn
+star Q0 2140 1 2.0 team1-TFIDF_bnn_bnn
+star Q0 280 2 2.0 team1-TFIDF_bnn_bnn
+abi Q0 692 0 2.0 team1-TFIDF_bnn_bnn
+machine learning Q0 628 0 2.0 team1-TFIDF_bnn_bnn
+machine learning Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+machine learning Q0 143 2 2.0 team1-TFIDF_bnn_bnn
+machine learning Q0 702 3 2.0 team1-TFIDF_bnn_bnn
+machine learning Q0 2092 4 2.0 team1-TFIDF_bnn_bnn
+machine learning Q0 716 5 2.0 team1-TFIDF_bnn_bnn
+machine learning Q0 2073 6 2.0 team1-TFIDF_bnn_bnn
+machine learning Q0 676 7 2.0 team1-TFIDF_bnn_bnn
+blast Q0 288 0 2.0 team1-TFIDF_bnn_bnn
+blast Q0 798 1 2.0 team1-TFIDF_bnn_bnn
+blast Q0 796 2 2.0 team1-TFIDF_bnn_bnn
+blast Q0 887 3 2.0 team1-TFIDF_bnn_bnn
+blast Q0 2164 4 2.0 team1-TFIDF_bnn_bnn
+blast Q0 818 5 2.0 team1-TFIDF_bnn_bnn
+blast Q0 2194 6 2.0 team1-TFIDF_bnn_bnn
+blast Q0 2130 7 2.0 team1-TFIDF_bnn_bnn
+blast Q0 2257 8 2.0 team1-TFIDF_bnn_bnn
+blast Q0 817 9 2.0 team1-TFIDF_bnn_bnn
+blast Q0 847 10 2.0 team1-TFIDF_bnn_bnn
+blast Q0 815 11 2.0 team1-TFIDF_bnn_bnn
+blast Q0 110 12 2.0 team1-TFIDF_bnn_bnn
+blast Q0 2092 13 2.0 team1-TFIDF_bnn_bnn
+blast Q0 970 14 2.0 team1-TFIDF_bnn_bnn
+blast Q0 650 15 2.0 team1-TFIDF_bnn_bnn
+blast Q0 424 16 2.0 team1-TFIDF_bnn_bnn
+blast Q0 646 17 2.0 team1-TFIDF_bnn_bnn
+blast Q0 802 18 2.0 team1-TFIDF_bnn_bnn
+blast Q0 2049 19 2.0 team1-TFIDF_bnn_bnn
+blast Q0 960 20 2.0 team1-TFIDF_bnn_bnn
+consensus Q0 2065 0 2.0 team1-TFIDF_bnn_bnn
+consensus Q0 285 1 2.0 team1-TFIDF_bnn_bnn
+consensus Q0 901 2 2.0 team1-TFIDF_bnn_bnn
+consensus Q0 452 3 2.0 team1-TFIDF_bnn_bnn
+consensus Q0 242 4 2.0 team1-TFIDF_bnn_bnn
+consensus Q0 2241 5 2.0 team1-TFIDF_bnn_bnn
+busted Q0 62 0 2.0 team1-TFIDF_bnn_bnn
+r Q0 2051 0 2.0 team1-TFIDF_bnn_bnn
+r Q0 639 1 2.0 team1-TFIDF_bnn_bnn
+r Q0 2302 2 2.0 team1-TFIDF_bnn_bnn
+r Q0 2173 3 2.0 team1-TFIDF_bnn_bnn
+r Q0 2300 4 2.0 team1-TFIDF_bnn_bnn
+r Q0 1016 5 2.0 team1-TFIDF_bnn_bnn
+r Q0 2165 6 2.0 team1-TFIDF_bnn_bnn
+r Q0 2164 7 2.0 team1-TFIDF_bnn_bnn
+r Q0 628 8 2.0 team1-TFIDF_bnn_bnn
+r Q0 1010 9 2.0 team1-TFIDF_bnn_bnn
+r Q0 1007 10 2.0 team1-TFIDF_bnn_bnn
+r Q0 751 11 2.0 team1-TFIDF_bnn_bnn
+r Q0 2152 12 2.0 team1-TFIDF_bnn_bnn
+r Q0 869 13 2.0 team1-TFIDF_bnn_bnn
+r Q0 741 14 2.0 team1-TFIDF_bnn_bnn
+r Q0 2274 15 2.0 team1-TFIDF_bnn_bnn
+r Q0 608 16 2.0 team1-TFIDF_bnn_bnn
+r Q0 731 17 2.0 team1-TFIDF_bnn_bnn
+r Q0 344 18 2.0 team1-TFIDF_bnn_bnn
+r Q0 982 19 2.0 team1-TFIDF_bnn_bnn
+r Q0 2259 20 2.0 team1-TFIDF_bnn_bnn
+r Q0 847 21 2.0 team1-TFIDF_bnn_bnn
+r Q0 716 22 2.0 team1-TFIDF_bnn_bnn
+r Q0 584 23 2.0 team1-TFIDF_bnn_bnn
+r Q0 456 24 2.0 team1-TFIDF_bnn_bnn
+r Q0 583 25 2.0 team1-TFIDF_bnn_bnn
+r Q0 838 26 2.0 team1-TFIDF_bnn_bnn
+r Q0 66 27 2.0 team1-TFIDF_bnn_bnn
+r Q0 2114 28 2.0 team1-TFIDF_bnn_bnn
+r Q0 578 29 2.0 team1-TFIDF_bnn_bnn
+r Q0 2111 30 2.0 team1-TFIDF_bnn_bnn
+r Q0 702 31 2.0 team1-TFIDF_bnn_bnn
+r Q0 956 32 2.0 team1-TFIDF_bnn_bnn
+r Q0 2234 33 2.0 team1-TFIDF_bnn_bnn
+r Q0 695 34 2.0 team1-TFIDF_bnn_bnn
+r Q0 307 35 2.0 team1-TFIDF_bnn_bnn
+r Q0 687 36 2.0 team1-TFIDF_bnn_bnn
+r Q0 2203 37 2.0 team1-TFIDF_bnn_bnn
+r Q0 923 38 2.0 team1-TFIDF_bnn_bnn
+r Q0 282 39 2.0 team1-TFIDF_bnn_bnn
+r Q0 153 40 2.0 team1-TFIDF_bnn_bnn
+r Q0 920 41 2.0 team1-TFIDF_bnn_bnn
+r Q0 664 42 2.0 team1-TFIDF_bnn_bnn
+r Q0 663 43 2.0 team1-TFIDF_bnn_bnn
+r Q0 150 44 2.0 team1-TFIDF_bnn_bnn
+r Q0 909 45 2.0 team1-TFIDF_bnn_bnn
+r Q0 525 46 2.0 team1-TFIDF_bnn_bnn
+r Q0 908 47 2.0 team1-TFIDF_bnn_bnn
+r Q0 779 48 2.0 team1-TFIDF_bnn_bnn
+r Q0 2186 49 2.0 team1-TFIDF_bnn_bnn
+nlp Q0 2137 0 2.0 team1-TFIDF_bnn_bnn
+personal genomics Q0 752 0 2.0 team1-TFIDF_bnn_bnn
+personal genomics Q0 283 1 2.0 team1-TFIDF_bnn_bnn
+personal genomics Q0 458 2 2.0 team1-TFIDF_bnn_bnn
+personal genomics Q0 357 3 2.0 team1-TFIDF_bnn_bnn
+personal genomics Q0 308 4 2.0 team1-TFIDF_bnn_bnn
+personal genomics Q0 196 5 2.0 team1-TFIDF_bnn_bnn
+personal genomics Q0 771 6 2.0 team1-TFIDF_bnn_bnn
+personal genomics Q0 195 7 2.0 team1-TFIDF_bnn_bnn
+personal genomics Q0 481 8 2.0 team1-TFIDF_bnn_bnn
+pathway Q0 2321 0 2.0 team1-TFIDF_bnn_bnn
+pathway Q0 1007 1 2.0 team1-TFIDF_bnn_bnn
+pathway Q0 623 2 2.0 team1-TFIDF_bnn_bnn
+pathway Q0 844 3 2.0 team1-TFIDF_bnn_bnn
+pathway Q0 2059 4 2.0 team1-TFIDF_bnn_bnn
+pathway Q0 2234 5 2.0 team1-TFIDF_bnn_bnn
+pathway Q0 584 6 2.0 team1-TFIDF_bnn_bnn
+pathway Q0 568 7 2.0 team1-TFIDF_bnn_bnn
+pathway Q0 567 8 2.0 team1-TFIDF_bnn_bnn
+albacore Q0 745 0 2.0 team1-TFIDF_bnn_bnn
+albacore Q0 2174 1 2.0 team1-TFIDF_bnn_bnn
+transposable elements Q0 146 0 2.0 team1-TFIDF_bnn_bnn
+transposable elements Q0 343 1 2.0 team1-TFIDF_bnn_bnn
+bed Q0 288 0 2.0 team1-TFIDF_bnn_bnn
+bed Q0 895 1 2.0 team1-TFIDF_bnn_bnn
+bed Q0 91 2 2.0 team1-TFIDF_bnn_bnn
+bed Q0 27 3 2.0 team1-TFIDF_bnn_bnn
+bed Q0 2265 4 2.0 team1-TFIDF_bnn_bnn
+bed Q0 661 5 2.0 team1-TFIDF_bnn_bnn
+bed Q0 565 6 2.0 team1-TFIDF_bnn_bnn
+bed Q0 2036 7 2.0 team1-TFIDF_bnn_bnn
+bed Q0 531 8 2.0 team1-TFIDF_bnn_bnn
+bed Q0 2318 9 2.0 team1-TFIDF_bnn_bnn
+bed Q0 427 10 2.0 team1-TFIDF_bnn_bnn
+bed Q0 134 11 2.0 team1-TFIDF_bnn_bnn
+bed Q0 837 12 2.0 team1-TFIDF_bnn_bnn
+bed Q0 2275 13 2.0 team1-TFIDF_bnn_bnn
+bed Q0 2083 14 2.0 team1-TFIDF_bnn_bnn
+bed Q0 2242 15 2.0 team1-TFIDF_bnn_bnn
+bed Q0 608 16 2.0 team1-TFIDF_bnn_bnn
+encode Q0 673 0 2.0 team1-TFIDF_bnn_bnn
+encode Q0 458 1 2.0 team1-TFIDF_bnn_bnn
+encode Q0 249 2 2.0 team1-TFIDF_bnn_bnn
+encode Q0 2051 3 2.0 team1-TFIDF_bnn_bnn
+visualization Q0 565 0 2.0 team1-TFIDF_bnn_bnn
+visualization Q0 663 1 2.0 team1-TFIDF_bnn_bnn
+visualization Q0 2117 2 2.0 team1-TFIDF_bnn_bnn
+annovar Q0 2224 0 2.0 team1-TFIDF_bnn_bnn
+annovar Q0 98 1 2.0 team1-TFIDF_bnn_bnn
+canu Q0 2145 0 2.0 team1-TFIDF_bnn_bnn
+canu Q0 2367 1 2.0 team1-TFIDF_bnn_bnn
+canu Q0 242 2 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2049 0 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 125 1 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 378 2 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 375 3 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 242 4 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 1007 5 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 110 6 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 107 7 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2153 8 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 869 9 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 997 10 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 994 11 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 350 12 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 982 13 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2130 14 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2128 15 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 844 16 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 972 17 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2378 18 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2246 19 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 837 20 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 452 21 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 196 22 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2241 23 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 960 24 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2111 25 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2237 26 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 570 27 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 314 28 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 567 29 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 950 30 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 818 31 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 942 32 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 558 33 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2349 34 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 553 35 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2343 36 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2341 37 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 677 38 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2339 39 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 798 40 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 924 41 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 282 42 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 914 43 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 528 44 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 653 45 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 909 46 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2059 47 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 650 48 2.0 team1-TFIDF_bnn_bnn
+protein structure Q0 2186 49 2.0 team1-TFIDF_bnn_bnn
+atc Q0 388 0 2.0 team1-TFIDF_bnn_bnn
+atc Q0 9 1 2.0 team1-TFIDF_bnn_bnn
+atc Q0 2390 2 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 2177 0 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 254 1 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 637 2 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 2300 3 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 1019 4 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 1018 5 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 378 6 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 2169 7 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 118 8 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 1012 9 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 372 10 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 367 11 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 238 12 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 747 13 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 488 14 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 998 15 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 997 16 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 869 17 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 994 18 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 481 19 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 2269 20 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 2140 21 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 857 22 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 856 23 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 595 24 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 849 25 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 333 26 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 844 27 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 456 28 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 70 29 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 2114 30 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 194 31 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 66 32 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 193 33 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 62 34 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 2234 35 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 314 36 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 441 37 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 57 38 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 568 39 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 567 40 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 693 41 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 565 42 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 51 43 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 687 44 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 559 45 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 939 46 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 299 47 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 2346 48 2.0 team1-TFIDF_bnn_bnn
+gene ontology Q0 548 49 2.0 team1-TFIDF_bnn_bnn
+fast5 Q0 2306 0 2.0 team1-TFIDF_bnn_bnn
+fast5 Q0 745 1 2.0 team1-TFIDF_bnn_bnn
+fast5 Q0 452 2 2.0 team1-TFIDF_bnn_bnn
+pfam Q0 972 0 2.0 team1-TFIDF_bnn_bnn
+trimming Q0 242 0 2.0 team1-TFIDF_bnn_bnn
+trimming Q0 2215 1 2.0 team1-TFIDF_bnn_bnn
+trimming Q0 2119 2 2.0 team1-TFIDF_bnn_bnn
+rsem Q0 610 0 2.0 team1-TFIDF_bnn_bnn
+rsem Q0 372 1 2.0 team1-TFIDF_bnn_bnn
+barcode Q0 297 0 2.0 team1-TFIDF_bnn_bnn
+barcode Q0 779 1 2.0 team1-TFIDF_bnn_bnn
+barcode Q0 970 2 2.0 team1-TFIDF_bnn_bnn
+ontology Q0 998 0 2.0 team1-TFIDF_bnn_bnn
+ontology Q0 9 1 2.0 team1-TFIDF_bnn_bnn
+ontology Q0 568 2 2.0 team1-TFIDF_bnn_bnn
+homer Q0 516 0 2.0 team1-TFIDF_bnn_bnn
+admixture Q0 481 0 2.0 team1-TFIDF_bnn_bnn
+admixture Q0 351 1 2.0 team1-TFIDF_bnn_bnn
+data download Q0 2048 0 2.0 team1-TFIDF_bnn_bnn
+data download Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+data download Q0 505 2 2.0 team1-TFIDF_bnn_bnn
+data download Q0 120 3 2.0 team1-TFIDF_bnn_bnn
+data download Q0 1014 4 2.0 team1-TFIDF_bnn_bnn
+data download Q0 756 5 2.0 team1-TFIDF_bnn_bnn
+data download Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+data download Q0 627 7 2.0 team1-TFIDF_bnn_bnn
+data download Q0 626 8 2.0 team1-TFIDF_bnn_bnn
+data download Q0 242 9 2.0 team1-TFIDF_bnn_bnn
+data download Q0 2289 10 2.0 team1-TFIDF_bnn_bnn
+data download Q0 752 11 2.0 team1-TFIDF_bnn_bnn
+data download Q0 112 12 2.0 team1-TFIDF_bnn_bnn
+data download Q0 878 13 2.0 team1-TFIDF_bnn_bnn
+data download Q0 620 14 2.0 team1-TFIDF_bnn_bnn
+data download Q0 1001 15 2.0 team1-TFIDF_bnn_bnn
+data download Q0 2024 16 2.0 team1-TFIDF_bnn_bnn
+data download Q0 488 17 2.0 team1-TFIDF_bnn_bnn
+data download Q0 232 18 2.0 team1-TFIDF_bnn_bnn
+data download Q0 103 19 2.0 team1-TFIDF_bnn_bnn
+data download Q0 230 20 2.0 team1-TFIDF_bnn_bnn
+data download Q0 610 21 2.0 team1-TFIDF_bnn_bnn
+data download Q0 609 22 2.0 team1-TFIDF_bnn_bnn
+data download Q0 481 23 2.0 team1-TFIDF_bnn_bnn
+data download Q0 97 24 2.0 team1-TFIDF_bnn_bnn
+data download Q0 351 25 2.0 team1-TFIDF_bnn_bnn
+data download Q0 350 26 2.0 team1-TFIDF_bnn_bnn
+data download Q0 92 27 2.0 team1-TFIDF_bnn_bnn
+data download Q0 89 28 2.0 team1-TFIDF_bnn_bnn
+data download Q0 343 29 2.0 team1-TFIDF_bnn_bnn
+data download Q0 724 30 2.0 team1-TFIDF_bnn_bnn
+data download Q0 83 31 2.0 team1-TFIDF_bnn_bnn
+data download Q0 462 32 2.0 team1-TFIDF_bnn_bnn
+data download Q0 458 33 2.0 team1-TFIDF_bnn_bnn
+data download Q0 329 34 2.0 team1-TFIDF_bnn_bnn
+data download Q0 73 35 2.0 team1-TFIDF_bnn_bnn
+data download Q0 584 36 2.0 team1-TFIDF_bnn_bnn
+data download Q0 456 37 2.0 team1-TFIDF_bnn_bnn
+data download Q0 328 38 2.0 team1-TFIDF_bnn_bnn
+data download Q0 2117 39 2.0 team1-TFIDF_bnn_bnn
+data download Q0 452 40 2.0 team1-TFIDF_bnn_bnn
+data download Q0 196 41 2.0 team1-TFIDF_bnn_bnn
+data download Q0 195 42 2.0 team1-TFIDF_bnn_bnn
+data download Q0 322 43 2.0 team1-TFIDF_bnn_bnn
+data download Q0 962 44 2.0 team1-TFIDF_bnn_bnn
+data download Q0 66 45 2.0 team1-TFIDF_bnn_bnn
+data download Q0 2113 46 2.0 team1-TFIDF_bnn_bnn
+data download Q0 191 47 2.0 team1-TFIDF_bnn_bnn
+data download Q0 702 48 2.0 team1-TFIDF_bnn_bnn
+data download Q0 2361 49 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 449 0 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 2302 1 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 285 2 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 253 3 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 157 4 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 2204 5 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 2363 6 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 531 7 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 403 8 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 1010 9 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 401 10 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 525 11 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 237 12 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 908 13 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 396 14 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 1002 15 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 2119 16 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 134 17 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 2149 18 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 453 19 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 2242 20 2.0 team1-TFIDF_bnn_bnn
+samtools Q0 2145 21 2.0 team1-TFIDF_bnn_bnn
+mapq Q0 2081 0 2.0 team1-TFIDF_bnn_bnn
+mapq Q0 508 1 2.0 team1-TFIDF_bnn_bnn
+mapq Q0 661 2 2.0 team1-TFIDF_bnn_bnn
+genotyping Q0 336 0 2.0 team1-TFIDF_bnn_bnn
+genotyping Q0 761 1 2.0 team1-TFIDF_bnn_bnn
+genotyping Q0 329 2 2.0 team1-TFIDF_bnn_bnn
+genotyping Q0 73 3 2.0 team1-TFIDF_bnn_bnn
+genotyping Q0 150 4 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 818 0 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 798 1 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 2237 2 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 2186 3 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 650 4 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 328 5 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 646 6 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 741 7 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 21 8 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 2083 9 2.0 team1-TFIDF_bnn_bnn
+refseq Q0 2130 10 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 289 0 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 508 1 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 407 2 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 500 3 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 404 4 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 308 5 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 1010 6 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 945 7 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 15 8 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 237 9 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 908 10 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 396 11 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 2149 12 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 36 13 2.0 team1-TFIDF_bnn_bnn
+bwa Q0 418 14 2.0 team1-TFIDF_bnn_bnn
+modelling Q0 2339 0 2.0 team1-TFIDF_bnn_bnn
+modelling Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 765 1 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 125 2 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 2043 3 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 378 4 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 375 5 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 1012 6 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 2036 7 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 2164 8 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 882 9 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 242 10 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 110 11 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 2029 12 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 2156 13 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 620 14 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 107 15 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 103 16 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 997 17 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 741 18 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 228 19 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 225 20 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 732 21 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 91 22 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 343 23 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 724 24 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 979 25 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 595 26 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 722 27 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 81 28 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 2128 29 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 847 30 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 462 31 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 333 32 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 969 33 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 70 34 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 837 35 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 452 36 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 2114 37 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 705 38 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 703 39 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 62 40 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 2106 41 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 314 42 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 570 43 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 950 44 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 2101 45 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 565 46 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 692 47 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 51 48 2.0 team1-TFIDF_bnn_bnn
+sequence annotation Q0 818 49 2.0 team1-TFIDF_bnn_bnn
+data request Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+data request Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+data request Q0 505 2 2.0 team1-TFIDF_bnn_bnn
+data request Q0 120 3 2.0 team1-TFIDF_bnn_bnn
+data request Q0 1014 4 2.0 team1-TFIDF_bnn_bnn
+data request Q0 756 5 2.0 team1-TFIDF_bnn_bnn
+data request Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+data request Q0 627 7 2.0 team1-TFIDF_bnn_bnn
+data request Q0 626 8 2.0 team1-TFIDF_bnn_bnn
+data request Q0 242 9 2.0 team1-TFIDF_bnn_bnn
+data request Q0 2289 10 2.0 team1-TFIDF_bnn_bnn
+data request Q0 112 11 2.0 team1-TFIDF_bnn_bnn
+data request Q0 620 12 2.0 team1-TFIDF_bnn_bnn
+data request Q0 1001 13 2.0 team1-TFIDF_bnn_bnn
+data request Q0 2024 14 2.0 team1-TFIDF_bnn_bnn
+data request Q0 488 15 2.0 team1-TFIDF_bnn_bnn
+data request Q0 232 16 2.0 team1-TFIDF_bnn_bnn
+data request Q0 103 17 2.0 team1-TFIDF_bnn_bnn
+data request Q0 610 18 2.0 team1-TFIDF_bnn_bnn
+data request Q0 609 19 2.0 team1-TFIDF_bnn_bnn
+data request Q0 481 20 2.0 team1-TFIDF_bnn_bnn
+data request Q0 97 21 2.0 team1-TFIDF_bnn_bnn
+data request Q0 351 22 2.0 team1-TFIDF_bnn_bnn
+data request Q0 350 23 2.0 team1-TFIDF_bnn_bnn
+data request Q0 92 24 2.0 team1-TFIDF_bnn_bnn
+data request Q0 89 25 2.0 team1-TFIDF_bnn_bnn
+data request Q0 343 26 2.0 team1-TFIDF_bnn_bnn
+data request Q0 724 27 2.0 team1-TFIDF_bnn_bnn
+data request Q0 83 28 2.0 team1-TFIDF_bnn_bnn
+data request Q0 462 29 2.0 team1-TFIDF_bnn_bnn
+data request Q0 458 30 2.0 team1-TFIDF_bnn_bnn
+data request Q0 329 31 2.0 team1-TFIDF_bnn_bnn
+data request Q0 73 32 2.0 team1-TFIDF_bnn_bnn
+data request Q0 584 33 2.0 team1-TFIDF_bnn_bnn
+data request Q0 456 34 2.0 team1-TFIDF_bnn_bnn
+data request Q0 328 35 2.0 team1-TFIDF_bnn_bnn
+data request Q0 2117 36 2.0 team1-TFIDF_bnn_bnn
+data request Q0 452 37 2.0 team1-TFIDF_bnn_bnn
+data request Q0 196 38 2.0 team1-TFIDF_bnn_bnn
+data request Q0 195 39 2.0 team1-TFIDF_bnn_bnn
+data request Q0 962 40 2.0 team1-TFIDF_bnn_bnn
+data request Q0 66 41 2.0 team1-TFIDF_bnn_bnn
+data request Q0 2113 42 2.0 team1-TFIDF_bnn_bnn
+data request Q0 191 43 2.0 team1-TFIDF_bnn_bnn
+data request Q0 702 44 2.0 team1-TFIDF_bnn_bnn
+data request Q0 2361 45 2.0 team1-TFIDF_bnn_bnn
+data request Q0 57 46 2.0 team1-TFIDF_bnn_bnn
+data request Q0 951 47 2.0 team1-TFIDF_bnn_bnn
+data request Q0 567 48 2.0 team1-TFIDF_bnn_bnn
+data request Q0 438 49 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 1019 1 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2298 2 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 1018 3 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2165 4 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 884 5 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 751 7 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 238 8 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 620 9 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2282 10 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 232 11 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 610 12 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2140 13 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 92 14 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 722 15 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 333 16 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 969 17 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 584 18 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2119 19 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2242 20 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 703 21 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 570 22 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 441 23 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 57 24 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 568 25 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2101 26 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 693 27 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2356 28 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 52 29 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 51 30 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 561 31 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 687 32 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 942 33 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 46 34 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 299 35 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2088 36 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2215 37 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 924 38 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 540 39 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2329 40 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 664 41 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 280 42 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2199 43 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 278 44 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2068 45 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 2194 46 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 528 47 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 909 48 2.0 team1-TFIDF_bnn_bnn
+rna splicing Q0 524 49 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 2275 0 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 2223 1 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 271 2 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 92 3 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 796 4 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 73 5 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 329 6 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 264 7 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 120 8 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 438 9 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 52 10 2.0 team1-TFIDF_bnn_bnn
+structural variation Q0 2067 11 2.0 team1-TFIDF_bnn_bnn
+shell Q0 357 0 2.0 team1-TFIDF_bnn_bnn
+shell Q0 716 1 2.0 team1-TFIDF_bnn_bnn
+centrifuge Q0 306 0 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 2145 0 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 2204 1 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 156 2 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 343 3 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 150 4 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 146 5 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 561 6 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 942 7 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 46 8 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 2378 9 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 584 10 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 2308 11 2.0 team1-TFIDF_bnn_bnn
+de bruijn Q0 611 12 2.0 team1-TFIDF_bnn_bnn
+sambamba Q0 531 0 2.0 team1-TFIDF_bnn_bnn
+sambamba Q0 403 1 2.0 team1-TFIDF_bnn_bnn
+gsea Q0 149 0 2.0 team1-TFIDF_bnn_bnn
+gsea Q0 2073 1 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 388 0 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 892 1 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 2043 2 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 2200 3 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 2230 4 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 692 5 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 307 6 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 882 7 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 943 8 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 45 9 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 837 10 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 709 11 2.0 team1-TFIDF_bnn_bnn
+biopython Q0 676 12 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 705 0 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 508 2 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 1018 3 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 570 4 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 1014 5 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2036 6 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 500 7 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 51 8 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2034 9 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 1010 10 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 626 11 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 110 12 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2349 13 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 1001 14 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 103 15 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 997 16 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 357 17 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 228 18 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 36 19 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 994 20 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 98 21 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 289 22 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 736 23 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 414 24 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 796 25 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2203 26 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2202 27 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2068 28 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 847 29 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2316 30 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 972 31 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 396 32 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2186 33 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 650 34 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 969 35 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2119 36 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 135 37 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 646 38 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2242 39 2.0 team1-TFIDF_bnn_bnn
+alignment Q0 2049 40 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 254 1 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 125 2 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2298 3 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 761 4 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 505 5 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 1014 6 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 886 7 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2165 8 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 1012 9 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 372 10 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2163 11 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 627 12 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 242 13 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 112 14 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 751 15 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2028 16 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2282 17 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 1001 18 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 103 19 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 230 20 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2149 21 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 997 22 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 994 23 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 609 24 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2140 25 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 92 26 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 731 27 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2131 28 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2378 29 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 970 30 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 842 31 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 584 32 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 583 33 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 194 34 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 702 35 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 318 36 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 62 37 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 954 38 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 314 39 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2361 40 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 949 41 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 52 42 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 51 43 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2098 44 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2097 45 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 945 46 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 939 47 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2346 48 2.0 team1-TFIDF_bnn_bnn
+bootstrap analysis Q0 2343 49 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 765 1 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 125 2 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 508 3 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 2043 4 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 1018 5 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 378 6 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 375 7 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 1014 8 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 2036 9 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 500 10 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 2164 11 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 2034 12 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 1010 13 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 626 14 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 882 15 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 242 16 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 110 17 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 2156 18 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 620 19 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 107 20 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 1001 21 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 103 22 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 357 23 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 997 24 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 741 25 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 228 26 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 994 27 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 98 28 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 225 29 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 736 30 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 732 31 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 91 32 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 343 33 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 724 34 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 979 35 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 595 36 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 722 37 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 81 38 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 2128 39 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 847 40 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 333 41 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 972 42 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 969 43 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 2119 44 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 70 45 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 837 46 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 452 47 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 2242 48 2.0 team1-TFIDF_bnn_bnn
+sequence alignment Q0 2114 49 2.0 team1-TFIDF_bnn_bnn
+array cgh Q0 745 0 2.0 team1-TFIDF_bnn_bnn
+array cgh Q0 45 1 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 505 2 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 120 3 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 1014 4 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 756 5 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 627 7 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 626 8 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 242 9 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 2289 10 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 112 11 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 620 12 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 1001 13 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 2024 14 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 488 15 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 232 16 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 103 17 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 610 18 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 609 19 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 481 20 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 97 21 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 351 22 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 350 23 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 92 24 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 89 25 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 343 26 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 724 27 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 83 28 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 462 29 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 458 30 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 329 31 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 73 32 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 584 33 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 456 34 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 328 35 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 2117 36 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 452 37 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 196 38 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 195 39 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 962 40 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 66 41 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 2113 42 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 191 43 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 702 44 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 2361 45 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 57 46 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 951 47 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 567 48 2.0 team1-TFIDF_bnn_bnn
+data mining Q0 438 49 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2300 2 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2043 3 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 1019 4 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2298 5 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 1018 6 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 1014 7 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2165 8 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 884 9 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 372 10 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 751 11 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 238 12 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2028 13 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 620 14 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2282 15 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 232 16 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 228 17 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 610 18 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2140 19 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 92 20 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 83 21 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 722 22 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 333 23 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2378 24 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 458 25 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 969 26 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 584 27 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2119 28 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2242 29 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 960 30 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 703 31 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 570 32 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 441 33 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 57 34 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 568 35 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 695 36 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2101 37 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 693 38 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2356 39 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 52 40 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 51 41 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 561 42 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 687 43 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 942 44 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 46 45 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 299 46 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2088 47 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 2215 48 2.0 team1-TFIDF_bnn_bnn
+rna seq Q0 414 49 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2049 0 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 508 1 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 1019 2 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2298 3 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 1018 4 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 1014 5 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2165 6 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2036 7 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 500 8 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 884 9 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 372 10 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2034 11 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 1010 12 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 626 13 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 751 14 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 110 15 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 238 16 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 620 17 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2282 18 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 1001 19 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 232 20 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 103 21 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 997 22 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 357 23 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 228 24 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 994 25 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 98 26 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 610 27 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 736 28 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2140 29 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 92 30 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 722 31 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 847 32 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 333 33 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 972 34 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 969 35 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 584 36 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2119 37 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2242 38 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 705 39 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 191 40 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 703 41 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 570 42 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 441 43 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 57 44 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 568 45 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2101 46 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 693 47 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 2356 48 2.0 team1-TFIDF_bnn_bnn
+rna alignment Q0 52 49 2.0 team1-TFIDF_bnn_bnn
+gaf Q0 568 0 2.0 team1-TFIDF_bnn_bnn
+grch38 Q0 752 0 2.0 team1-TFIDF_bnn_bnn
+grch38 Q0 604 1 2.0 team1-TFIDF_bnn_bnn
+grch38 Q0 326 2 2.0 team1-TFIDF_bnn_bnn
+grch38 Q0 2293 3 2.0 team1-TFIDF_bnn_bnn
+grch38 Q0 531 4 2.0 team1-TFIDF_bnn_bnn
+grch38 Q0 2081 5 2.0 team1-TFIDF_bnn_bnn
+iclip Q0 83 0 2.0 team1-TFIDF_bnn_bnn
+coreutils Q0 974 0 2.0 team1-TFIDF_bnn_bnn
+linux Q0 935 0 2.0 team1-TFIDF_bnn_bnn
+linux Q0 2078 1 2.0 team1-TFIDF_bnn_bnn
+esp6500 Q0 2289 0 2.0 team1-TFIDF_bnn_bnn
+genomics Q0 752 0 2.0 team1-TFIDF_bnn_bnn
+genomics Q0 283 1 2.0 team1-TFIDF_bnn_bnn
+genomics Q0 458 2 2.0 team1-TFIDF_bnn_bnn
+genomics Q0 357 3 2.0 team1-TFIDF_bnn_bnn
+genomics Q0 308 4 2.0 team1-TFIDF_bnn_bnn
+genomics Q0 771 5 2.0 team1-TFIDF_bnn_bnn
+genomics Q0 195 6 2.0 team1-TFIDF_bnn_bnn
+phylogenetics Q0 626 0 2.0 team1-TFIDF_bnn_bnn
+phylogenetics Q0 103 1 2.0 team1-TFIDF_bnn_bnn
+mpileup Q0 449 0 2.0 team1-TFIDF_bnn_bnn
+mpileup Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+mpileup Q0 237 2 2.0 team1-TFIDF_bnn_bnn
+perl Q0 2149 0 2.0 team1-TFIDF_bnn_bnn
+perl Q0 110 1 2.0 team1-TFIDF_bnn_bnn
+perl Q0 264 2 2.0 team1-TFIDF_bnn_bnn
+perl Q0 2341 3 2.0 team1-TFIDF_bnn_bnn
+gistic Q0 251 0 2.0 team1-TFIDF_bnn_bnn
+human Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+human Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+human Q0 829 2 2.0 team1-TFIDF_bnn_bnn
+human Q0 2234 3 2.0 team1-TFIDF_bnn_bnn
+human Q0 951 4 2.0 team1-TFIDF_bnn_bnn
+human Q0 438 5 2.0 team1-TFIDF_bnn_bnn
+human Q0 821 6 2.0 team1-TFIDF_bnn_bnn
+human Q0 565 7 2.0 team1-TFIDF_bnn_bnn
+human Q0 2098 8 2.0 team1-TFIDF_bnn_bnn
+human Q0 945 9 2.0 team1-TFIDF_bnn_bnn
+human Q0 558 10 2.0 team1-TFIDF_bnn_bnn
+human Q0 110 11 2.0 team1-TFIDF_bnn_bnn
+human Q0 2029 12 2.0 team1-TFIDF_bnn_bnn
+human Q0 553 13 2.0 team1-TFIDF_bnn_bnn
+human Q0 2216 14 2.0 team1-TFIDF_bnn_bnn
+human Q0 168 15 2.0 team1-TFIDF_bnn_bnn
+human Q0 998 16 2.0 team1-TFIDF_bnn_bnn
+human Q0 678 17 2.0 team1-TFIDF_bnn_bnn
+human Q0 228 18 2.0 team1-TFIDF_bnn_bnn
+human Q0 2081 19 2.0 team1-TFIDF_bnn_bnn
+human Q0 288 20 2.0 team1-TFIDF_bnn_bnn
+human Q0 27 21 2.0 team1-TFIDF_bnn_bnn
+human Q0 664 22 2.0 team1-TFIDF_bnn_bnn
+human Q0 278 23 2.0 team1-TFIDF_bnn_bnn
+human Q0 531 24 2.0 team1-TFIDF_bnn_bnn
+human Q0 785 25 2.0 team1-TFIDF_bnn_bnn
+human Q0 654 26 2.0 team1-TFIDF_bnn_bnn
+human Q0 587 27 2.0 team1-TFIDF_bnn_bnn
+human Q0 584 28 2.0 team1-TFIDF_bnn_bnn
+human Q0 518 29 2.0 team1-TFIDF_bnn_bnn
+human Q0 326 30 2.0 team1-TFIDF_bnn_bnn
+human Q0 901 31 2.0 team1-TFIDF_bnn_bnn
+human Q0 5 32 2.0 team1-TFIDF_bnn_bnn
+human Q0 2241 33 2.0 team1-TFIDF_bnn_bnn
+human Q0 2049 34 2.0 team1-TFIDF_bnn_bnn
+human Q0 513 35 2.0 team1-TFIDF_bnn_bnn
+conversion Q0 2242 0 2.0 team1-TFIDF_bnn_bnn
+conversion Q0 525 1 2.0 team1-TFIDF_bnn_bnn
+conversion Q0 939 2 2.0 team1-TFIDF_bnn_bnn
+conversion Q0 91 3 2.0 team1-TFIDF_bnn_bnn
+conversion Q0 522 4 2.0 team1-TFIDF_bnn_bnn
+conversion Q0 694 5 2.0 team1-TFIDF_bnn_bnn
+conversion Q0 2068 6 2.0 team1-TFIDF_bnn_bnn
+conversion Q0 228 7 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 321 0 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 253 2 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 1019 3 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 438 4 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 2101 5 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 242 6 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 945 7 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 2216 8 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 2152 9 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 2275 10 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 2145 11 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 672 12 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 608 13 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 2204 14 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 531 15 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 722 16 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 402 17 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 81 18 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 2318 19 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 525 20 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 524 21 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 329 22 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 73 23 2.0 team1-TFIDF_bnn_bnn
+coverage Q0 449 24 2.0 team1-TFIDF_bnn_bnn
+gatk Q0 321 0 2.0 team1-TFIDF_bnn_bnn
+gatk Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+gatk Q0 462 2 2.0 team1-TFIDF_bnn_bnn
+gatk Q0 285 3 2.0 team1-TFIDF_bnn_bnn
+gatk Q0 157 4 2.0 team1-TFIDF_bnn_bnn
+gatk Q0 426 5 2.0 team1-TFIDF_bnn_bnn
+gatk Q0 73 6 2.0 team1-TFIDF_bnn_bnn
+gatk Q0 407 7 2.0 team1-TFIDF_bnn_bnn
+seurat Q0 2356 0 2.0 team1-TFIDF_bnn_bnn
+seurat Q0 779 1 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2051 0 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2300 2 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2043 3 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2298 4 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 1014 5 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2165 6 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 372 7 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 751 8 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 238 9 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 620 10 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2028 11 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2282 12 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 232 13 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 228 14 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 610 15 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 92 16 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 83 17 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 722 18 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2378 19 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 458 20 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 969 21 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 584 22 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2119 23 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2242 24 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 960 25 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 703 26 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 695 27 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2101 28 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 693 29 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 52 30 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 51 31 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 561 32 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 687 33 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 299 34 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2088 35 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2215 36 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 414 37 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 540 38 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2329 39 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 664 40 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 280 41 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2199 42 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 278 43 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 661 44 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2068 45 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 2194 46 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 909 47 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 524 48 2.0 team1-TFIDF_bnn_bnn
+medip seq Q0 395 49 2.0 team1-TFIDF_bnn_bnn
+hts Q0 422 0 2.0 team1-TFIDF_bnn_bnn
+go Q0 769 0 2.0 team1-TFIDF_bnn_bnn
+go Q0 254 1 2.0 team1-TFIDF_bnn_bnn
+go Q0 2333 2 2.0 team1-TFIDF_bnn_bnn
+go Q0 2059 3 2.0 team1-TFIDF_bnn_bnn
+go Q0 2346 4 2.0 team1-TFIDF_bnn_bnn
+go Q0 584 5 2.0 team1-TFIDF_bnn_bnn
+go Q0 568 6 2.0 team1-TFIDF_bnn_bnn
+go Q0 2343 7 2.0 team1-TFIDF_bnn_bnn
+go Q0 1012 8 2.0 team1-TFIDF_bnn_bnn
+go Q0 2323 9 2.0 team1-TFIDF_bnn_bnn
+go Q0 962 10 2.0 team1-TFIDF_bnn_bnn
+go Q0 817 11 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 505 2 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 120 3 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 1014 4 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 756 5 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 627 7 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 626 8 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 242 9 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 2289 10 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 112 11 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 620 12 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 1001 13 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 2024 14 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 488 15 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 232 16 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 103 17 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 610 18 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 609 19 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 481 20 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 97 21 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 351 22 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 350 23 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 92 24 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 89 25 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 343 26 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 724 27 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 83 28 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 462 29 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 458 30 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 329 31 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 73 32 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 584 33 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 456 34 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 328 35 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 2117 36 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 452 37 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 196 38 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 195 39 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 962 40 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 66 41 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 2113 42 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 191 43 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 702 44 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 2361 45 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 57 46 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 951 47 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 567 48 2.0 team1-TFIDF_bnn_bnn
+simulated data Q0 438 49 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 769 0 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 895 1 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 2174 2 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 253 3 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 892 4 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 375 5 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 885 6 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 628 7 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 2163 8 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 752 9 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 110 10 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 237 11 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 745 12 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 98 13 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 481 14 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 608 15 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 351 16 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 2142 17 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 860 18 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 604 19 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 91 20 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 2137 21 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 856 22 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 595 23 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 81 24 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 336 25 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 716 26 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 837 27 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 709 28 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 453 29 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 196 30 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 708 31 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 322 32 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 702 33 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 568 34 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 567 35 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 694 36 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 949 37 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 565 38 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 692 39 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 307 40 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 561 41 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 943 42 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 559 43 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 45 44 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 935 45 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 807 46 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 678 47 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 289 48 2.0 team1-TFIDF_bnn_bnn
+file formats Q0 672 49 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 81 0 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 751 1 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 639 2 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 2302 3 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 909 4 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 2140 5 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 2346 6 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 282 7 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 153 8 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 230 9 2.0 team1-TFIDF_bnn_bnn
+bioconductor Q0 2180 10 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 528 0 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 783 1 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 159 2 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 350 3 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 972 4 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 860 5 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 650 6 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 2200 7 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 694 8 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 646 9 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 677 10 2.0 team1-TFIDF_bnn_bnn
+pdb Q0 884 11 2.0 team1-TFIDF_bnn_bnn
+contamination Q0 2194 0 2.0 team1-TFIDF_bnn_bnn
+contamination Q0 351 1 2.0 team1-TFIDF_bnn_bnn
+contamination Q0 761 2 2.0 team1-TFIDF_bnn_bnn
+contamination Q0 951 3 2.0 team1-TFIDF_bnn_bnn
+contamination Q0 2338 4 2.0 team1-TFIDF_bnn_bnn
+codon Q0 2259 0 2.0 team1-TFIDF_bnn_bnn
+codon Q0 125 1 2.0 team1-TFIDF_bnn_bnn
+codon Q0 2300 2 2.0 team1-TFIDF_bnn_bnn
+codon Q0 732 3 2.0 team1-TFIDF_bnn_bnn
+codon Q0 997 4 2.0 team1-TFIDF_bnn_bnn
+motifs Q0 288 0 2.0 team1-TFIDF_bnn_bnn
+motifs Q0 333 1 2.0 team1-TFIDF_bnn_bnn
+motifs Q0 594 2 2.0 team1-TFIDF_bnn_bnn
+crispr cas9 Q0 456 0 2.0 team1-TFIDF_bnn_bnn
+crispr cas9 Q0 732 1 2.0 team1-TFIDF_bnn_bnn
+crispr cas9 Q0 107 2 2.0 team1-TFIDF_bnn_bnn
+gse Q0 149 0 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 637 1 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 120 2 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 375 3 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 2293 4 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 2036 5 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 628 7 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 242 8 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 2028 9 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 107 10 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 361 11 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 1001 12 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 98 13 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 2274 14 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 481 15 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 225 16 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 97 17 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 736 18 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 608 19 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 351 20 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 990 21 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 989 22 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 732 23 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 604 24 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 343 25 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 462 26 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 844 27 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 970 28 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 328 29 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 327 30 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 2119 31 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 70 32 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 709 33 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 195 34 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 322 35 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 449 36 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 191 37 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 702 38 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 318 39 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 316 40 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 442 41 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 2361 42 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 568 43 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 438 44 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 693 45 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 821 46 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 565 47 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 817 48 2.0 team1-TFIDF_bnn_bnn
+genome sequencing Q0 687 49 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 2194 0 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 909 1 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 157 2 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 524 3 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 396 4 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 923 5 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 970 6 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 2088 7 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 2054 8 2.0 team1-TFIDF_bnn_bnn
+workflow management Q0 51 9 2.0 team1-TFIDF_bnn_bnn
+cancer Q0 752 0 2.0 team1-TFIDF_bnn_bnn
+cancer Q0 143 1 2.0 team1-TFIDF_bnn_bnn
+cancer Q0 462 2 2.0 team1-TFIDF_bnn_bnn
+cancer Q0 877 3 2.0 team1-TFIDF_bnn_bnn
+cancer Q0 587 4 2.0 team1-TFIDF_bnn_bnn
+cancer Q0 777 5 2.0 team1-TFIDF_bnn_bnn
+crispr Q0 456 0 2.0 team1-TFIDF_bnn_bnn
+crispr Q0 732 1 2.0 team1-TFIDF_bnn_bnn
+crispr Q0 107 2 2.0 team1-TFIDF_bnn_bnn
+gaussian Q0 434 0 2.0 team1-TFIDF_bnn_bnn
+subset Q0 769 0 2.0 team1-TFIDF_bnn_bnn
+subset Q0 350 1 2.0 team1-TFIDF_bnn_bnn
+subset Q0 285 2 2.0 team1-TFIDF_bnn_bnn
+subset Q0 956 3 2.0 team1-TFIDF_bnn_bnn
+subset Q0 2101 4 2.0 team1-TFIDF_bnn_bnn
+subset Q0 627 5 2.0 team1-TFIDF_bnn_bnn
+subset Q0 2097 6 2.0 team1-TFIDF_bnn_bnn
+subset Q0 687 7 2.0 team1-TFIDF_bnn_bnn
+subset Q0 2186 8 2.0 team1-TFIDF_bnn_bnn
+subset Q0 969 9 2.0 team1-TFIDF_bnn_bnn
+subset Q0 103 10 2.0 team1-TFIDF_bnn_bnn
+subset Q0 2149 11 2.0 team1-TFIDF_bnn_bnn
+subset Q0 869 12 2.0 team1-TFIDF_bnn_bnn
+subset Q0 453 13 2.0 team1-TFIDF_bnn_bnn
+subset Q0 2306 14 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2049 0 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2363 1 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 378 2 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 1016 3 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2359 4 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2293 5 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2356 6 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 500 7 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2034 8 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2224 9 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2223 10 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 623 11 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 303 12 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 553 13 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 294 14 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 997 15 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 609 16 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2145 17 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 288 18 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 92 19 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 731 20 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 21 21 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2068 22 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2259 23 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2067 24 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 594 25 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 849 26 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 81 27 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 528 28 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 783 29 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 590 30 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 779 31 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2378 32 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 202 33 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 777 34 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 969 35 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2056 36 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 899 37 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 195 38 2.0 team1-TFIDF_bnn_bnn
+software recommendation Q0 2113 39 2.0 team1-TFIDF_bnn_bnn
+variants Q0 321 0 2.0 team1-TFIDF_bnn_bnn
+variants Q0 285 1 2.0 team1-TFIDF_bnn_bnn
+variants Q0 796 2 2.0 team1-TFIDF_bnn_bnn
+variants Q0 120 3 2.0 team1-TFIDF_bnn_bnn
+variants Q0 438 4 2.0 team1-TFIDF_bnn_bnn
+variants Q0 722 5 2.0 team1-TFIDF_bnn_bnn
+variants Q0 945 6 2.0 team1-TFIDF_bnn_bnn
+variants Q0 2224 7 2.0 team1-TFIDF_bnn_bnn
+variants Q0 2223 8 2.0 team1-TFIDF_bnn_bnn
+variants Q0 271 9 2.0 team1-TFIDF_bnn_bnn
+variants Q0 143 10 2.0 team1-TFIDF_bnn_bnn
+variants Q0 654 11 2.0 team1-TFIDF_bnn_bnn
+variants Q0 908 12 2.0 team1-TFIDF_bnn_bnn
+variants Q0 587 13 2.0 team1-TFIDF_bnn_bnn
+variants Q0 73 14 2.0 team1-TFIDF_bnn_bnn
+variants Q0 264 15 2.0 team1-TFIDF_bnn_bnn
+variants Q0 168 16 2.0 team1-TFIDF_bnn_bnn
+variants Q0 2275 17 2.0 team1-TFIDF_bnn_bnn
+variants Q0 195 18 2.0 team1-TFIDF_bnn_bnn
+taxonomy Q0 998 0 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2049 0 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2363 1 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 378 2 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 1016 3 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2359 4 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2293 5 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2356 6 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 500 7 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2034 8 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2224 9 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2223 10 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 623 11 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 303 12 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 553 13 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 294 14 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 997 15 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2145 16 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 288 17 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 92 18 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 21 19 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2068 20 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2259 21 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2067 22 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 594 23 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 81 24 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 528 25 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 783 26 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 590 27 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 779 28 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2378 29 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 202 30 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 969 31 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2056 32 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 899 33 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 195 34 2.0 team1-TFIDF_bnn_bnn
+software installation Q0 2113 35 2.0 team1-TFIDF_bnn_bnn
+gwas Q0 2098 0 2.0 team1-TFIDF_bnn_bnn
+gwas Q0 317 1 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 70 0 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 159 1 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 782 2 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 350 3 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 877 4 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 125 5 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 2140 6 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 378 7 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 89 8 2.0 team1-TFIDF_bnn_bnn
+hidden markov models Q0 57 9 2.0 team1-TFIDF_bnn_bnn
+mmcif Q0 694 0 2.0 team1-TFIDF_bnn_bnn
+normalization Q0 962 0 2.0 team1-TFIDF_bnn_bnn
+normalization Q0 2333 1 2.0 team1-TFIDF_bnn_bnn
+normalization Q0 92 2 2.0 team1-TFIDF_bnn_bnn
+normalization Q0 505 3 2.0 team1-TFIDF_bnn_bnn
+normalization Q0 2165 4 2.0 team1-TFIDF_bnn_bnn
+normalization Q0 869 5 2.0 team1-TFIDF_bnn_bnn
+normalization Q0 2356 6 2.0 team1-TFIDF_bnn_bnn
+normalization Q0 372 7 2.0 team1-TFIDF_bnn_bnn
+normalization Q0 52 8 2.0 team1-TFIDF_bnn_bnn
+dna Q0 321 0 2.0 team1-TFIDF_bnn_bnn
+dna Q0 2361 1 2.0 team1-TFIDF_bnn_bnn
+dna Q0 505 2 2.0 team1-TFIDF_bnn_bnn
+dna Q0 375 3 2.0 team1-TFIDF_bnn_bnn
+dna Q0 1014 4 2.0 team1-TFIDF_bnn_bnn
+dna Q0 692 5 2.0 team1-TFIDF_bnn_bnn
+dna Q0 558 6 2.0 team1-TFIDF_bnn_bnn
+dna Q0 110 7 2.0 team1-TFIDF_bnn_bnn
+dna Q0 2156 8 2.0 team1-TFIDF_bnn_bnn
+dna Q0 1001 9 2.0 team1-TFIDF_bnn_bnn
+dna Q0 36 10 2.0 team1-TFIDF_bnn_bnn
+dna Q0 98 11 2.0 team1-TFIDF_bnn_bnn
+dna Q0 2081 12 2.0 team1-TFIDF_bnn_bnn
+dna Q0 97 13 2.0 team1-TFIDF_bnn_bnn
+dna Q0 288 14 2.0 team1-TFIDF_bnn_bnn
+dna Q0 351 15 2.0 team1-TFIDF_bnn_bnn
+dna Q0 540 16 2.0 team1-TFIDF_bnn_bnn
+dna Q0 2390 17 2.0 team1-TFIDF_bnn_bnn
+dna Q0 150 18 2.0 team1-TFIDF_bnn_bnn
+dna Q0 2259 19 2.0 team1-TFIDF_bnn_bnn
+dna Q0 19 20 2.0 team1-TFIDF_bnn_bnn
+dna Q0 844 21 2.0 team1-TFIDF_bnn_bnn
+dna Q0 2056 22 2.0 team1-TFIDF_bnn_bnn
+dna Q0 5 23 2.0 team1-TFIDF_bnn_bnn
+dna Q0 1 24 2.0 team1-TFIDF_bnn_bnn
+dna Q0 513 25 2.0 team1-TFIDF_bnn_bnn
+cigar Q0 705 0 2.0 team1-TFIDF_bnn_bnn
+cigar Q0 719 1 2.0 team1-TFIDF_bnn_bnn
+cigar Q0 637 2 2.0 team1-TFIDF_bnn_bnn
+cigar Q0 157 3 2.0 team1-TFIDF_bnn_bnn
+cigar Q0 661 4 2.0 team1-TFIDF_bnn_bnn
+cigar Q0 404 5 2.0 team1-TFIDF_bnn_bnn
+freebayes Q0 407 0 2.0 team1-TFIDF_bnn_bnn
+freebayes Q0 73 1 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 849 0 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 604 1 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 2106 2 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 2137 3 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 2101 4 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 661 5 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 565 6 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 2068 7 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 2036 8 2.0 team1-TFIDF_bnn_bnn
+gtf Q0 2242 9 2.0 team1-TFIDF_bnn_bnn
+flow cytometry Q0 306 0 2.0 team1-TFIDF_bnn_bnn
+flow cytometry Q0 703 1 2.0 team1-TFIDF_bnn_bnn
+flow cytometry Q0 956 2 2.0 team1-TFIDF_bnn_bnn
+flow cytometry Q0 920 3 2.0 team1-TFIDF_bnn_bnn
+flow cytometry Q0 434 4 2.0 team1-TFIDF_bnn_bnn
+text Q0 2048 0 2.0 team1-TFIDF_bnn_bnn
+text Q0 878 1 2.0 team1-TFIDF_bnn_bnn
+text Q0 923 2 2.0 team1-TFIDF_bnn_bnn
+text Q0 2186 3 2.0 team1-TFIDF_bnn_bnn
+text Q0 568 4 2.0 team1-TFIDF_bnn_bnn
+text Q0 264 5 2.0 team1-TFIDF_bnn_bnn
+text Q0 453 6 2.0 team1-TFIDF_bnn_bnn
+text Q0 884 7 2.0 team1-TFIDF_bnn_bnn
+text Q0 307 8 2.0 team1-TFIDF_bnn_bnn
+text Q0 962 9 2.0 team1-TFIDF_bnn_bnn
+text Q0 81 10 2.0 team1-TFIDF_bnn_bnn
+text Q0 2128 11 2.0 team1-TFIDF_bnn_bnn
+scrnaseq Q0 29 0 2.0 team1-TFIDF_bnn_bnn
+ebseq Q0 610 0 2.0 team1-TFIDF_bnn_bnn
+ebseq Q0 372 1 2.0 team1-TFIDF_bnn_bnn
+staden Q0 692 0 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 2177 0 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 375 1 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 914 2 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 242 3 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 528 4 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 942 5 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 110 6 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 909 7 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 650 8 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 2153 9 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 2246 10 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 646 11 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 869 12 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 837 13 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 677 14 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 452 15 2.0 team1-TFIDF_bnn_bnn
+3d structure Q0 2339 16 2.0 team1-TFIDF_bnn_bnn
+hyphy Q0 62 0 2.0 team1-TFIDF_bnn_bnn
+python Q0 2177 0 2.0 team1-TFIDF_bnn_bnn
+python Q0 1016 1 2.0 team1-TFIDF_bnn_bnn
+python Q0 500 2 2.0 team1-TFIDF_bnn_bnn
+python Q0 307 3 2.0 team1-TFIDF_bnn_bnn
+python Q0 882 4 2.0 team1-TFIDF_bnn_bnn
+python Q0 561 5 2.0 team1-TFIDF_bnn_bnn
+python Q0 2128 6 2.0 team1-TFIDF_bnn_bnn
+python Q0 943 7 2.0 team1-TFIDF_bnn_bnn
+python Q0 623 8 2.0 team1-TFIDF_bnn_bnn
+python Q0 716 9 2.0 team1-TFIDF_bnn_bnn
+python Q0 2251 10 2.0 team1-TFIDF_bnn_bnn
+python Q0 2059 11 2.0 team1-TFIDF_bnn_bnn
+python Q0 1002 12 2.0 team1-TFIDF_bnn_bnn
+python Q0 264 13 2.0 team1-TFIDF_bnn_bnn
+python Q0 838 14 2.0 team1-TFIDF_bnn_bnn
+python Q0 837 15 2.0 team1-TFIDF_bnn_bnn
+python Q0 709 16 2.0 team1-TFIDF_bnn_bnn
+quantification Q0 774 0 2.0 team1-TFIDF_bnn_bnn
+quantification Q0 559 1 2.0 team1-TFIDF_bnn_bnn
+quantification Q0 2056 2 2.0 team1-TFIDF_bnn_bnn
+quantification Q0 567 3 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 97 0 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 2367 1 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 2174 2 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 796 3 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 375 4 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 722 5 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 306 6 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 242 7 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 45 8 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 2316 9 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 202 10 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 745 11 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 296 12 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 518 13 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 294 14 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 452 15 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 36 16 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 899 17 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 2306 18 2.0 team1-TFIDF_bnn_bnn
+nanopore Q0 2145 19 2.0 team1-TFIDF_bnn_bnn
+gene Q0 2177 0 2.0 team1-TFIDF_bnn_bnn
+gene Q0 254 1 2.0 team1-TFIDF_bnn_bnn
+gene Q0 637 2 2.0 team1-TFIDF_bnn_bnn
+gene Q0 2300 3 2.0 team1-TFIDF_bnn_bnn
+gene Q0 1019 4 2.0 team1-TFIDF_bnn_bnn
+gene Q0 1018 5 2.0 team1-TFIDF_bnn_bnn
+gene Q0 378 6 2.0 team1-TFIDF_bnn_bnn
+gene Q0 2169 7 2.0 team1-TFIDF_bnn_bnn
+gene Q0 118 8 2.0 team1-TFIDF_bnn_bnn
+gene Q0 1012 9 2.0 team1-TFIDF_bnn_bnn
+gene Q0 372 10 2.0 team1-TFIDF_bnn_bnn
+gene Q0 367 11 2.0 team1-TFIDF_bnn_bnn
+gene Q0 238 12 2.0 team1-TFIDF_bnn_bnn
+gene Q0 747 13 2.0 team1-TFIDF_bnn_bnn
+gene Q0 488 14 2.0 team1-TFIDF_bnn_bnn
+gene Q0 997 15 2.0 team1-TFIDF_bnn_bnn
+gene Q0 869 16 2.0 team1-TFIDF_bnn_bnn
+gene Q0 994 17 2.0 team1-TFIDF_bnn_bnn
+gene Q0 481 18 2.0 team1-TFIDF_bnn_bnn
+gene Q0 2269 19 2.0 team1-TFIDF_bnn_bnn
+gene Q0 2140 20 2.0 team1-TFIDF_bnn_bnn
+gene Q0 857 21 2.0 team1-TFIDF_bnn_bnn
+gene Q0 856 22 2.0 team1-TFIDF_bnn_bnn
+gene Q0 595 23 2.0 team1-TFIDF_bnn_bnn
+gene Q0 849 24 2.0 team1-TFIDF_bnn_bnn
+gene Q0 333 25 2.0 team1-TFIDF_bnn_bnn
+gene Q0 844 26 2.0 team1-TFIDF_bnn_bnn
+gene Q0 456 27 2.0 team1-TFIDF_bnn_bnn
+gene Q0 70 28 2.0 team1-TFIDF_bnn_bnn
+gene Q0 2114 29 2.0 team1-TFIDF_bnn_bnn
+gene Q0 194 30 2.0 team1-TFIDF_bnn_bnn
+gene Q0 66 31 2.0 team1-TFIDF_bnn_bnn
+gene Q0 193 32 2.0 team1-TFIDF_bnn_bnn
+gene Q0 62 33 2.0 team1-TFIDF_bnn_bnn
+gene Q0 2234 34 2.0 team1-TFIDF_bnn_bnn
+gene Q0 314 35 2.0 team1-TFIDF_bnn_bnn
+gene Q0 441 36 2.0 team1-TFIDF_bnn_bnn
+gene Q0 57 37 2.0 team1-TFIDF_bnn_bnn
+gene Q0 568 38 2.0 team1-TFIDF_bnn_bnn
+gene Q0 567 39 2.0 team1-TFIDF_bnn_bnn
+gene Q0 693 40 2.0 team1-TFIDF_bnn_bnn
+gene Q0 565 41 2.0 team1-TFIDF_bnn_bnn
+gene Q0 51 42 2.0 team1-TFIDF_bnn_bnn
+gene Q0 687 43 2.0 team1-TFIDF_bnn_bnn
+gene Q0 559 44 2.0 team1-TFIDF_bnn_bnn
+gene Q0 939 45 2.0 team1-TFIDF_bnn_bnn
+gene Q0 299 46 2.0 team1-TFIDF_bnn_bnn
+gene Q0 2346 47 2.0 team1-TFIDF_bnn_bnn
+gene Q0 548 48 2.0 team1-TFIDF_bnn_bnn
+gene Q0 673 49 2.0 team1-TFIDF_bnn_bnn
+classification Q0 306 0 2.0 team1-TFIDF_bnn_bnn
+classification Q0 702 1 2.0 team1-TFIDF_bnn_bnn
+classification Q0 620 2 2.0 team1-TFIDF_bnn_bnn
+classification Q0 378 3 2.0 team1-TFIDF_bnn_bnn
+conservation Q0 288 0 2.0 team1-TFIDF_bnn_bnn
+conservation Q0 2092 1 2.0 team1-TFIDF_bnn_bnn
+conservation Q0 2049 2 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 765 1 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 125 2 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 2043 3 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 378 4 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 375 5 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 2164 6 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 882 7 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 242 8 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 110 9 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 2156 10 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 620 11 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 107 12 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 103 13 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 997 14 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 741 15 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 228 16 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 225 17 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 732 18 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 91 19 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 343 20 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 724 21 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 979 22 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 595 23 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 722 24 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 81 25 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 2128 26 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 847 27 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 333 28 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 70 29 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 837 30 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 452 31 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 2114 32 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 705 33 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 703 34 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 62 35 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 570 36 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 950 37 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 692 38 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 51 39 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 818 40 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 817 41 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 561 42 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 2095 43 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 815 44 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 303 45 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 45 46 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 2216 47 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 935 48 2.0 team1-TFIDF_bnn_bnn
+sequence homology Q0 294 49 2.0 team1-TFIDF_bnn_bnn
+strandedness Q0 2088 0 2.0 team1-TFIDF_bnn_bnn
+phylogeny Q0 103 0 2.0 team1-TFIDF_bnn_bnn
+phylogeny Q0 923 1 2.0 team1-TFIDF_bnn_bnn
+phylogeny Q0 1001 2 2.0 team1-TFIDF_bnn_bnn
+indel Q0 705 0 2.0 team1-TFIDF_bnn_bnn
+indel Q0 2202 1 2.0 team1-TFIDF_bnn_bnn
+indel Q0 2377 2 2.0 team1-TFIDF_bnn_bnn
+indel Q0 821 3 2.0 team1-TFIDF_bnn_bnn
+indel Q0 449 4 2.0 team1-TFIDF_bnn_bnn
+antibiotics Q0 878 0 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 1019 1 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2298 2 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 1018 3 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2165 4 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 884 5 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 751 7 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 238 8 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 620 9 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2282 10 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 232 11 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 610 12 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2140 13 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 92 14 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 722 15 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 333 16 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 969 17 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 584 18 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2119 19 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2242 20 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 703 21 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 570 22 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 441 23 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 57 24 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 568 25 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2101 26 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 693 27 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2356 28 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 52 29 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 51 30 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 561 31 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 687 32 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 942 33 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 46 34 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 299 35 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2088 36 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2215 37 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 924 38 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 540 39 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2329 40 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 664 41 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 280 42 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2199 43 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 278 44 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2068 45 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 2194 46 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 528 47 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 909 48 2.0 team1-TFIDF_bnn_bnn
+chimeric rna Q0 524 49 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 225 0 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 909 1 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 540 2 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 375 3 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 343 4 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 2275 5 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 146 6 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 242 7 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 2145 8 2.0 team1-TFIDF_bnn_bnn
+repeat elements Q0 945 9 2.0 team1-TFIDF_bnn_bnn
+algorithms Q0 161 0 2.0 team1-TFIDF_bnn_bnn
+algorithms Q0 143 1 2.0 team1-TFIDF_bnn_bnn
+algorithms Q0 702 2 2.0 team1-TFIDF_bnn_bnn
+algorithms Q0 637 3 2.0 team1-TFIDF_bnn_bnn
+algorithms Q0 378 4 2.0 team1-TFIDF_bnn_bnn
+algorithms Q0 89 5 2.0 team1-TFIDF_bnn_bnn
+algorithms Q0 837 6 2.0 team1-TFIDF_bnn_bnn
+algorithms Q0 149 7 2.0 team1-TFIDF_bnn_bnn
+algorithms Q0 628 8 2.0 team1-TFIDF_bnn_bnn
+transcriptome Q0 51 0 2.0 team1-TFIDF_bnn_bnn
+transcriptome Q0 703 1 2.0 team1-TFIDF_bnn_bnn
+transcriptome Q0 46 2 2.0 team1-TFIDF_bnn_bnn
+transcriptome Q0 584 3 2.0 team1-TFIDF_bnn_bnn
+transcriptome Q0 2054 4 2.0 team1-TFIDF_bnn_bnn
+transcriptome Q0 2068 5 2.0 team1-TFIDF_bnn_bnn
+transcriptome Q0 2036 6 2.0 team1-TFIDF_bnn_bnn
+transcriptome Q0 595 7 2.0 team1-TFIDF_bnn_bnn
+transcriptome Q0 83 8 2.0 team1-TFIDF_bnn_bnn
+granges Q0 2274 0 2.0 team1-TFIDF_bnn_bnn
+granges Q0 716 1 2.0 team1-TFIDF_bnn_bnn
+granges Q0 2051 2 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 892 1 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 1019 2 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 1018 3 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 2169 4 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 633 5 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 375 6 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 884 7 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 756 8 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 110 9 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 2156 10 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 488 11 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 228 12 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 481 13 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 2142 14 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 91 15 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 853 16 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 2259 17 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 979 18 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 595 19 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 974 20 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 587 21 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 837 22 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 708 23 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 2242 24 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 702 25 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 2237 26 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 956 27 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 2363 28 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 568 29 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 694 30 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 949 31 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 565 32 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 692 33 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 818 34 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 943 35 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 939 36 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 807 37 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 678 38 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 161 39 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 2200 40 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 920 41 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 661 42 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 2068 43 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 528 44 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 271 45 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 525 46 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 908 47 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 522 48 2.0 team1-TFIDF_bnn_bnn
+format conversion Q0 388 49 2.0 team1-TFIDF_bnn_bnn
+hgp Q0 5 0 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 449 0 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 2333 1 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 761 2 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 120 3 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 407 4 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 438 5 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 2293 6 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 242 7 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 654 8 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 329 9 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 2216 10 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 2119 11 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 2149 12 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 357 13 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 418 14 2.0 team1-TFIDF_bnn_bnn
+illumina Q0 2081 15 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 561 0 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 2174 1 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 2142 2 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 702 3 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 2237 4 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 2152 5 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 2390 6 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 709 7 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 51 8 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 19 9 2.0 team1-TFIDF_bnn_bnn
+k mer Q0 146 10 2.0 team1-TFIDF_bnn_bnn
+maf Q0 2242 0 2.0 team1-TFIDF_bnn_bnn
+maf Q0 317 1 2.0 team1-TFIDF_bnn_bnn
+pysam Q0 2131 0 2.0 team1-TFIDF_bnn_bnn
+pysam Q0 280 1 2.0 team1-TFIDF_bnn_bnn
+pysam Q0 2149 2 2.0 team1-TFIDF_bnn_bnn
+pysam Q0 2163 3 2.0 team1-TFIDF_bnn_bnn
+hg18 Q0 316 0 2.0 team1-TFIDF_bnn_bnn
+hg18 Q0 318 1 2.0 team1-TFIDF_bnn_bnn
+yield Q0 296 0 2.0 team1-TFIDF_bnn_bnn
+fcs Q0 956 0 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 672 0 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 285 1 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 856 2 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 344 3 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 949 4 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 661 5 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 752 6 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 2223 7 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 271 8 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 974 9 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 654 10 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 462 11 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 842 12 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 264 13 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 168 14 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 2279 15 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 837 16 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 2275 17 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 769 18 2.0 team1-TFIDF_bnn_bnn
+vcf Q0 481 19 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 769 0 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 254 1 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 2333 2 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 314 3 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 2073 4 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 568 5 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 149 6 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 1012 7 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 2323 8 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 817 9 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 2059 10 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 2346 11 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 584 12 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 2343 13 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 230 14 2.0 team1-TFIDF_bnn_bnn
+go enrichment Q0 962 15 2.0 team1-TFIDF_bnn_bnn
+medips Q0 2028 0 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2048 0 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 318 1 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 316 2 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 251 3 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2361 4 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 761 5 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 951 6 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2101 7 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 692 8 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 627 9 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 434 10 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2097 11 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 238 12 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 1002 13 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 869 14 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 36 15 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 611 16 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 609 17 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 481 18 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 97 19 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 351 20 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2140 21 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 283 22 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2265 23 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 664 24 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 280 25 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2199 26 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2324 27 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 83 28 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 19 29 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2194 30 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 271 31 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 779 32 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 970 33 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 73 34 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2119 35 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 2310 36 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 388 37 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 962 38 2.0 team1-TFIDF_bnn_bnn
+multi sample Q0 769 39 2.0 team1-TFIDF_bnn_bnn
+homology modelling Q0 2339 0 2.0 team1-TFIDF_bnn_bnn
+homology modelling Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+multi omics Q0 769 0 2.0 team1-TFIDF_bnn_bnn
+multi omics Q0 283 1 2.0 team1-TFIDF_bnn_bnn
+multi omics Q0 73 2 2.0 team1-TFIDF_bnn_bnn
+multi omics Q0 280 3 2.0 team1-TFIDF_bnn_bnn
+multi omics Q0 886 4 2.0 team1-TFIDF_bnn_bnn
+multi omics Q0 2101 5 2.0 team1-TFIDF_bnn_bnn
+multi omics Q0 388 6 2.0 team1-TFIDF_bnn_bnn
+multi omics Q0 434 7 2.0 team1-TFIDF_bnn_bnn
+multi omics Q0 2113 8 2.0 team1-TFIDF_bnn_bnn
+featurecounts Q0 2101 0 2.0 team1-TFIDF_bnn_bnn
+drugs Q0 756 0 2.0 team1-TFIDF_bnn_bnn
+drugs Q0 750 1 2.0 team1-TFIDF_bnn_bnn
+drugs Q0 2029 2 2.0 team1-TFIDF_bnn_bnn
+drugs Q0 633 3 2.0 team1-TFIDF_bnn_bnn
+drugs Q0 9 4 2.0 team1-TFIDF_bnn_bnn
+homework Q0 765 0 2.0 team1-TFIDF_bnn_bnn
+reproducibility Q0 112 0 2.0 team1-TFIDF_bnn_bnn
+orthology Q0 1012 0 2.0 team1-TFIDF_bnn_bnn
+orthology Q0 165 1 2.0 team1-TFIDF_bnn_bnn
+identifiers Q0 2343 0 2.0 team1-TFIDF_bnn_bnn
+identifiers Q0 488 1 2.0 team1-TFIDF_bnn_bnn
+ucsc Q0 322 0 2.0 team1-TFIDF_bnn_bnn
+ucsc Q0 895 1 2.0 team1-TFIDF_bnn_bnn
+ucsc Q0 2237 2 2.0 team1-TFIDF_bnn_bnn
+ucsc Q0 27 3 2.0 team1-TFIDF_bnn_bnn
+ucsc Q0 249 4 2.0 team1-TFIDF_bnn_bnn
+ucsc Q0 2117 5 2.0 team1-TFIDF_bnn_bnn
+ucsc Q0 2083 6 2.0 team1-TFIDF_bnn_bnn
+open data Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+open data Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+open data Q0 378 2 2.0 team1-TFIDF_bnn_bnn
+open data Q0 505 3 2.0 team1-TFIDF_bnn_bnn
+open data Q0 120 4 2.0 team1-TFIDF_bnn_bnn
+open data Q0 1014 5 2.0 team1-TFIDF_bnn_bnn
+open data Q0 756 6 2.0 team1-TFIDF_bnn_bnn
+open data Q0 372 7 2.0 team1-TFIDF_bnn_bnn
+open data Q0 627 8 2.0 team1-TFIDF_bnn_bnn
+open data Q0 626 9 2.0 team1-TFIDF_bnn_bnn
+open data Q0 242 10 2.0 team1-TFIDF_bnn_bnn
+open data Q0 1010 11 2.0 team1-TFIDF_bnn_bnn
+open data Q0 2289 12 2.0 team1-TFIDF_bnn_bnn
+open data Q0 112 13 2.0 team1-TFIDF_bnn_bnn
+open data Q0 2029 14 2.0 team1-TFIDF_bnn_bnn
+open data Q0 620 15 2.0 team1-TFIDF_bnn_bnn
+open data Q0 1001 16 2.0 team1-TFIDF_bnn_bnn
+open data Q0 2024 17 2.0 team1-TFIDF_bnn_bnn
+open data Q0 488 18 2.0 team1-TFIDF_bnn_bnn
+open data Q0 232 19 2.0 team1-TFIDF_bnn_bnn
+open data Q0 103 20 2.0 team1-TFIDF_bnn_bnn
+open data Q0 610 21 2.0 team1-TFIDF_bnn_bnn
+open data Q0 609 22 2.0 team1-TFIDF_bnn_bnn
+open data Q0 481 23 2.0 team1-TFIDF_bnn_bnn
+open data Q0 97 24 2.0 team1-TFIDF_bnn_bnn
+open data Q0 2145 25 2.0 team1-TFIDF_bnn_bnn
+open data Q0 351 26 2.0 team1-TFIDF_bnn_bnn
+open data Q0 350 27 2.0 team1-TFIDF_bnn_bnn
+open data Q0 92 28 2.0 team1-TFIDF_bnn_bnn
+open data Q0 89 29 2.0 team1-TFIDF_bnn_bnn
+open data Q0 343 30 2.0 team1-TFIDF_bnn_bnn
+open data Q0 724 31 2.0 team1-TFIDF_bnn_bnn
+open data Q0 83 32 2.0 team1-TFIDF_bnn_bnn
+open data Q0 2128 33 2.0 team1-TFIDF_bnn_bnn
+open data Q0 462 34 2.0 team1-TFIDF_bnn_bnn
+open data Q0 458 35 2.0 team1-TFIDF_bnn_bnn
+open data Q0 202 36 2.0 team1-TFIDF_bnn_bnn
+open data Q0 329 37 2.0 team1-TFIDF_bnn_bnn
+open data Q0 73 38 2.0 team1-TFIDF_bnn_bnn
+open data Q0 584 39 2.0 team1-TFIDF_bnn_bnn
+open data Q0 456 40 2.0 team1-TFIDF_bnn_bnn
+open data Q0 328 41 2.0 team1-TFIDF_bnn_bnn
+open data Q0 838 42 2.0 team1-TFIDF_bnn_bnn
+open data Q0 2117 43 2.0 team1-TFIDF_bnn_bnn
+open data Q0 709 44 2.0 team1-TFIDF_bnn_bnn
+open data Q0 452 45 2.0 team1-TFIDF_bnn_bnn
+open data Q0 196 46 2.0 team1-TFIDF_bnn_bnn
+open data Q0 195 47 2.0 team1-TFIDF_bnn_bnn
+open data Q0 962 48 2.0 team1-TFIDF_bnn_bnn
+open data Q0 66 49 2.0 team1-TFIDF_bnn_bnn
+computation Q0 361 0 2.0 team1-TFIDF_bnn_bnn
+computation Q0 716 1 2.0 team1-TFIDF_bnn_bnn
+computation Q0 2234 2 2.0 team1-TFIDF_bnn_bnn
+computation Q0 441 3 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 2049 0 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 639 1 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 2174 2 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 637 3 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 253 4 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 508 5 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 1018 6 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 761 7 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 120 8 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 375 9 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 1014 10 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 2165 11 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 2036 12 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 500 13 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 372 14 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 2034 15 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 1010 16 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 626 17 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 242 18 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 110 19 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 1001 20 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 745 21 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 103 22 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 997 23 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 357 24 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 228 25 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 611 26 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 994 27 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 98 28 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 610 29 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 2145 30 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 736 31 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 608 32 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 223 33 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 731 34 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 83 35 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 722 36 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 336 37 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 847 38 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 972 39 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 716 40 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 969 41 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 73 42 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 456 43 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 2119 44 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 326 45 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 452 46 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 2242 47 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 193 48 2.0 team1-TFIDF_bnn_bnn
+read alignment Q0 705 49 2.0 team1-TFIDF_bnn_bnn
+genome Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+genome Q0 120 1 2.0 team1-TFIDF_bnn_bnn
+genome Q0 375 2 2.0 team1-TFIDF_bnn_bnn
+genome Q0 628 3 2.0 team1-TFIDF_bnn_bnn
+genome Q0 242 4 2.0 team1-TFIDF_bnn_bnn
+genome Q0 107 5 2.0 team1-TFIDF_bnn_bnn
+genome Q0 1001 6 2.0 team1-TFIDF_bnn_bnn
+genome Q0 2274 7 2.0 team1-TFIDF_bnn_bnn
+genome Q0 481 8 2.0 team1-TFIDF_bnn_bnn
+genome Q0 225 9 2.0 team1-TFIDF_bnn_bnn
+genome Q0 97 10 2.0 team1-TFIDF_bnn_bnn
+genome Q0 736 11 2.0 team1-TFIDF_bnn_bnn
+genome Q0 608 12 2.0 team1-TFIDF_bnn_bnn
+genome Q0 351 13 2.0 team1-TFIDF_bnn_bnn
+genome Q0 990 14 2.0 team1-TFIDF_bnn_bnn
+genome Q0 604 15 2.0 team1-TFIDF_bnn_bnn
+genome Q0 343 16 2.0 team1-TFIDF_bnn_bnn
+genome Q0 462 17 2.0 team1-TFIDF_bnn_bnn
+genome Q0 328 18 2.0 team1-TFIDF_bnn_bnn
+genome Q0 70 19 2.0 team1-TFIDF_bnn_bnn
+genome Q0 709 20 2.0 team1-TFIDF_bnn_bnn
+genome Q0 195 21 2.0 team1-TFIDF_bnn_bnn
+genome Q0 322 22 2.0 team1-TFIDF_bnn_bnn
+genome Q0 449 23 2.0 team1-TFIDF_bnn_bnn
+genome Q0 702 24 2.0 team1-TFIDF_bnn_bnn
+genome Q0 318 25 2.0 team1-TFIDF_bnn_bnn
+genome Q0 316 26 2.0 team1-TFIDF_bnn_bnn
+genome Q0 442 27 2.0 team1-TFIDF_bnn_bnn
+genome Q0 2361 28 2.0 team1-TFIDF_bnn_bnn
+genome Q0 568 29 2.0 team1-TFIDF_bnn_bnn
+genome Q0 438 30 2.0 team1-TFIDF_bnn_bnn
+genome Q0 821 31 2.0 team1-TFIDF_bnn_bnn
+genome Q0 565 32 2.0 team1-TFIDF_bnn_bnn
+genome Q0 817 33 2.0 team1-TFIDF_bnn_bnn
+genome Q0 303 34 2.0 team1-TFIDF_bnn_bnn
+genome Q0 174 35 2.0 team1-TFIDF_bnn_bnn
+genome Q0 46 36 2.0 team1-TFIDF_bnn_bnn
+genome Q0 2216 37 2.0 team1-TFIDF_bnn_bnn
+genome Q0 168 38 2.0 team1-TFIDF_bnn_bnn
+genome Q0 807 39 2.0 team1-TFIDF_bnn_bnn
+genome Q0 36 40 2.0 team1-TFIDF_bnn_bnn
+genome Q0 418 41 2.0 team1-TFIDF_bnn_bnn
+genome Q0 2081 42 2.0 team1-TFIDF_bnn_bnn
+genome Q0 288 43 2.0 team1-TFIDF_bnn_bnn
+genome Q0 285 44 2.0 team1-TFIDF_bnn_bnn
+genome Q0 796 45 2.0 team1-TFIDF_bnn_bnn
+genome Q0 540 46 2.0 team1-TFIDF_bnn_bnn
+genome Q0 27 47 2.0 team1-TFIDF_bnn_bnn
+genome Q0 404 48 2.0 team1-TFIDF_bnn_bnn
+genome Q0 2067 49 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2049 0 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2174 1 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 765 2 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 125 3 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 251 4 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 249 5 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2169 6 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 1014 7 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 750 8 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2153 9 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 232 10 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 610 11 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 481 12 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 990 13 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 853 14 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 595 15 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 722 16 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 73 17 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 584 18 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2241 19 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 703 20 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 318 21 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2109 22 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 316 23 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 954 24 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 314 25 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 441 26 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2361 27 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 568 28 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 951 29 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2230 30 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2101 31 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 693 32 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 565 33 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2356 34 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 434 35 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 306 36 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 46 37 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 174 38 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2088 39 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2215 40 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 807 41 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 678 42 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 165 43 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 29 44 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 540 45 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2201 46 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 2199 47 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 278 48 2.0 team1-TFIDF_bnn_bnn
+single cell Q0 19 49 2.0 team1-TFIDF_bnn_bnn
+deeptools Q0 608 0 2.0 team1-TFIDF_bnn_bnn
+deeptools Q0 525 1 2.0 team1-TFIDF_bnn_bnn
+deeptools Q0 708 2 2.0 team1-TFIDF_bnn_bnn
+exome Q0 672 0 2.0 team1-TFIDF_bnn_bnn
+exome Q0 351 1 2.0 team1-TFIDF_bnn_bnn
+exome Q0 316 2 2.0 team1-TFIDF_bnn_bnn
+exome Q0 427 3 2.0 team1-TFIDF_bnn_bnn
+snp Q0 336 0 2.0 team1-TFIDF_bnn_bnn
+snp Q0 89 1 2.0 team1-TFIDF_bnn_bnn
+snp Q0 73 2 2.0 team1-TFIDF_bnn_bnn
+snp Q0 407 3 2.0 team1-TFIDF_bnn_bnn
+snp Q0 705 4 2.0 team1-TFIDF_bnn_bnn
+snp Q0 2352 5 2.0 team1-TFIDF_bnn_bnn
+scaffold Q0 97 0 2.0 team1-TFIDF_bnn_bnn
+scaffold Q0 2149 1 2.0 team1-TFIDF_bnn_bnn
+report Q0 945 0 2.0 team1-TFIDF_bnn_bnn
+report Q0 908 1 2.0 team1-TFIDF_bnn_bnn
+report Q0 524 2 2.0 team1-TFIDF_bnn_bnn
+report Q0 424 3 2.0 team1-TFIDF_bnn_bnn
+report Q0 853 4 2.0 team1-TFIDF_bnn_bnn
+report Q0 2083 5 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 769 0 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 120 1 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 375 2 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 628 3 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 2036 4 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 1012 5 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 2034 6 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 242 7 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 2031 8 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 107 9 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 747 10 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 1001 11 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 103 12 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 869 13 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 2274 14 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 481 15 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 225 16 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 97 17 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 736 18 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 608 19 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 351 20 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 990 21 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 604 22 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 343 23 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 979 24 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 336 25 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 719 26 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 462 27 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 969 28 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 328 29 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 70 30 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 326 31 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 838 32 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 709 33 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 837 34 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 452 35 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 195 36 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 322 37 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 705 38 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 449 39 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 321 40 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 702 41 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 318 42 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 316 43 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 442 44 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 2361 45 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 568 46 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 2359 47 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 438 48 2.0 team1-TFIDF_bnn_bnn
+reference genome Q0 565 49 2.0 team1-TFIDF_bnn_bnn
+snv Q0 2275 0 2.0 team1-TFIDF_bnn_bnn
+statistics Q0 242 0 2.0 team1-TFIDF_bnn_bnn
+statistics Q0 765 1 2.0 team1-TFIDF_bnn_bnn
+statistics Q0 2204 2 2.0 team1-TFIDF_bnn_bnn
+statistics Q0 361 3 2.0 team1-TFIDF_bnn_bnn
+statistics Q0 103 4 2.0 team1-TFIDF_bnn_bnn
+statistics Q0 678 5 2.0 team1-TFIDF_bnn_bnn
+statistics Q0 627 6 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 505 2 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 120 3 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 1014 4 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 756 5 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 627 7 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 626 8 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 242 9 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 2289 10 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 112 11 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 620 12 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 1001 13 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 2024 14 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 488 15 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 232 16 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 103 17 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 610 18 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 609 19 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 481 20 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 97 21 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 351 22 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 350 23 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 92 24 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 89 25 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 343 26 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 724 27 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 83 28 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 462 29 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 458 30 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 329 31 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 73 32 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 584 33 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 456 34 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 328 35 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 2117 36 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 452 37 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 196 38 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 195 39 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 962 40 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 66 41 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 2113 42 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 191 43 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 702 44 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 2361 45 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 57 46 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 951 47 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 567 48 2.0 team1-TFIDF_bnn_bnn
+data retrieval Q0 438 49 2.0 team1-TFIDF_bnn_bnn
+macs2 Q0 161 0 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2051 0 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2300 2 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2043 3 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2298 4 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 1014 5 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2165 6 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 372 7 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 751 8 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 238 9 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 620 10 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2028 11 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2282 12 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 232 13 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 228 14 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 610 15 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 92 16 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 83 17 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 722 18 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2378 19 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 458 20 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 969 21 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 584 22 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2119 23 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2242 24 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 960 25 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 703 26 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 695 27 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2101 28 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 693 29 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 52 30 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 51 31 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 561 32 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 687 33 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 299 34 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2088 35 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2215 36 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 414 37 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 540 38 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2329 39 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 664 40 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 280 41 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2199 42 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 278 43 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 661 44 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2068 45 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 2194 46 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 909 47 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 524 48 2.0 team1-TFIDF_bnn_bnn
+chip seq Q0 395 49 2.0 team1-TFIDF_bnn_bnn
+kegg Q0 1012 0 2.0 team1-TFIDF_bnn_bnn
+kegg Q0 878 1 2.0 team1-TFIDF_bnn_bnn
+kegg Q0 844 2 2.0 team1-TFIDF_bnn_bnn
+kegg Q0 230 3 2.0 team1-TFIDF_bnn_bnn
+kegg Q0 165 4 2.0 team1-TFIDF_bnn_bnn
+smalt Q0 308 0 2.0 team1-TFIDF_bnn_bnn
+threshold Q0 288 0 2.0 team1-TFIDF_bnn_bnn
+threshold Q0 110 1 2.0 team1-TFIDF_bnn_bnn
+threshold Q0 909 2 2.0 team1-TFIDF_bnn_bnn
+threshold Q0 317 3 2.0 team1-TFIDF_bnn_bnn
+threshold Q0 2092 4 2.0 team1-TFIDF_bnn_bnn
+threshold Q0 731 5 2.0 team1-TFIDF_bnn_bnn
+threshold Q0 314 6 2.0 team1-TFIDF_bnn_bnn
+threshold Q0 2073 7 2.0 team1-TFIDF_bnn_bnn
+threshold Q0 194 8 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 288 0 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 159 1 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 350 2 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 125 3 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 2140 4 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 2203 5 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 1019 6 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 378 7 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 89 8 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 57 9 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 528 10 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 782 11 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 877 12 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 70 13 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 997 14 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 5 15 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 388 16 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 196 17 2.0 team1-TFIDF_bnn_bnn
+nucleotide models Q0 1 18 2.0 team1-TFIDF_bnn_bnn
+minion Q0 2145 0 2.0 team1-TFIDF_bnn_bnn
+minion Q0 2367 1 2.0 team1-TFIDF_bnn_bnn
+minion Q0 2174 2 2.0 team1-TFIDF_bnn_bnn
+minion Q0 732 3 2.0 team1-TFIDF_bnn_bnn
+minion Q0 2359 4 2.0 team1-TFIDF_bnn_bnn
+minion Q0 438 5 2.0 team1-TFIDF_bnn_bnn
+minion Q0 306 6 2.0 team1-TFIDF_bnn_bnn
+minion Q0 45 7 2.0 team1-TFIDF_bnn_bnn
+minion Q0 745 8 2.0 team1-TFIDF_bnn_bnn
+minion Q0 296 9 2.0 team1-TFIDF_bnn_bnn
+minion Q0 518 10 2.0 team1-TFIDF_bnn_bnn
+minion Q0 294 11 2.0 team1-TFIDF_bnn_bnn
+minion Q0 36 12 2.0 team1-TFIDF_bnn_bnn
+minion Q0 899 13 2.0 team1-TFIDF_bnn_bnn
+minion Q0 2306 14 2.0 team1-TFIDF_bnn_bnn
+gtools Q0 317 0 2.0 team1-TFIDF_bnn_bnn
+reference Q0 769 0 2.0 team1-TFIDF_bnn_bnn
+reference Q0 120 1 2.0 team1-TFIDF_bnn_bnn
+reference Q0 2036 2 2.0 team1-TFIDF_bnn_bnn
+reference Q0 1012 3 2.0 team1-TFIDF_bnn_bnn
+reference Q0 2034 4 2.0 team1-TFIDF_bnn_bnn
+reference Q0 242 5 2.0 team1-TFIDF_bnn_bnn
+reference Q0 2031 6 2.0 team1-TFIDF_bnn_bnn
+reference Q0 747 7 2.0 team1-TFIDF_bnn_bnn
+reference Q0 103 8 2.0 team1-TFIDF_bnn_bnn
+reference Q0 869 9 2.0 team1-TFIDF_bnn_bnn
+reference Q0 481 10 2.0 team1-TFIDF_bnn_bnn
+reference Q0 225 11 2.0 team1-TFIDF_bnn_bnn
+reference Q0 97 12 2.0 team1-TFIDF_bnn_bnn
+reference Q0 608 13 2.0 team1-TFIDF_bnn_bnn
+reference Q0 990 14 2.0 team1-TFIDF_bnn_bnn
+reference Q0 604 15 2.0 team1-TFIDF_bnn_bnn
+reference Q0 979 16 2.0 team1-TFIDF_bnn_bnn
+reference Q0 336 17 2.0 team1-TFIDF_bnn_bnn
+reference Q0 719 18 2.0 team1-TFIDF_bnn_bnn
+reference Q0 969 19 2.0 team1-TFIDF_bnn_bnn
+reference Q0 326 20 2.0 team1-TFIDF_bnn_bnn
+reference Q0 838 21 2.0 team1-TFIDF_bnn_bnn
+reference Q0 837 22 2.0 team1-TFIDF_bnn_bnn
+reference Q0 452 23 2.0 team1-TFIDF_bnn_bnn
+reference Q0 322 24 2.0 team1-TFIDF_bnn_bnn
+reference Q0 705 25 2.0 team1-TFIDF_bnn_bnn
+reference Q0 449 26 2.0 team1-TFIDF_bnn_bnn
+reference Q0 321 27 2.0 team1-TFIDF_bnn_bnn
+reference Q0 2359 28 2.0 team1-TFIDF_bnn_bnn
+reference Q0 821 29 2.0 team1-TFIDF_bnn_bnn
+reference Q0 51 30 2.0 team1-TFIDF_bnn_bnn
+reference Q0 818 31 2.0 team1-TFIDF_bnn_bnn
+reference Q0 945 32 2.0 team1-TFIDF_bnn_bnn
+reference Q0 2223 33 2.0 team1-TFIDF_bnn_bnn
+reference Q0 807 34 2.0 team1-TFIDF_bnn_bnn
+reference Q0 678 35 2.0 team1-TFIDF_bnn_bnn
+reference Q0 36 36 2.0 team1-TFIDF_bnn_bnn
+reference Q0 289 37 2.0 team1-TFIDF_bnn_bnn
+reference Q0 672 38 2.0 team1-TFIDF_bnn_bnn
+reference Q0 285 39 2.0 team1-TFIDF_bnn_bnn
+reference Q0 2204 40 2.0 team1-TFIDF_bnn_bnn
+reference Q0 796 41 2.0 team1-TFIDF_bnn_bnn
+reference Q0 540 42 2.0 team1-TFIDF_bnn_bnn
+reference Q0 27 43 2.0 team1-TFIDF_bnn_bnn
+reference Q0 153 44 2.0 team1-TFIDF_bnn_bnn
+reference Q0 404 45 2.0 team1-TFIDF_bnn_bnn
+reference Q0 2065 46 2.0 team1-TFIDF_bnn_bnn
+reference Q0 527 47 2.0 team1-TFIDF_bnn_bnn
+reference Q0 271 48 2.0 team1-TFIDF_bnn_bnn
+reference Q0 654 49 2.0 team1-TFIDF_bnn_bnn
+pacbio Q0 1010 0 2.0 team1-TFIDF_bnn_bnn
+pacbio Q0 174 1 2.0 team1-TFIDF_bnn_bnn
+pacbio Q0 329 2 2.0 team1-TFIDF_bnn_bnn
+pacbio Q0 375 3 2.0 team1-TFIDF_bnn_bnn
+pacbio Q0 438 4 2.0 team1-TFIDF_bnn_bnn
+pacbio Q0 885 5 2.0 team1-TFIDF_bnn_bnn
+pacbio Q0 899 6 2.0 team1-TFIDF_bnn_bnn
+fluorescence Q0 434 0 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2177 0 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 1019 1 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2298 2 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 1018 3 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 375 4 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2165 5 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 884 6 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 372 7 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 242 8 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 751 9 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 110 10 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 238 11 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 620 12 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2282 13 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2153 14 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 232 15 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 869 16 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 610 17 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2140 18 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 92 19 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 722 20 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 333 21 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 969 22 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 584 23 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2119 24 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2246 25 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 837 26 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 452 27 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2242 28 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 703 29 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 570 30 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 441 31 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 57 32 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 568 33 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2101 34 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 693 35 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2356 36 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 52 37 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 51 38 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 561 39 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 687 40 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 942 41 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 46 42 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 299 43 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2088 44 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2215 45 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 677 46 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 2339 47 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 924 48 2.0 team1-TFIDF_bnn_bnn
+rna structure Q0 540 49 2.0 team1-TFIDF_bnn_bnn
+gff3 Q0 2177 0 2.0 team1-TFIDF_bnn_bnn
+gff3 Q0 2095 1 2.0 team1-TFIDF_bnn_bnn
+gff3 Q0 2341 2 2.0 team1-TFIDF_bnn_bnn
+gff3 Q0 853 3 2.0 team1-TFIDF_bnn_bnn
+gff3 Q0 661 4 2.0 team1-TFIDF_bnn_bnn
+gff3 Q0 565 5 2.0 team1-TFIDF_bnn_bnn
+gff3 Q0 2068 6 2.0 team1-TFIDF_bnn_bnn
+gff3 Q0 2242 7 2.0 team1-TFIDF_bnn_bnn
+wgs Q0 945 0 2.0 team1-TFIDF_bnn_bnn
+wgs Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+wgs Q0 462 2 2.0 team1-TFIDF_bnn_bnn
+wgs Q0 411 3 2.0 team1-TFIDF_bnn_bnn
+wgs Q0 299 4 2.0 team1-TFIDF_bnn_bnn
+wgs Q0 951 5 2.0 team1-TFIDF_bnn_bnn
+wgs Q0 935 6 2.0 team1-TFIDF_bnn_bnn
+wgs Q0 407 7 2.0 team1-TFIDF_bnn_bnn
+rna Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+rna Q0 1019 1 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2298 2 2.0 team1-TFIDF_bnn_bnn
+rna Q0 1018 3 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2165 4 2.0 team1-TFIDF_bnn_bnn
+rna Q0 884 5 2.0 team1-TFIDF_bnn_bnn
+rna Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+rna Q0 751 7 2.0 team1-TFIDF_bnn_bnn
+rna Q0 238 8 2.0 team1-TFIDF_bnn_bnn
+rna Q0 620 9 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2282 10 2.0 team1-TFIDF_bnn_bnn
+rna Q0 232 11 2.0 team1-TFIDF_bnn_bnn
+rna Q0 610 12 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2140 13 2.0 team1-TFIDF_bnn_bnn
+rna Q0 92 14 2.0 team1-TFIDF_bnn_bnn
+rna Q0 722 15 2.0 team1-TFIDF_bnn_bnn
+rna Q0 333 16 2.0 team1-TFIDF_bnn_bnn
+rna Q0 969 17 2.0 team1-TFIDF_bnn_bnn
+rna Q0 584 18 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2119 19 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2242 20 2.0 team1-TFIDF_bnn_bnn
+rna Q0 703 21 2.0 team1-TFIDF_bnn_bnn
+rna Q0 570 22 2.0 team1-TFIDF_bnn_bnn
+rna Q0 441 23 2.0 team1-TFIDF_bnn_bnn
+rna Q0 57 24 2.0 team1-TFIDF_bnn_bnn
+rna Q0 568 25 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2101 26 2.0 team1-TFIDF_bnn_bnn
+rna Q0 693 27 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2356 28 2.0 team1-TFIDF_bnn_bnn
+rna Q0 52 29 2.0 team1-TFIDF_bnn_bnn
+rna Q0 51 30 2.0 team1-TFIDF_bnn_bnn
+rna Q0 561 31 2.0 team1-TFIDF_bnn_bnn
+rna Q0 687 32 2.0 team1-TFIDF_bnn_bnn
+rna Q0 942 33 2.0 team1-TFIDF_bnn_bnn
+rna Q0 46 34 2.0 team1-TFIDF_bnn_bnn
+rna Q0 299 35 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2088 36 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2215 37 2.0 team1-TFIDF_bnn_bnn
+rna Q0 924 38 2.0 team1-TFIDF_bnn_bnn
+rna Q0 540 39 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2329 40 2.0 team1-TFIDF_bnn_bnn
+rna Q0 664 41 2.0 team1-TFIDF_bnn_bnn
+rna Q0 280 42 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2199 43 2.0 team1-TFIDF_bnn_bnn
+rna Q0 278 44 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2068 45 2.0 team1-TFIDF_bnn_bnn
+rna Q0 2194 46 2.0 team1-TFIDF_bnn_bnn
+rna Q0 528 47 2.0 team1-TFIDF_bnn_bnn
+rna Q0 909 48 2.0 team1-TFIDF_bnn_bnn
+rna Q0 524 49 2.0 team1-TFIDF_bnn_bnn
+domains Q0 2117 0 2.0 team1-TFIDF_bnn_bnn
+domains Q0 972 1 2.0 team1-TFIDF_bnn_bnn
+domains Q0 2153 2 2.0 team1-TFIDF_bnn_bnn
+archive Q0 242 0 2.0 team1-TFIDF_bnn_bnn
+archive Q0 604 1 2.0 team1-TFIDF_bnn_bnn
+archive Q0 411 2 2.0 team1-TFIDF_bnn_bnn
+archive Q0 2306 3 2.0 team1-TFIDF_bnn_bnn
+estimation Q0 21 0 2.0 team1-TFIDF_bnn_bnn
+estimation Q0 351 1 2.0 team1-TFIDF_bnn_bnn
+estimation Q0 191 2 2.0 team1-TFIDF_bnn_bnn
+technical replicates Q0 609 0 2.0 team1-TFIDF_bnn_bnn
+technical replicates Q0 2140 1 2.0 team1-TFIDF_bnn_bnn
+technical replicates Q0 153 2 2.0 team1-TFIDF_bnn_bnn
+technical replicates Q0 232 3 2.0 team1-TFIDF_bnn_bnn
+technical replicates Q0 372 4 2.0 team1-TFIDF_bnn_bnn
+technical replicates Q0 52 5 2.0 team1-TFIDF_bnn_bnn
+technical replicates Q0 610 6 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 2306 0 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 639 1 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 2174 2 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 637 3 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 253 4 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 508 5 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 761 6 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 120 7 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 375 8 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 1014 9 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 2165 10 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 500 11 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 372 12 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 242 13 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 110 14 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 745 15 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 486 16 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 2149 17 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 228 18 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 611 19 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 98 20 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 610 21 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 2145 22 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 608 23 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 223 24 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 2269 25 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 731 26 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 83 27 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 722 28 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 336 29 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 462 30 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 716 31 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 73 32 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 456 33 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 326 34 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 452 35 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 449 36 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 193 37 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 705 38 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 191 39 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 702 40 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 956 41 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 950 42 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 2230 43 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 694 44 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 438 45 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 2356 46 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 308 47 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 307 48 2.0 team1-TFIDF_bnn_bnn
+read mapping Q0 306 49 2.0 team1-TFIDF_bnn_bnn
+metagene Q0 608 0 2.0 team1-TFIDF_bnn_bnn
+metagene Q0 516 1 2.0 team1-TFIDF_bnn_bnn
+methylation Q0 2051 0 2.0 team1-TFIDF_bnn_bnn
+methylation Q0 2028 1 2.0 team1-TFIDF_bnn_bnn
+methylation Q0 505 2 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 1 0 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 120 1 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 375 2 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 628 3 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 242 4 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 110 5 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 2029 6 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 107 7 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 1001 8 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 998 9 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 228 10 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 2274 11 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 481 12 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 225 13 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 97 14 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 736 15 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 608 16 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 351 17 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 990 18 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 604 19 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 343 20 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 462 21 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 587 22 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 328 23 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 584 24 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 70 25 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 326 26 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 709 27 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 195 28 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 322 29 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 449 30 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 2241 31 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 191 32 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 702 33 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 318 34 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 829 35 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 316 36 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 442 37 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 2234 38 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 2361 39 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 568 40 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 951 41 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 438 42 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 821 43 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 565 44 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 2098 45 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 817 46 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 945 47 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 303 48 2.0 team1-TFIDF_bnn_bnn
+human genome Q0 174 49 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 2242 0 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 2318 1 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 2302 2 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 525 3 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 427 4 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 27 5 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 2265 6 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 2119 7 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 695 8 2.0 team1-TFIDF_bnn_bnn
+bedtools Q0 70 9 2.0 team1-TFIDF_bnn_bnn
+data management Q0 771 0 2.0 team1-TFIDF_bnn_bnn
+data management Q0 253 1 2.0 team1-TFIDF_bnn_bnn
+data management Q0 505 2 2.0 team1-TFIDF_bnn_bnn
+data management Q0 120 3 2.0 team1-TFIDF_bnn_bnn
+data management Q0 1014 4 2.0 team1-TFIDF_bnn_bnn
+data management Q0 756 5 2.0 team1-TFIDF_bnn_bnn
+data management Q0 372 6 2.0 team1-TFIDF_bnn_bnn
+data management Q0 627 7 2.0 team1-TFIDF_bnn_bnn
+data management Q0 626 8 2.0 team1-TFIDF_bnn_bnn
+data management Q0 242 9 2.0 team1-TFIDF_bnn_bnn
+data management Q0 2289 10 2.0 team1-TFIDF_bnn_bnn
+data management Q0 112 11 2.0 team1-TFIDF_bnn_bnn
+data management Q0 620 12 2.0 team1-TFIDF_bnn_bnn
+data management Q0 1001 13 2.0 team1-TFIDF_bnn_bnn
+data management Q0 2024 14 2.0 team1-TFIDF_bnn_bnn
+data management Q0 488 15 2.0 team1-TFIDF_bnn_bnn
+data management Q0 232 16 2.0 team1-TFIDF_bnn_bnn
+data management Q0 103 17 2.0 team1-TFIDF_bnn_bnn
+data management Q0 610 18 2.0 team1-TFIDF_bnn_bnn
+data management Q0 609 19 2.0 team1-TFIDF_bnn_bnn
+data management Q0 481 20 2.0 team1-TFIDF_bnn_bnn
+data management Q0 97 21 2.0 team1-TFIDF_bnn_bnn
+data management Q0 351 22 2.0 team1-TFIDF_bnn_bnn
+data management Q0 350 23 2.0 team1-TFIDF_bnn_bnn
+data management Q0 92 24 2.0 team1-TFIDF_bnn_bnn
+data management Q0 89 25 2.0 team1-TFIDF_bnn_bnn
+data management Q0 343 26 2.0 team1-TFIDF_bnn_bnn
+data management Q0 724 27 2.0 team1-TFIDF_bnn_bnn
+data management Q0 83 28 2.0 team1-TFIDF_bnn_bnn
+data management Q0 462 29 2.0 team1-TFIDF_bnn_bnn
+data management Q0 458 30 2.0 team1-TFIDF_bnn_bnn
+data management Q0 329 31 2.0 team1-TFIDF_bnn_bnn
+data management Q0 73 32 2.0 team1-TFIDF_bnn_bnn
+data management Q0 584 33 2.0 team1-TFIDF_bnn_bnn
+data management Q0 456 34 2.0 team1-TFIDF_bnn_bnn
+data management Q0 328 35 2.0 team1-TFIDF_bnn_bnn
+data management Q0 2117 36 2.0 team1-TFIDF_bnn_bnn
+data management Q0 452 37 2.0 team1-TFIDF_bnn_bnn
+data management Q0 196 38 2.0 team1-TFIDF_bnn_bnn
+data management Q0 195 39 2.0 team1-TFIDF_bnn_bnn
+data management Q0 962 40 2.0 team1-TFIDF_bnn_bnn
+data management Q0 66 41 2.0 team1-TFIDF_bnn_bnn
+data management Q0 2113 42 2.0 team1-TFIDF_bnn_bnn
+data management Q0 191 43 2.0 team1-TFIDF_bnn_bnn
+data management Q0 702 44 2.0 team1-TFIDF_bnn_bnn
+data management Q0 2361 45 2.0 team1-TFIDF_bnn_bnn
+data management Q0 57 46 2.0 team1-TFIDF_bnn_bnn
+data management Q0 951 47 2.0 team1-TFIDF_bnn_bnn
+data management Q0 567 48 2.0 team1-TFIDF_bnn_bnn
+data management Q0 438 49 2.0 team1-TFIDF_bnn_bnn
+ancestry Q0 481 0 2.0 team1-TFIDF_bnn_bnn
+ancestry Q0 73 1 2.0 team1-TFIDF_bnn_bnn
+combat Q0 886 0 2.0 team1-TFIDF_bnn_bnn
+storage Q0 587 0 2.0 team1-TFIDF_bnn_bnn
+pasa Q0 969 0 2.0 team1-TFIDF_bnn_bnn
+interactions Q0 673 0 2.0 team1-TFIDF_bnn_bnn
+interactions Q0 653 1 2.0 team1-TFIDF_bnn_bnn
+interactions Q0 2059 2 2.0 team1-TFIDF_bnn_bnn
+interactions Q0 731 3 2.0 team1-TFIDF_bnn_bnn
+interactions Q0 650 4 2.0 team1-TFIDF_bnn_bnn
+interactions Q0 567 5 2.0 team1-TFIDF_bnn_bnn
+interactions Q0 646 6 2.0 team1-TFIDF_bnn_bnn
+interactions Q0 914 7 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 741 0 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 2300 1 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 604 2 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 540 3 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 2106 4 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 2137 5 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 2359 6 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 2101 7 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 661 8 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 21 9 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 2036 10 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 785 11 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 2384 12 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 527 13 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 2062 14 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 654 15 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 939 16 2.0 team1-TFIDF_bnn_bnn
+ensembl Q0 522 17 2.0 team1-TFIDF_bnn_bnn
+database Q0 2241 0 2.0 team1-TFIDF_bnn_bnn
+database Q0 829 1 2.0 team1-TFIDF_bnn_bnn
+database Q0 570 2 2.0 team1-TFIDF_bnn_bnn
+database Q0 2169 3 2.0 team1-TFIDF_bnn_bnn
+database Q0 887 4 2.0 team1-TFIDF_bnn_bnn
+database Q0 118 5 2.0 team1-TFIDF_bnn_bnn
+database Q0 1012 6 2.0 team1-TFIDF_bnn_bnn
+database Q0 818 7 2.0 team1-TFIDF_bnn_bnn
+database Q0 817 8 2.0 team1-TFIDF_bnn_bnn
+database Q0 2095 9 2.0 team1-TFIDF_bnn_bnn
+database Q0 815 10 2.0 team1-TFIDF_bnn_bnn
+database Q0 623 11 2.0 team1-TFIDF_bnn_bnn
+database Q0 878 12 2.0 team1-TFIDF_bnn_bnn
+database Q0 110 13 2.0 team1-TFIDF_bnn_bnn
+database Q0 2092 14 2.0 team1-TFIDF_bnn_bnn
+database Q0 747 15 2.0 team1-TFIDF_bnn_bnn
+database Q0 2153 16 2.0 team1-TFIDF_bnn_bnn
+database Q0 488 17 2.0 team1-TFIDF_bnn_bnn
+database Q0 2343 18 2.0 team1-TFIDF_bnn_bnn
+database Q0 2022 19 2.0 team1-TFIDF_bnn_bnn
+database Q0 486 20 2.0 team1-TFIDF_bnn_bnn
+database Q0 230 21 2.0 team1-TFIDF_bnn_bnn
+database Q0 677 22 2.0 team1-TFIDF_bnn_bnn
+database Q0 548 23 2.0 team1-TFIDF_bnn_bnn
+database Q0 802 24 2.0 team1-TFIDF_bnn_bnn
+database Q0 673 25 2.0 team1-TFIDF_bnn_bnn
+database Q0 990 26 2.0 team1-TFIDF_bnn_bnn
+database Q0 798 27 2.0 team1-TFIDF_bnn_bnn
+database Q0 283 28 2.0 team1-TFIDF_bnn_bnn
+database Q0 282 29 2.0 team1-TFIDF_bnn_bnn
+database Q0 2323 30 2.0 team1-TFIDF_bnn_bnn
+database Q0 979 31 2.0 team1-TFIDF_bnn_bnn
+database Q0 2194 32 2.0 team1-TFIDF_bnn_bnn
+database Q0 2130 33 2.0 team1-TFIDF_bnn_bnn
+database Q0 2065 34 2.0 team1-TFIDF_bnn_bnn
+database Q0 527 35 2.0 team1-TFIDF_bnn_bnn
+database Q0 972 36 2.0 team1-TFIDF_bnn_bnn
+database Q0 970 37 2.0 team1-TFIDF_bnn_bnn
+database Q0 709 38 2.0 team1-TFIDF_bnn_bnn
+database Q0 196 39 2.0 team1-TFIDF_bnn_bnn
+git Q0 112 0 2.0 team1-TFIDF_bnn_bnn
+git Q0 751 1 2.0 team1-TFIDF_bnn_bnn
+blat Q0 110 0 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 146 0 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 351 1 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 125 2 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 620 3 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 570 4 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 280 5 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 2101 6 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 884 7 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 228 8 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 196 9 2.0 team1-TFIDF_bnn_bnn
+gc content Q0 2259 10 2.0 team1-TFIDF_bnn_bnn
+parallel Q0 2257 0 2.0 team1-TFIDF_bnn_bnn
+parallel Q0 525 1 2.0 team1-TFIDF_bnn_bnn
+parallel Q0 2316 2 2.0 team1-TFIDF_bnn_bnn
+parallel Q0 411 3 2.0 team1-TFIDF_bnn_bnn
+parallel Q0 135 4 2.0 team1-TFIDF_bnn_bnn
+parallel Q0 150 5 2.0 team1-TFIDF_bnn_bnn
+structural Q0 2275 0 2.0 team1-TFIDF_bnn_bnn
+structural Q0 2223 1 2.0 team1-TFIDF_bnn_bnn
+structural Q0 271 2 2.0 team1-TFIDF_bnn_bnn
+structural Q0 796 3 2.0 team1-TFIDF_bnn_bnn
+structural Q0 329 4 2.0 team1-TFIDF_bnn_bnn
+structural Q0 264 5 2.0 team1-TFIDF_bnn_bnn
+structural Q0 120 6 2.0 team1-TFIDF_bnn_bnn
+structural Q0 438 7 2.0 team1-TFIDF_bnn_bnn
+repeat Q0 225 0 2.0 team1-TFIDF_bnn_bnn
+repeat Q0 909 1 2.0 team1-TFIDF_bnn_bnn
+repeat Q0 540 2 2.0 team1-TFIDF_bnn_bnn
+repeat Q0 375 3 2.0 team1-TFIDF_bnn_bnn
+repeat Q0 343 4 2.0 team1-TFIDF_bnn_bnn
+repeat Q0 2275 5 2.0 team1-TFIDF_bnn_bnn
+repeat Q0 242 6 2.0 team1-TFIDF_bnn_bnn
+repeat Q0 2145 7 2.0 team1-TFIDF_bnn_bnn
+repeat Q0 945 8 2.0 team1-TFIDF_bnn_bnn
+impute2 Q0 336 0 2.0 team1-TFIDF_bnn_bnn
+impute2 Q0 949 1 2.0 team1-TFIDF_bnn_bnn
+mass spectrometry Q0 609 0 2.0 team1-TFIDF_bnn_bnn
+mass spectrometry Q0 2111 1 2.0 team1-TFIDF_bnn_bnn
+mass spectrometry Q0 314 2 2.0 team1-TFIDF_bnn_bnn
+mass spectrometry Q0 857 3 2.0 team1-TFIDF_bnn_bnn
+ngs Q0 81 0 2.0 team1-TFIDF_bnn_bnn
+ngs Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+ngs Q0 351 2 2.0 team1-TFIDF_bnn_bnn
+ngs Q0 456 3 2.0 team1-TFIDF_bnn_bnn
+ngs Q0 2199 4 2.0 team1-TFIDF_bnn_bnn
+ngs Q0 327 5 2.0 team1-TFIDF_bnn_bnn
+ngs Q0 422 6 2.0 team1-TFIDF_bnn_bnn
+ngs Q0 196 7 2.0 team1-TFIDF_bnn_bnn
+ngs Q0 146 8 2.0 team1-TFIDF_bnn_bnn
+bioawk Q0 661 0 2.0 team1-TFIDF_bnn_bnn
+bioawk Q0 974 1 2.0 team1-TFIDF_bnn_bnn
+deseq2 Q0 193 0 2.0 team1-TFIDF_bnn_bnn
+deseq2 Q0 909 1 2.0 team1-TFIDF_bnn_bnn
+deseq2 Q0 2378 2 2.0 team1-TFIDF_bnn_bnn
+deseq2 Q0 153 3 2.0 team1-TFIDF_bnn_bnn
+deseq2 Q0 584 4 2.0 team1-TFIDF_bnn_bnn
+deseq2 Q0 232 5 2.0 team1-TFIDF_bnn_bnn
+deseq2 Q0 2375 6 2.0 team1-TFIDF_bnn_bnn
+sam Q0 289 0 2.0 team1-TFIDF_bnn_bnn
+sam Q0 157 1 2.0 team1-TFIDF_bnn_bnn
+sam Q0 2363 2 2.0 team1-TFIDF_bnn_bnn
+sam Q0 661 3 2.0 team1-TFIDF_bnn_bnn
+sam Q0 2036 4 2.0 team1-TFIDF_bnn_bnn
+sam Q0 404 5 2.0 team1-TFIDF_bnn_bnn
+sam Q0 402 6 2.0 team1-TFIDF_bnn_bnn
+sam Q0 719 7 2.0 team1-TFIDF_bnn_bnn
+sam Q0 14 8 2.0 team1-TFIDF_bnn_bnn
+sam Q0 908 9 2.0 team1-TFIDF_bnn_bnn
+sam Q0 1002 10 2.0 team1-TFIDF_bnn_bnn
+sam Q0 424 11 2.0 team1-TFIDF_bnn_bnn
+sam Q0 2088 12 2.0 team1-TFIDF_bnn_bnn
+sam Q0 611 13 2.0 team1-TFIDF_bnn_bnn
+sam Q0 2306 14 2.0 team1-TFIDF_bnn_bnn
+sam Q0 2242 15 2.0 team1-TFIDF_bnn_bnn
+sam Q0 98 16 2.0 team1-TFIDF_bnn_bnn
+sam Q0 705 17 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 899 0 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 2302 1 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 254 2 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 2173 3 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 508 4 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 1019 5 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 1018 6 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 378 7 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 120 8 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 375 9 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 1014 10 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 372 11 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 2036 12 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 2163 13 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 1010 14 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 242 15 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 110 16 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 237 17 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 620 18 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 361 19 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 1001 20 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 486 21 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 2022 22 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 98 23 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 2145 24 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 97 25 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 736 26 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 608 27 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 83 28 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 722 29 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 594 30 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 81 31 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 2257 32 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 974 33 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 462 34 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 970 35 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 202 36 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 73 37 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 329 38 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 327 39 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 2117 40 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 709 41 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 452 42 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 449 43 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 2367 44 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 442 45 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 951 46 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 438 47 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 51 48 2.0 team1-TFIDF_bnn_bnn
+long reads Q0 818 49 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 81 0 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 462 1 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 909 2 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 1001 3 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 2119 4 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 2390 5 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 709 6 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 2067 7 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 2275 8 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 994 9 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 242 10 2.0 team1-TFIDF_bnn_bnn
+next generation Q0 705 11 2.0 team1-TFIDF_bnn_bnn
+bigwig Q0 288 0 2.0 team1-TFIDF_bnn_bnn
+bigwig Q0 525 1 2.0 team1-TFIDF_bnn_bnn
+bigwig Q0 716 2 2.0 team1-TFIDF_bnn_bnn
+bigwig Q0 2088 3 2.0 team1-TFIDF_bnn_bnn
+bigwig Q0 2263 4 2.0 team1-TFIDF_bnn_bnn
+bigwig Q0 708 5 2.0 team1-TFIDF_bnn_bnn
+bigwig Q0 608 6 2.0 team1-TFIDF_bnn_bnn
+bioanalyzer Q0 2056 0 2.0 team1-TFIDF_bnn_bnn
+selectvariants Q0 974 0 2.0 team1-TFIDF_bnn_bnn
+reads Q0 2051 0 2.0 team1-TFIDF_bnn_bnn
+reads Q0 2302 1 2.0 team1-TFIDF_bnn_bnn
+reads Q0 2173 2 2.0 team1-TFIDF_bnn_bnn
+reads Q0 508 3 2.0 team1-TFIDF_bnn_bnn
+reads Q0 1019 4 2.0 team1-TFIDF_bnn_bnn
+reads Q0 1018 5 2.0 team1-TFIDF_bnn_bnn
+reads Q0 120 6 2.0 team1-TFIDF_bnn_bnn
+reads Q0 375 7 2.0 team1-TFIDF_bnn_bnn
+reads Q0 1014 8 2.0 team1-TFIDF_bnn_bnn
+reads Q0 372 9 2.0 team1-TFIDF_bnn_bnn
+reads Q0 2163 10 2.0 team1-TFIDF_bnn_bnn
+reads Q0 1010 11 2.0 team1-TFIDF_bnn_bnn
+reads Q0 242 12 2.0 team1-TFIDF_bnn_bnn
+reads Q0 110 13 2.0 team1-TFIDF_bnn_bnn
+reads Q0 237 14 2.0 team1-TFIDF_bnn_bnn
+reads Q0 620 15 2.0 team1-TFIDF_bnn_bnn
+reads Q0 361 16 2.0 team1-TFIDF_bnn_bnn
+reads Q0 486 17 2.0 team1-TFIDF_bnn_bnn
+reads Q0 98 18 2.0 team1-TFIDF_bnn_bnn
+reads Q0 2145 19 2.0 team1-TFIDF_bnn_bnn
+reads Q0 97 20 2.0 team1-TFIDF_bnn_bnn
+reads Q0 608 21 2.0 team1-TFIDF_bnn_bnn
+reads Q0 83 22 2.0 team1-TFIDF_bnn_bnn
+reads Q0 722 23 2.0 team1-TFIDF_bnn_bnn
+reads Q0 81 24 2.0 team1-TFIDF_bnn_bnn
+reads Q0 974 25 2.0 team1-TFIDF_bnn_bnn
+reads Q0 462 26 2.0 team1-TFIDF_bnn_bnn
+reads Q0 970 27 2.0 team1-TFIDF_bnn_bnn
+reads Q0 202 28 2.0 team1-TFIDF_bnn_bnn
+reads Q0 329 29 2.0 team1-TFIDF_bnn_bnn
+reads Q0 73 30 2.0 team1-TFIDF_bnn_bnn
+reads Q0 327 31 2.0 team1-TFIDF_bnn_bnn
+reads Q0 452 32 2.0 team1-TFIDF_bnn_bnn
+reads Q0 449 33 2.0 team1-TFIDF_bnn_bnn
+reads Q0 442 34 2.0 team1-TFIDF_bnn_bnn
+reads Q0 951 35 2.0 team1-TFIDF_bnn_bnn
+reads Q0 438 36 2.0 team1-TFIDF_bnn_bnn
+reads Q0 51 37 2.0 team1-TFIDF_bnn_bnn
+reads Q0 306 38 2.0 team1-TFIDF_bnn_bnn
+reads Q0 945 39 2.0 team1-TFIDF_bnn_bnn
+reads Q0 174 40 2.0 team1-TFIDF_bnn_bnn
+reads Q0 427 41 2.0 team1-TFIDF_bnn_bnn
+reads Q0 935 42 2.0 team1-TFIDF_bnn_bnn
+reads Q0 807 43 2.0 team1-TFIDF_bnn_bnn
+reads Q0 678 44 2.0 team1-TFIDF_bnn_bnn
+reads Q0 418 45 2.0 team1-TFIDF_bnn_bnn
+reads Q0 289 46 2.0 team1-TFIDF_bnn_bnn
+reads Q0 796 47 2.0 team1-TFIDF_bnn_bnn
+reads Q0 27 48 2.0 team1-TFIDF_bnn_bnn
+reads Q0 280 49 2.0 team1-TFIDF_bnn_bnn
+edger Q0 2165 0 2.0 team1-TFIDF_bnn_bnn
+edger Q0 2378 1 2.0 team1-TFIDF_bnn_bnn
+edger Q0 457 2 2.0 team1-TFIDF_bnn_bnn
+edger Q0 2199 3 2.0 team1-TFIDF_bnn_bnn
+gnomad Q0 933 0 2.0 team1-TFIDF_bnn_bnn
+gnomad Q0 73 1 2.0 team1-TFIDF_bnn_bnn
+performance Q0 418 0 2.0 team1-TFIDF_bnn_bnn
+performance Q0 525 1 2.0 team1-TFIDF_bnn_bnn
+performance Q0 361 2 2.0 team1-TFIDF_bnn_bnn
+performance Q0 403 3 2.0 team1-TFIDF_bnn_bnn
+velvet Q0 2152 0 2.0 team1-TFIDF_bnn_bnn
+velvet Q0 156 1 2.0 team1-TFIDF_bnn_bnn
+velvet Q0 1019 2 2.0 team1-TFIDF_bnn_bnn
+velvet Q0 1018 3 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2048 0 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 251 1 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2169 2 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 761 3 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 887 4 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 118 5 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 1012 6 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 627 7 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 623 8 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 878 9 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 110 10 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 238 11 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 747 12 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 1002 13 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2153 14 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 488 15 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2022 16 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 486 17 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 230 18 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 869 19 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 611 20 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 609 21 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 481 22 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 97 23 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 351 24 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 990 25 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2140 26 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2265 27 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 979 28 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 83 29 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2130 30 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 972 31 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 970 32 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 73 33 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2119 34 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 709 35 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 196 36 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 962 37 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2241 38 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 318 39 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 829 40 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 316 41 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 570 42 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2361 43 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 951 44 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 692 45 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 818 46 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 817 47 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2097 48 2.0 team1-TFIDF_bnn_bnn
+sample database Q0 2095 49 2.0 team1-TFIDF_bnn_bnn
+clustering Q0 2298 0 2.0 team1-TFIDF_bnn_bnn
+clustering Q0 751 1 2.0 team1-TFIDF_bnn_bnn
+clustering Q0 703 2 2.0 team1-TFIDF_bnn_bnn
+clustering Q0 254 3 2.0 team1-TFIDF_bnn_bnn
+clustering Q0 238 4 2.0 team1-TFIDF_bnn_bnn
+clustering Q0 395 5 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 752 0 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 283 1 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 779 2 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 458 3 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 329 4 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 357 5 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 693 6 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 308 7 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 2356 8 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 195 9 2.0 team1-TFIDF_bnn_bnn
+10x genomics Q0 771 10 2.0 team1-TFIDF_bnn_bnn
+mauve Q0 266 0 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2241 0 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 125 1 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 508 2 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2170 3 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2359 4 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2165 5 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 626 6 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 242 7 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 1007 8 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 238 9 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 107 10 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 426 11 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2090 12 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 1001 13 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 745 14 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2088 15 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 289 16 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 736 17 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 288 18 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 860 19 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 796 20 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 540 21 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 411 22 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2202 23 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 89 24 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 664 25 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 663 26 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 407 27 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2390 28 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2067 29 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 595 30 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 531 31 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2194 32 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 594 33 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 462 34 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 12 35 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 2059 36 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 395 37 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 522 38 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 777 39 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 584 40 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 326 41 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 388 42 2.0 team1-TFIDF_bnn_bnn
+best practice Q0 452 43 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 193 0 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 191 1 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 62 2 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 125 3 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 829 4 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 251 5 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 378 6 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 57 7 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 568 8 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 2359 9 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 558 10 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 174 11 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 877 12 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 2346 13 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 1001 14 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 232 15 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 998 16 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 997 17 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 161 18 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 350 19 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 2140 20 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 2073 21 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 2199 22 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 343 23 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 143 24 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 782 25 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 909 26 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 2059 27 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 73 28 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 264 29 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 2375 30 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 326 31 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 196 32 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 195 33 2.0 team1-TFIDF_bnn_bnn
+disease model Q0 321 34 2.0 team1-TFIDF_bnn_bnn
+snap Q0 407 0 2.0 team1-TFIDF_bnn_bnn

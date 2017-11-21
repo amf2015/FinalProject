@@ -1,189 +1,184 @@
 package edu.unh.cs753853.team1.ranking;
 
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.document.Document;
-import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.Term;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.*;
 import org.apache.lucene.search.similarities.BasicStats;
 import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
-
-import edu.unh.cs753853.team1.DocumentResults;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.index.DirectoryReader;
+import org.apache.lucene.index.IndexReader;
 
 import java.io.*;
 import java.util.*;
 
-
-/*
- * Class to hold docId with associated score. 
- * Allows for easier sorting
- */
-class DocResult {
-	public int docId;
-	public int score;
-	
-	// constructor
-	public DocResult(int id, int s) {
-		docId = id;
-		score = s;
-	}
-}
-
-/*
- * Comparator to allow PriorityQueue to sort DocResults
- */
-class DocComparator implements Comparator<DocResult> {
-	
-	@Override
-	public int compare(DocResult d1, DocResult d2) {
-		if(d1.score < d2.score)
-            return 1;
-        if(d1.score > d2.score)
-            return -1;
-        return 0;
-	}
-}
-
-
-/*
- * the indexing and querying of documents
- * uses tf-idf: bnn.bnn
- * 
- */
 public class TFIDF_bnn_bnn {
-	
-	private IndexSearcher indexSearcher = null;
-	private QueryParser queryParser = null;
-	
-	// query pages
-	private ArrayList<String> queryPages;
-	
-	// num docs to return for a query
-	private int numDocs = 100;
-		
-	// map of queries to document results with scores
-	HashMap<Query, ArrayList<DocumentResults> > queryResults;
-	
-	
-	// directory  structure..
-	static final private String INDEX_DIRECTORY = "index";
-	static final private String OUTPUT_DIR = "output";
-	
-	private String runFile = "/tfidf_bnn_bnn.run";
-	
-	/*
-	 * @param pageList
-	 * @param maxDox
-	 */
-	TFIDF_bnn_bnn(ArrayList<String> pageList, int maxDox) throws IOException, ParseException {
-		queryPages = pageList;
-		numDocs = maxDox;
-		
-		queryParser = new QueryParser("parabody", new StandardAnalyzer());
-		
-		indexSearcher = new IndexSearcher(DirectoryReader.open(FSDirectory.open((new File(INDEX_DIRECTORY).toPath()))));
-		
-		SimilarityBase bnn = new SimilarityBase() {
-			protected float score(BasicStats stats, float freq, float decLen) {
+
+	private IndexSearcher searcher; // lucene IndexSearcher
+	private QueryParser parser; // lucene QueryParser
+
+	private int numDocs; // no of documents to be returned
+	private ArrayList<String> queryPageList; // List of pages to query
+
+	// Map of queries list to map of Documents list to scores for that query
+	private HashMap<String, ArrayList<DocumentResult>> queryResults;
+
+	public TFIDF_bnn_bnn(ArrayList<String> pl, int n) throws ParseException,
+			IOException {
+
+		numDocs = n; 
+		queryPageList = pl; // Each page title will be used as a query
+
+		// Parse the postbody field using StandardAnalyzer
+		String fields[] = { "posttitle", "postbody" };
+		parser = new MultiFieldQueryParser(fields, new StandardAnalyzer());
+
+		// Create an index searcher
+		String INDEX_DIRECTORY = "index";
+		searcher = new IndexSearcher(DirectoryReader.open(FSDirectory
+				.open((new File(INDEX_DIRECTORY).toPath()))));
+
+		// Set bnn_bnn similarity class which computes tf[t,d]
+		SimilarityBase bnn_bnn = new SimilarityBase() {
+			protected float score(BasicStats stats, float freq, float docLen) {
 				return freq > 0 ? 1 : 0;
 			}
+
 			@Override
 			public String toString() {
 				return null;
 			}
 		};
-		indexSearcher.setSimilarity(bnn);
+		searcher.setSimilarity(bnn_bnn);
 	}
 
-	/*
-	 *  method to go through and score docs for each query
-	 *  @throws ParseException
-	 */
-	public void doScoring() throws ParseException, IOException {
-		queryResults = new HashMap<>();
-		
-		HashMap<Query, HashMap<Integer, Integer> > results = new HashMap<>();
-		
-		// run through cbor.outlines for queries
-		for(String page: queryPages) {
-			ArrayList<TermQuery> queryTerms = new ArrayList<>();  
-		/*
-            Query qry = queryParser.parse(page.getPageName());      
-            String qid = page.getPageId();
-			
-            
-			for(String term: page.getPageName().split(" ")) {
-				TermQuery cur = new TermQuery(new Term("parabody", term));
-				queryTerms.add(cur);
-			}
- 			
-			
-			HashMap<Integer, Integer> docScores = new HashMap<>();
-			for(TermQuery term: queryTerms) {
-				TopDocs topDocs = indexSearcher.search(term, numDocs);
-				for(int i = 0; i < topDocs.scoreDocs.length; i++) {
-					Document doc = indexSearcher.doc(topDocs.scoreDocs[i].doc);
-					
-					if( !docScores.containsKey(topDocs.scoreDocs[i].doc) ) {
-						docScores.put(topDocs.scoreDocs[i].doc, 1);
-					}
-					else {
-						int prev = docScores.get(topDocs.scoreDocs[i].doc);
-						docScores.put(topDocs.scoreDocs[i].doc, ++prev);
-					}
-					
-				}
-				
-				
-			}
-			results.put(qry, docScores);
-			*/
-		}
-		writeResults(results);
-		
-	}
-	
-	/* 
+	/**
 	 * 
+	 * @param runfile
+	 *            The name of the runfile to output to
+	 * @throws IOException
+	 * @throws ParseException
 	 */
-	private void writeResults(HashMap<Query, HashMap<Integer, Integer> > map) throws IOException {
-		System.out.println("TFIDF_bnn_bnn writing results to: \t\t" + OUTPUT_DIR + "/tfidf_bnn_bnn.run");
-		FileWriter writer = new FileWriter(new File(OUTPUT_DIR + runFile));
-		
-		Set<Query> keys = map.keySet();
-		Iterator<Query> iter = keys.iterator();
-		while(iter.hasNext()) {
-			Query curQuery = iter.next();
-			HashMap<Integer, Integer> doc = map.get(curQuery); 
-			String q = curQuery.toString();
-			Set<Integer> tmp = doc.keySet();
-			Iterator<Integer> docIds = tmp.iterator(); 
-			
-			PriorityQueue<DocResult> queue = new PriorityQueue<>(new DocComparator());
-			while(docIds.hasNext()) {
-				int curDocId = docIds.next();
-				int score = doc.get(curDocId);
-				DocResult tmsRes = new DocResult(curDocId, score);
-				
-				
-				queue.add(tmsRes);
+	public void storeScoresTo(String runfile) throws IOException,
+			ParseException {
+
+		queryResults = new HashMap<>(); // Maps query to map of Documents with
+										// TF-IDF score
+
+		for (String page : queryPageList) { // For every post in posts.xml
+
+			HashMap<Integer, DocumentResult> docMap = new HashMap<>();
+			HashMap<TermQuery, Float> queryweights = new HashMap<>(); 
+			ArrayList<TermQuery> terms = new ArrayList<>(); 
+			PriorityQueue<DocumentResult> docQueue = new PriorityQueue<>(
+					new ResultComparator());
+			ArrayList<DocumentResult> docResults = new ArrayList<>();
+			HashMap<Integer, Float> scores = new HashMap<>(); // Mapping of each
+																// Document to
+																// its score
+
+			for (String term : page.split(" ")) { // For every word in page
+													// name...
+													// Take word as query term
+													// for postbody
+				TermQuery postq = new TermQuery(new Term("postbody", term));
+				TermQuery titleq = new TermQuery(new Term("posttitle", term));
+				terms.add(postq);
+				terms.add(titleq);
+				// check if query is present then add one else add 0;
+				queryweights.put(postq,
+						queryweights.getOrDefault(postq, 0.0f) + 1.0f);
+				queryweights.put(titleq,
+						queryweights.getOrDefault(titleq, 0.0f) + 1.0f);
 			}
-			
-			int count = 0;
-			DocResult cur;
-			while((cur = queue.poll()) != null && count++ < 100) {
+			// For every Term
+			for (TermQuery query : terms) { 
+
+				// Index Reader for calculation
+				IndexReader reader = searcher.getIndexReader();
+
 				
-//				String rank = Integer.toString(count);
-				String line = cur.docId + " Q0 " + indexSearcher.doc(cur.docId).getField("paraid").stringValue() + " " + count + " " + cur.score + " " + "team1-tfidf_bnn_bnn";
-				
-				writer.write(line + '\n');
+                float df = (reader.docFreq(query.getTerm()) == 0) ? 0 : 1;
+				float qTF = 1; // boolean term frequency
+
+				float qdf = df;
+				float qWeight = qTF * qdf;
+
+				queryweights.put(query, qWeight);
+
+				// Get the topN documents that match our query
+				TopDocs tpd = searcher.search(query, numDocs);
+				for (int i = 0; i < tpd.scoreDocs.length; i++) { // For every
+																	// returned
+																	// document...
+					Document doc = searcher.doc(tpd.scoreDocs[i].doc); // Get
+																		// the
+																		// document
+					int docId = Integer.parseInt(doc.get("postid"));
+					double score = tpd.scoreDocs[i].score
+							* queryweights.get(query); // Calculate TF-IDF for
+														// document
+
+					DocumentResult dResults = docMap.get(docId);
+					if (dResults == null) {
+						dResults = new DocumentResult(docId, (float) score);
+					}
+					float prevScore = dResults.getScore();
+					// Store score for later use
+					scores.put(Integer.parseInt(doc.get("postid")),
+							(float) (prevScore + score));
+				}
+			}
+
+			// For every document and its corresponding score...
+			for (Map.Entry<Integer, Float> entry : scores.entrySet()) {
+				int docId = entry.getKey();
+				Float score = entry.getValue();
+
+				// Normalize the score
+				scores.put(docId, score);
+
+				DocumentResult docResult = new DocumentResult(docId, score);
+				docQueue.add(docResult);
+			}
+
+			int rankCount = 0;
+			DocumentResult current;
+			while ((current = docQueue.poll()) != null) {
+				current.setRank(rankCount);
+				docResults.add(current);
+				rankCount++;
+				if (rankCount >= numDocs)
+					break;
+			}
+
+			// Map our Documents and scores to the corresponding query
+			queryResults.put(page, docResults);
+		}
+
+		System.out.println("TFIDF_bnn_bnn writing results to: " + runfile);
+		FileWriter runfileWriter = new FileWriter(new File(runfile));
+		for (Map.Entry<String, ArrayList<DocumentResult>> results : queryResults
+				.entrySet()) {
+			String query = results.getKey();
+			ArrayList<DocumentResult> list = results.getValue();
+			for (int i = 0; i < list.size(); i++) {
+				DocumentResult dr = list.get(i);
+				runfileWriter.write(query + " Q0 " + dr.getId() + " "
+						+ dr.getRank() + " " + dr.getScore()
+						+ " team1-TFIDF_bnn_bnn\n");
 			}
 		}
-		writer.close();
-		
+		runfileWriter.close();
+
 	}
+
+	public HashMap<String, ArrayList<DocumentResult>> getQueryResults() {
+		return this.queryResults;
+	}
+
 }
