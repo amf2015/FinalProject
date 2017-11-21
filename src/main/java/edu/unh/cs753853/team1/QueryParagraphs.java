@@ -1,7 +1,6 @@
 package edu.unh.cs753853.team1;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -95,19 +94,20 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-			Dump dmp = q.indexDump( "stackoverflow/cs_stackoverflow/");
+		    // Parse the .xml files from cs.stackexchange.com into a Dump Object
+			Dump cs = q.indexDump( "stackoverflow/cs_stackoverflow/");
 
 			// Use our tags as test queries
-			ArrayList<String> queries = dmp.getReadableTagNames();
+			ArrayList<String> cs_queries = cs.getReadableTagNames();
 
 			// Limit returned posts to 30
-			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
+			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(cs_queries, 30);
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/lnc-ltn.run");
 
 			// Generate relevance information based on tags
 			// 	all posts that have a specific tag should be marked as
 			//  relevant given a search query which is that tag
-			ProjectUtils.writeQrelsFile(queries, dmp, "tags");
+			ProjectUtils.writeQrelsFile(cs_queries, cs, "tags");
 
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
