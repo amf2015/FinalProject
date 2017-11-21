@@ -36,8 +36,8 @@ import org.apache.lucene.search.similarities.BasicStats;
 import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
 
-//Bigram Language Model with Laplace smoothing. 
-public class LanguageMode_BL {
+// Bigram Language Model with Laplace smoothing.
+public class LanguageMode_BL_old {
 
 	static final private String INDEX_DIRECTORY = "index";
 	static private QueryParser parser = null;
@@ -81,9 +81,13 @@ public class LanguageMode_BL {
 		}
 
 		// Write run file function
-		if (runFileStrList.size() > 0) {
+		if (runFileStrList.size() > 0)
+
+		{
 			writeStrListToRunFile(runFileStrList, path);
-		} else {
+		} else
+
+		{
 			System.out.println("No result for run file.");
 		}
 

@@ -1,43 +1,62 @@
 package edu.unh.cs753853.team1.ranking;
 
-public class LanguageModel_BL {
-
-<<<<<<< HEAD
-	public void RankDocWithBigram_LM() {
-=======
-import javax.xml.crypto.Data;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Reader;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
-import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
+import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.similarities.BasicStats;
 import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
 
+import edu.unh.cs753853.team1.DocumentResults;
+import edu.unh.cs753853.team1.utils.ProjectConfig;
+
 //Bigram Language Model with Laplace smoothing. 
 public class LanguageModel_BL {
 
-	static final private String INDEX_DIRECTORY = "index";
-	static private QueryParser parser = null;
-	static private Integer docNum = 100;
-	static private String TEAM_METHOD = "Team1-Bigram";
+	final private String INDEX_DIRECTORY = ProjectConfig.INDEX_DIRECTORY;
+	private QueryParser parser = null;
+	private IndexSearcher searcher = null;
+	private int numdocs;
+	private ArrayList<String> queryPageList;
+	private HashMap<String, ArrayList<DocumentResults>> queryResults;
 
-	/*
-	private static IndexReader getInedexReader(String path) throws IOException {
-		return DirectoryReader.open(FSDirectory.open((new File(path).toPath())));
-	}
+	// private String TEAM_METHOD = "Team1-Bigram";
 
-	public static SimilarityBase getFreqSimilarityBase() throws IOException {
-		SimilarityBase freqSim = new SimilarityBase() {
+	public LanguageModel_BL(ArrayList<String> pl, int n) throws ParseException, IOException {
+
+		numdocs = n;
+		queryPageList = pl;
+
+		String fields[] = { "posttitle", "postbody" };
+		parser = new MultiFieldQueryParser(fields, new StandardAnalyzer());
+
+		searcher = new IndexSearcher(DirectoryReader.open(FSDirectory.open((new File(INDEX_DIRECTORY).toPath()))));
+
+		SimilarityBase bl_sim = new SimilarityBase() {
+
 			@Override
 			protected float score(BasicStats stats, float freq, float docLen) {
 				return freq;
@@ -48,97 +67,14 @@ public class LanguageModel_BL {
 				return null;
 			}
 		};
-		return freqSim;
+		searcher.setSimilarity(bl_sim);
 	}
 
-	public static void RankDocWithBigram_LM(ArrayList<Data.Page> queryList, String path) {
-		ArrayList<String> runFileStrList = new ArrayList<String>();
-		if (queryList != null) {
-			for (Data.Page p : queryList) {
-				String queryStr = p.getPageId();
-				System.out.println("Query String: " + queryStr);
-				HashMap<String, Float> result_map = getRankedDocuments(queryStr);
-				int i = 0;
-				for (Entry<String, Float> entry : result_map.entrySet()) {
-					String runFileString = queryStr + " Q0 " + entry.getKey() + " " + i + " " + entry.getValue() + " "
-							+ TEAM_METHOD;
-					runFileStrList.add(runFileString);
-					i++;
-				}
-			}
-		}
+	public void generateResults(String runfiles) throws IOException, ParseException {
 
-		// Write run file function
-		if (runFileStrList.size() > 0) {
-			writeStrListToRunFile(runFileStrList, path);
-		} else {
-			System.out.println("No result for run file.");
-		}
+		queryResults = new HashMap<>();
 
 	}
-
-	private static HashMap<String, Float> getRankedDocuments(String queryStr) {
-		HashMap<String, Float> doc_score = new HashMap<String, Float>();
-
-		try {
-			IndexReader ir = getInedexReader(INDEX_DIRECTORY);
-			IndexSearcher se = new IndexSearcher(ir);
-			se.setSimilarity(getFreqSimilarityBase());
-			parser = new QueryParser("parabody", new StandardAnalyzer());
-
-			Query q = parser.parse(queryStr);
-			TopDocs topDocs = se.search(q, docNum);
-			ScoreDoc[] hits = topDocs.scoreDocs;
-
-			for (int i = 0; i < hits.length; i++) {
-				Document doc = se.doc(hits[i].doc);
-				String docId = doc.get("paraid");
-				String docBody = doc.get("parabody");
-				ArrayList<Float> p_wt = new ArrayList<Float>();
-
-				ArrayList<String> bigram_list = analyzeByBigram(docBody);
-				ArrayList<String> unigram_list = analyzeByUnigram(docBody);
-				ArrayList<String> query_list = analyzeByUnigram(queryStr);
-
-				// Size of vocabulary
-				int size_of_voc = getSizeOfVocabulary(unigram_list);
-				int size_of_doc = unigram_list.size();
-
-				String pre_term = "";
-				for (String term : query_list) {
-					if (pre_term == "") {
-						int tf = countExactStrFreqInList(term, unigram_list);
-						float p = laplaceSmoothingWith1(tf, size_of_doc, size_of_voc);
-						p_wt.add(p);
-					} else {
-						// Get total occurrences with given term.
-						String wildcard = pre_term + " ";
-						int tf_given_term = countStrFreqInList(wildcard, bigram_list);
-
-						// Get occurrences of term with given term.
-						String str = pre_term + " " + term;
-						int tf = countExactStrFreqInList(str, bigram_list);
-						float p = laplaceSmoothingWith1(tf_given_term, tf, size_of_voc);
-						p_wt.add(p);
-					}
-					pre_term = term;
-				}
-
-				// Caculate score with log;
-				System.out.println(p_wt);
-				float score = getScoreByPListWithLog(p_wt);
-				doc_score.put(docId, score);
-
-			}
-
-		} catch (Throwable e) {
-			e.printStackTrace();
-		}
-
-		return sortByValue(doc_score);
-	}
-
-	// Utility methods
 
 	// Get score from list of p.
 	private static float getScoreByPListWithLog(ArrayList<Float> p_list) {
@@ -274,8 +210,7 @@ public class LanguageModel_BL {
 				ee.printStackTrace();
 			}
 		}
->>>>>>> 0bbc48bfd22819d3a479220286e7479a252af599
 
 	}
-	*/
+
 }
