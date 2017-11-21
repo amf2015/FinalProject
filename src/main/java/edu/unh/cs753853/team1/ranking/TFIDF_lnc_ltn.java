@@ -190,7 +190,7 @@ public class TFIDF_lnc_ltn {
             for(int i = 0; i < list.size(); i++)
             {
                 DocumentResult dr = list.get(i);
-                runfileWriter.write(query + " Q0 " + dr.getId() + " " + dr.getRank() + " " + dr.getScore() + " team1-TFIDF_lnc_ltn\n");
+                runfileWriter.write(query.replace(" ", "-") + " Q0 " + dr.getId() + " " + dr.getRank() + " " + dr.getScore() + " team1-TFIDF_lnc_ltn\n");
             }
         }
         runfileWriter.close();
