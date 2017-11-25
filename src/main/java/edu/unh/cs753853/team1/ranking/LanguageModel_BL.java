@@ -21,16 +21,21 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
+import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
+import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.ScoreDoc;
+import org.apache.lucene.search.TermQuery;
+import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.similarities.BasicStats;
 import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
 
-import edu.unh.cs753853.team1.DocumentResults;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 
 //Bigram Language Model with Laplace smoothing. 
@@ -39,9 +44,9 @@ public class LanguageModel_BL {
 	final private String INDEX_DIRECTORY = ProjectConfig.INDEX_DIRECTORY;
 	private QueryParser parser = null;
 	private IndexSearcher searcher = null;
-	private int numdocs;
+	private int numdocs = 100;
 	private ArrayList<String> queryPageList;
-	private HashMap<String, ArrayList<DocumentResults>> queryResults;
+	private HashMap<String, ArrayList<DocumentResult>> queryResults;
 
 	// private String TEAM_METHOD = "Team1-Bigram";
 
@@ -74,6 +79,140 @@ public class LanguageModel_BL {
 
 		queryResults = new HashMap<>();
 
+		for (String pageQuery : queryPageList) {
+			ArrayList<DocumentResult> rankedDocs = new ArrayList<DocumentResult>();
+			HashMap<Integer, Float> result_map = getRankedDocuments(pageQuery);
+
+			int rankCount = 0;
+			for (Map.Entry<Integer, Float> entry : result_map.entrySet()) {
+				int docId = entry.getKey();
+				Float score = entry.getValue();
+
+				DocumentResult docResult = new DocumentResult(docId, score);
+				docResult.setRank(rankCount);
+				rankCount++;
+
+				rankedDocs.add(docResult);
+			}
+
+			queryResults.put(pageQuery, rankedDocs);
+		}
+
+	}
+
+	public HashMap<Integer, Float> getRankedDocuments(String queryStr) {
+		HashMap<Integer, Float> doc_score = new HashMap<Integer, Float>();
+
+		try {
+
+			IndexReader ir = searcher.getIndexReader();
+			TermQuery postq = new TermQuery(new Term("postbody", queryStr));
+			TermQuery titleq = new TermQuery(new Term("posttitle", queryStr));
+
+			// QueryScore of post body (postbody)
+			TopDocs topDocs_body = searcher.search(postq, numdocs);
+			ScoreDoc[] hits_body = topDocs_body.scoreDocs;
+
+			for (int i = 0; i < hits_body.length; i++) {
+				Document doc = searcher.doc(hits_body[i].doc);
+
+				int docId = Integer.parseInt(doc.get("postid"));
+				String docBody = doc.get("postbody");
+				ArrayList<Float> p_wt = new ArrayList<Float>();
+
+				ArrayList<String> bigram_list = analyzeByBigram(docBody);
+				ArrayList<String> unigram_list = analyzeByUnigram(docBody);
+				ArrayList<String> query_list = analyzeByUnigram(queryStr);
+
+				// Size of vocabulary
+				int size_of_voc = getSizeOfVocabulary(unigram_list);
+				int size_of_doc = unigram_list.size();
+
+				String pre_term = "";
+				for (String term : query_list) {
+					if (pre_term == "") {
+						int tf = countExactStrFreqInList(term, unigram_list);
+						float p = laplaceSmoothingWith1(tf, size_of_doc, size_of_voc);
+						p_wt.add(p);
+					} else {
+						// Get total occurrences with given term.
+						String wildcard = pre_term + " ";
+						int tf_given_term = countStrFreqInList(wildcard, bigram_list);
+
+						// Get occurrences of term with given term.
+						String str = pre_term + " " + term;
+						int tf = countExactStrFreqInList(str, bigram_list);
+						float p = laplaceSmoothingWith1(tf_given_term, tf, size_of_voc);
+						p_wt.add(p);
+					}
+					pre_term = term;
+				}
+
+				// Caculate score with log;
+				// System.out.println(p_wt);
+				float score = getScoreByPListWithLog(p_wt);
+				doc_score.put(docId, score);
+
+			}
+
+			// QueryScore of post title (posttitle)
+			TopDocs topDocs_title = searcher.search(titleq, numdocs);
+			ScoreDoc[] hits_title = topDocs_title.scoreDocs;
+
+			for (int i = 0; i < hits_title.length; i++) {
+				Document doc = searcher.doc(hits_title[i].doc);
+
+				int docId = Integer.parseInt(doc.get("postid"));
+				String docBody = doc.get("posttitle");
+				ArrayList<Float> p_wt = new ArrayList<Float>();
+
+				ArrayList<String> bigram_list = analyzeByBigram(docBody);
+				ArrayList<String> unigram_list = analyzeByUnigram(docBody);
+				ArrayList<String> query_list = analyzeByUnigram(queryStr);
+
+				// Size of vocabulary
+				int size_of_voc = getSizeOfVocabulary(unigram_list);
+				int size_of_doc = unigram_list.size();
+
+				String pre_term = "";
+				for (String term : query_list) {
+					if (pre_term == "") {
+						int tf = countExactStrFreqInList(term, unigram_list);
+						float p = laplaceSmoothingWith1(tf, size_of_doc, size_of_voc);
+						p_wt.add(p);
+					} else {
+						// Get total occurrences with given term.
+						String wildcard = pre_term + " ";
+						int tf_given_term = countStrFreqInList(wildcard, bigram_list);
+
+						// Get occurrences of term with given term.
+						String str = pre_term + " " + term;
+						int tf = countExactStrFreqInList(str, bigram_list);
+						float p = laplaceSmoothingWith1(tf_given_term, tf, size_of_voc);
+						p_wt.add(p);
+					}
+					pre_term = term;
+				}
+
+				// Caculate score with log;
+				System.out.println(p_wt);
+				float score = getScoreByPListWithLog(p_wt);
+
+				if (doc_score.get(docId) != null) {
+					float total_score = doc_score.get(docId) + score;
+					doc_score.put(docId, total_score);
+				} else {
+					doc_score.put(docId, score);
+				}
+
+			}
+
+		} catch (Throwable e) {
+
+			e.printStackTrace();
+		}
+
+		return sortByValue(doc_score);
 	}
 
 	// Get score from list of p.
@@ -158,19 +297,19 @@ public class LanguageModel_BL {
 	}
 
 	// Sort Descending HashMap<String, float>Map by its value
-	private static HashMap<String, Float> sortByValue(Map<String, Float> unsortMap) {
+	private static HashMap<Integer, Float> sortByValue(Map<Integer, Float> unsortMap) {
 
-		List<Map.Entry<String, Float>> list = new LinkedList<Map.Entry<String, Float>>(unsortMap.entrySet());
+		List<Map.Entry<Integer, Float>> list = new LinkedList<Map.Entry<Integer, Float>>(unsortMap.entrySet());
 
-		Collections.sort(list, new Comparator<Map.Entry<String, Float>>() {
+		Collections.sort(list, new Comparator<Map.Entry<Integer, Float>>() {
 
-			public int compare(Map.Entry<String, Float> o1, Map.Entry<String, Float> o2) {
+			public int compare(Map.Entry<Integer, Float> o1, Map.Entry<Integer, Float> o2) {
 				return (o2.getValue()).compareTo(o1.getValue());
 			}
 		});
 
-		HashMap<String, Float> sortedMap = new LinkedHashMap<String, Float>();
-		for (Map.Entry<String, Float> entry : list)
+		HashMap<Integer, Float> sortedMap = new LinkedHashMap<Integer, Float>();
+		for (Map.Entry<Integer, Float> entry : list)
 
 		{
 			sortedMap.put(entry.getKey(), entry.getValue());
