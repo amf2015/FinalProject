@@ -184,10 +184,10 @@ public class QueryParagraphs {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
 		    String queryDirectory = ProjectConfig.STACK_DIRECTORY;
-
 			if(args.length == 1)
 			{
 				queryDirectory += args[0];
+				ProjectConfig.set_OUTPUT_MODIFIER(args[0].replace("/",""));
 			}
 
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
@@ -195,14 +195,14 @@ public class QueryParagraphs {
 
 			// Use our tags as test queries
 			ArrayList<String> cs_queries = dmp.getReadableTagNames();
-			
+
 //			try {
 				//q.rankPosts(dmp, 20, "rankOutput");
 //			} 
 
 			// Limit returned posts to 30
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(cs_queries, 30);
-			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/cs-lnc-ltn.run");
+			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "-lnc-ltn.run");
 
 			// Generate relevance information based on tags
 			// 	all posts that have a specific tag should be marked as
