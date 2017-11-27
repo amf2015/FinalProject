@@ -183,16 +183,18 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
+		    String queryDirectory = ProjectConfig.STACK_DIRECTORY;
+
 			if(args.length == 1)
 			{
-				System.out.println(args[0]);
+				queryDirectory += args[0];
 			}
 
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
-			Dump cs_stackexchange = q.indexDump(ProjectConfig.CS_STACK_DIRECTORY);
+			Dump dmp = q.indexDump(queryDirectory);
 
 			// Use our tags as test queries
-			ArrayList<String> cs_queries = cs_stackexchange.getReadableTagNames();
+			ArrayList<String> cs_queries = dmp.getReadableTagNames();
 			
 //			try {
 				//q.rankPosts(dmp, 20, "rankOutput");
@@ -205,7 +207,7 @@ public class QueryParagraphs {
 			// Generate relevance information based on tags
 			// 	all posts that have a specific tag should be marked as
 			//  relevant given a search query which is that tag
-			ProjectUtils.writeQrelsFile(cs_queries, cs_stackexchange, "tags");
+			ProjectUtils.writeQrelsFile(cs_queries, dmp, "tags");
 
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
