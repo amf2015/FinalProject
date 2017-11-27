@@ -31,6 +31,7 @@ import edu.unh.cs753853.team1.entities.Dump;
 import edu.unh.cs753853.team1.entities.Post;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
+import edu.unh.cs753853.team1.ranking.TFIDF_anc_apc;
 import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
@@ -90,14 +91,28 @@ public class QueryParagraphs {
 		indexType.setIndexOptions(IndexOptions.DOCS_AND_FREQS);
 		indexType.setStored(true);
 		indexType.setStoreTermVectors(true);
-
+		
+		// count max tf for each doc
+		HashMap<String,Integer> tf = new HashMap<>();
+		int maxTF = 0;
+		for(String cur: postInfo.postBody.split(" ")) {
+			if(tf.containsKey(cur)) {
+				tf.put(cur, tf.get(cur)+1);
+			} else {
+				tf.put(cur, 1);
+			}
+			if(tf.get(cur) > maxTF) {
+				maxTF = tf.get(cur);
+			}
+		}
+		
 		// Save post: Id, Score, AnswerCount, Title, Body
 		postdoc.add(new StringField("postid", Integer.toString(postInfo.postId), Field.Store.YES));
 		postdoc.add(new StringField("postscore", Integer.toString(postInfo.score), Field.Store.YES));
 		postdoc.add(new StringField("postanswers", Integer.toString(postInfo.answerCount), Field.Store.YES));
 		postdoc.add(new Field("posttitle", postInfo.postTitle, indexType));
 		postdoc.add(new Field("postbody", postInfo.postBody, indexType));
-
+		postdoc.add(new StringField("maxtf", Integer.toString(maxTF), Field.Store.YES));
 
 		writer.addDocument(postdoc);
 	}
@@ -115,67 +130,67 @@ public class QueryParagraphs {
 	 * max results per query
 	 * write results to filename
 	 */
-	private void rankPosts(Dump dump, int max, String filename)
-			throws IOException {
-		
-		if (is == null) {
-			is = new IndexSearcher(DirectoryReader.open(FSDirectory
-					.open((new File(INDEX_DIRECTORY).toPath()))));
-		}
-		if (qp == null) {
-			qp = new QueryParser("postbody", new StandardAnalyzer());
-		}
-
-		
-		Query q;
-		TopDocs tds;
-		ScoreDoc[] retDocs;
-		ArrayList<String> runStrings = new ArrayList<String>();
-		
-		while(queries.size() > 0) {
-			String tmpQ = queries.remove(queries.size()-1);
-			try {
-				q = qp.parse(tmpQ);
-				tds = is.search(q, max);
-				retDocs = tds.scoreDocs;
-				
-				Document d;
-				
-				for (int i = 0; i < retDocs.length; i++) {
-					d = is.doc(retDocs[i].doc);
-					String runFileString = tmpQ + " Q0 "
-							+ d.getField("posttitle").stringValue() + " " + i + " "
-							+ tds.scoreDocs[i].score + " team1-" + "method";
-					runStrings.add(runFileString);
-				}
-			} catch (ParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		writeRunfile(filename, runStrings);
-
-	}
-
-
-	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
-		String fullpath = OUTPUT_DIR + "/" + filename;
-		
-		PrintWriter writer;
-		try {
-			writer = new PrintWriter(fullpath, "UTF-8");
-			for (String runString : runfileStrings) {
-				writer.write(runString + "\n");
-			}
-			writer.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+//	private void rankPosts(Dump dump, int max, String filename)
+//			throws IOException {
+//		
+//		if (is == null) {
+//			is = new IndexSearcher(DirectoryReader.open(FSDirectory
+//					.open((new File(INDEX_DIRECTORY).toPath()))));
+//		}
+//		if (qp == null) {
+//			qp = new QueryParser("postbody", new StandardAnalyzer());
+//		}
+//
+//		
+//		Query q;
+//		TopDocs tds;
+//		ScoreDoc[] retDocs;
+//		ArrayList<String> runStrings = new ArrayList<String>();
+//		
+//		while(queries.size() > 0) {
+//			String tmpQ = queries.remove(queries.size()-1);
+//			try {
+//				q = qp.parse(tmpQ);
+//				tds = is.search(q, max);
+//				retDocs = tds.scoreDocs;
+//				
+//				Document d;
+//				
+//				for (int i = 0; i < retDocs.length; i++) {
+//					d = is.doc(retDocs[i].doc);
+//					String runFileString = tmpQ + " Q0 "
+//							+ d.getField("posttitle").stringValue() + " " + i + " "
+//							+ tds.scoreDocs[i].score + " team1-" + "method";
+//					runStrings.add(runFileString);
+//				}
+//			} catch (ParseException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//		}
+//		writeRunfile(filename, runStrings);
+//
+//	}
+//
+//
+//	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
+//		String fullpath = OUTPUT_DIR + "/" + filename;
+//		
+//		PrintWriter writer;
+//		try {
+//			writer = new PrintWriter(fullpath, "UTF-8");
+//			for (String runString : runfileStrings) {
+//				writer.write(runString + "\n");
+//			}
+//			writer.close();
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (UnsupportedEncodingException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 
 	
 	
@@ -203,6 +218,9 @@ public class QueryParagraphs {
 			// Limit returned posts to 30
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(cs_queries, 30);
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/cs-lnc-ltn.run");
+			
+			TFIDF_anc_apc tfidf_anc_apc = new TFIDF_anc_apc(cs_queries, 30);
+			tfidf_anc_apc.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/cs-anc-apc.run");
 
 			// Generate relevance information based on tags
 			// 	all posts that have a specific tag should be marked as
