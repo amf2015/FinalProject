@@ -3,7 +3,7 @@ package edu.unh.cs753853.team1.utils;
 public class ProjectConfig {
 	public static String TEAM_NAME = "Team 1";
 	public static String INDEX_DIRECTORY = "index";
-	public static String OUTPUT_DIRECTORY = "output/";
+	public static String OUTPUT_DIRECTORY = "output";
 	public static String OUTPUT_MODIFIER = "";
 	public static String STACK_DIRECTORY = "stackoverflow/";
 
