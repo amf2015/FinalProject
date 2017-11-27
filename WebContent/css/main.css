@@ -1,0 +1,106 @@
+body {
+	font: 15px/1.3 'Open Sans', sans-serif;
+	text-align: left;
+	background-color: #F5F5F5;
+	height: 100%;
+}
+
+
+.app {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+	
+}
+
+
+.app .header {
+	flex: 0 1 auto;
+}
+
+.app .ContentContainer {
+	flex: 1 1 auto;
+	height: 700px;
+}
+
+
+.app .footer {
+	flex: 0 1 3em;
+	font-size: 13px;
+	position: relative;
+	padding-top: 10px;
+	color: #fff;
+	text-align: center;
+	background-color: #c2c2c2
+}
+
+/*-------------------------
+	Nav Bar
+--------------------------*/
+.navbar {
+	margin-top: 0.65em;
+	color: #fff;
+}
+s
+.navbar .searchBar{
+	display: inline;
+	margin: auto;
+	padding-top: 0.5em;
+    width: 70%;
+}
+
+.navbar .searchBar .searchBox {
+	width:50%;
+}
+
+.navbar .searchBar .searchBtn {
+	background-color: #f2a900;
+	box-shadow: 0 1px 1px #ccc;
+	border-radius: 2px;
+	color: #fff;
+}
+
+.navbar .searchBar>button:hover {
+	color: #5e5b64;
+	background-color: white;
+}
+
+
+.navbar-brand {
+	float: left;
+	height: 50px;
+	padding: 6px 15px;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.navbar-default {
+	
+}
+
+ul.NavBar {
+	margin-top: 0px;
+	background-color: #f2a900;
+	box-shadow: 0 1px 1px #ccc;
+	border-radius: 2px;
+	color: #fff;
+}
+
+
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	background-color: transparent;
+	-webkit-transition: background-color 0.25s;
+	-moz-transition: background-color 0.25s;
+	transition: background-color 0.25s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #5e5b64;
+	background-color: white;
+}
