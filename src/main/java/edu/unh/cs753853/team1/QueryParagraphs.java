@@ -2,7 +2,6 @@ package edu.unh.cs753853.team1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -30,12 +29,8 @@ import org.apache.lucene.store.FSDirectory;
 
 import edu.unh.cs753853.team1.entities.Dump;
 import edu.unh.cs753853.team1.entities.Post;
-import edu.unh.cs753853.team1.entities.Tag;
-import edu.unh.cs753853.team1.entities.User;
-import edu.unh.cs753853.team1.entities.Vote;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
-import edu.unh.cs753853.team1.ranking.DocumentResult;
 import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
@@ -162,68 +157,6 @@ public class QueryParagraphs {
 
 	}
 
-	/*
-	private ArrayList<Data.Page> getPageListFromPath(String path) {
-		ArrayList<Data.Page> pageList = new ArrayList<Data.Page>();
-		try {
-			FileInputStream fis = new FileInputStream(new File(path));
-			for (Data.Page page : DeserializeData.iterableAnnotations(fis)) {
-				pageList.add(page);
-				//System.out.println(page.toString());
-
-			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (RuntimeCborException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return pageList;
-	}
-
-	// Function to read run file and store in hashmap inside HashMap
-	public static HashMap<String, HashMap<String, String>> read_dataFile(
-			String file_name) {
-		HashMap<String, HashMap<String, String>> query = new HashMap<String, HashMap<String, String>>();
-
-		File f = new File(file_name);
-		BufferedReader br = null;
-		try {
-			br = new BufferedReader(new FileReader(f));
-			ArrayList<String> al = new ArrayList<>();
-			String text = null;
-			while ((text = br.readLine()) != null) {
-				String queryId = text.split(" ")[0];
-				String paraID = text.split(" ")[2];
-				String rank = text.split(" ")[3];
-
-				if (al.contains(queryId))
-					query.get(queryId).put(paraID, rank);
-				else {
-					HashMap<String, String> docs = new HashMap<String, String>();
-					docs.put(paraID, rank);
-					query.put(queryId, docs);
-					al.add(queryId);
-				}
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		try {
-			if (br != null)
-				br.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		return query;
-	}
-
-	*/
 
 	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
 		String fullpath = OUTPUT_DIR + "/" + filename;
