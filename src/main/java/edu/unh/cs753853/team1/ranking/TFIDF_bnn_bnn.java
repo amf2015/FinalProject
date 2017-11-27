@@ -12,7 +12,6 @@ import org.apache.lucene.search.similarities.BasicStats;
 import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
 
-import edu.unh.cs753853.team1.DocumentResults;
 
 import java.io.*;
 import java.util.*;
@@ -66,7 +65,7 @@ public class TFIDF_bnn_bnn {
 	private int numDocs = 100;
 		
 	// map of queries to document results with scores
-	HashMap<Query, ArrayList<DocumentResults> > queryResults;
+	HashMap<Query, ArrayList<DocumentResult> > queryResults;
 	
 	
 	// directory  structure..
