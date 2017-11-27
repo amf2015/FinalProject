@@ -183,6 +183,11 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
+			if(args.length == 1)
+			{
+				System.out.println(args[0]);
+			}
+
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
 			Dump cs_stackexchange = q.indexDump(ProjectConfig.CS_STACK_DIRECTORY);
 
