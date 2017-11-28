@@ -31,6 +31,7 @@ import edu.unh.cs753853.team1.entities.Dump;
 import edu.unh.cs753853.team1.entities.Post;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
+import edu.unh.cs753853.team1.ranking.DocumentResult;
 import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
@@ -194,20 +195,29 @@ public class QueryParagraphs {
 			Dump dmp = q.indexDump(queryDirectory);
 
 			// Use our tags as test queries
-			ArrayList<String> cs_queries = dmp.getReadableTagNames();
+			ArrayList<String> queries = dmp.getReadableTagNames();
 
 //			try {
 				//q.rankPosts(dmp, 20, "rankOutput");
 //			} 
 
 			// Limit returned posts to 30
-			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(cs_queries, 30);
+			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "-lnc-ltn.run");
+
+			ArrayList<Post> rankedPosts = new ArrayList<>();
+			for(DocumentResult result: tfidf_lnc_ltn.getResultsForQuery(queries.get(0))) {
+				int postId = result.getId();
+				Post post = dmp.getPostById(postId);
+				rankedPosts.add(post);
+			}
+
+
 
 			// Generate relevance information based on tags
 			// 	all posts that have a specific tag should be marked as
 			//  relevant given a search query which is that tag
-			ProjectUtils.writeQrelsFile(cs_queries, dmp, "tags");
+			ProjectUtils.writeQrelsFile(queries, dmp, "tags");
 
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();

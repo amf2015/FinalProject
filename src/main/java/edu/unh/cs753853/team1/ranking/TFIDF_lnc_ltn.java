@@ -198,11 +198,12 @@ public class TFIDF_lnc_ltn {
 
     }
 
-    public HashMap<String, ArrayList<DocumentResult>> getQueryResults()
-    {
+    public HashMap<String, ArrayList<DocumentResult>> getQueryResults() {
         return this.queryResults;
     }
 
-
+    public ArrayList<DocumentResult> getResultsForQuery(String query) {
+        return this.queryResults.get(query);
+    }
 
 }
