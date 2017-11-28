@@ -141,9 +141,9 @@ public class TFIDF_anc_apc {
                 {   // For every returned document...
                     Document doc = searcher.doc(tpd.scoreDocs[i].doc);                  // Get the document
                     int docId = Integer.parseInt(doc.get("postid"));
-                    float numerator = Float.parseFloat(doc.get("maxtf"));
+                    float max = Float.parseFloat(doc.get("maxtf"));
               
-                    double score = (0.5f + (numerator / tpd.scoreDocs[i].score)) * queryweights.get(query);    // Calculate TF-IDF for document
+                    double score = (0.5f + (tpd.scoreDocs[i].score/max)) * queryweights.get(query);    // Calculate TF-IDF for document
 
                     DocumentResult dResults = docMap.get(docId);
                     if(dResults == null)
