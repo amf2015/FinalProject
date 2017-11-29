@@ -164,7 +164,7 @@ public class TFIDF_bnn_bnn {
             queryResults.put(page, docResults);
         }
 
-        System.out.println("\tWriting results to: " + runfile);
+        System.out.println("\t-> Writing results to: " + runfile);
         FileWriter runfileWriter = new FileWriter(new File(runfile));
         for (Map.Entry<String, ArrayList<DocumentResult>> results : queryResults
                 .entrySet()) {

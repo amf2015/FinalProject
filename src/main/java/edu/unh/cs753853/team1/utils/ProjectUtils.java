@@ -133,7 +133,7 @@ public class ProjectUtils {
 	}
 
 	public static void status(int current, int overall, String descriptor) {
-		System.out.println("(" + current + "/" + overall + ") -> " + descriptor);
+		System.out.println("\n(" + current + "/" + overall + "):\t" + descriptor);
 	}
 
 }
