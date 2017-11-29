@@ -181,7 +181,7 @@ public class TFIDF_lnc_ltn {
         }
 
 
-        System.out.println("TFIDF_lnc_ltn writing results to: " + runfile);
+        System.out.println("\tWriting results to: " + runfile);
         FileWriter runfileWriter = new FileWriter(new File(runfile));
         for(Map.Entry<String, ArrayList<DocumentResult>> results: queryResults.entrySet())
         {
