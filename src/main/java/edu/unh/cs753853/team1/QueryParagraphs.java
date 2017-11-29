@@ -48,8 +48,6 @@ public class QueryParagraphs {
 	// directory structure..
 	static final String INDEX_DIRECTORY = ProjectConfig.INDEX_DIRECTORY;
 	static final private String OUTPUT_DIR = ProjectConfig.OUTPUT_DIRECTORY;
-	
-	private ArrayList<String> queries;
 
 	private Dump indexDump(String dumpDir) throws IOException {
 		Dump dmp = new Dump();
@@ -105,20 +103,14 @@ public class QueryParagraphs {
 		writer.addDocument(postdoc);
 	}
 	
-	
-	void addQuery(String s) {
-		if(queries == null) {
-			queries = new ArrayList<String>();
-		}
-		queries.add(s);
-	}
-	
+
+
 	/*
 	 * dump
 	 * max results per query
 	 * write results to filename
 	 */
-	private void rankPosts(Dump dump, int max, String filename)
+	private void rankPosts(ArrayList<String> queries, int max, String filename)
 			throws IOException {
 		
 		if (is == null) {
@@ -146,7 +138,7 @@ public class QueryParagraphs {
 				
 				for (int i = 0; i < retDocs.length; i++) {
 					d = is.doc(retDocs[i].doc);
-					String runFileString = tmpQ + " Q0 "
+					String runFileString = tmpQ.replace(" ", "-") + " Q0 "
 							+ d.getField("posttitle").stringValue() + " " + i + " "
 							+ tds.scoreDocs[i].score + " team1-" + "method";
 					runStrings.add(runFileString);
@@ -199,9 +191,7 @@ public class QueryParagraphs {
 			// Use our tags as test queries
 			ArrayList<String> queries = dmp.getReadableTagNames();
 
-//			try {
-				//q.rankPosts(dmp, 20, "rankOutput");
-//			} 
+            q.rankPosts(queries, 30, ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "-lucene.run");
 
 			// Limit returned posts to 30
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
