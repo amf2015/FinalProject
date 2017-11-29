@@ -176,16 +176,23 @@ public class QueryParagraphs {
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
-		    String indexDirectory = ProjectConfig.STACK_DIRECTORY;
+			// Default .xml dump directory ("stackoverflow/")
+		    String dumpDirectory = ProjectConfig.STACK_DIRECTORY;
+
+		    // Argument allows user to specify .xml dump directory, defaults to ProjectConfig.STACK_DIRECTORY ("stackoverflow/")
 			if(args.length == 1)
 			{
-				indexDirectory += args[0];
+			    // If we have an argument, add it to the end of the default directory
+				// 	e.g. "stackoverflow/" + arg[0]
+				dumpDirectory += args[0];
+				// Set a modifier so that we can label files and keep track of which directory they
+				// were indexed from.
 				ProjectConfig.set_OUTPUT_MODIFIER(args[0].replace("/","") + "-");
 			}
 
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
             ProjectUtils.status(0, 5, "Index .xml files");
-			Dump dmp = q.indexDump(indexDirectory);
+			Dump dmp = q.indexDump(dumpDirectory);
 
 			// Use our tags as test queries
 			ArrayList<String> queries = dmp.getReadableTagNames();
