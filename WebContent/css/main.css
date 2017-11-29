@@ -20,7 +20,8 @@ body {
 
 .app .ContentContainer {
 	flex: 1 1 auto;
-	height: 700px;
+	width:80%;
+	margin:auto;
 }
 
 

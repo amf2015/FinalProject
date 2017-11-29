@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="./js-lib/angular-ui-router.min.js"></script>
-<script src="./js-lib/ui-bootstrap-1.2.4.min.js"></script>
 <script src="./js-lib/projectControl.js"></script>
 
 
@@ -18,7 +18,7 @@
 <link rel="shortcut icon" href="./css/favicon.ico">
 
 </head>
-<body data-ng-app="mainControl">
+<body data-ng-app="main">
 <div class="app">
 	<nav class="navbar navbar-default header">
 		<div class="container-fluid">
@@ -30,10 +30,10 @@
 					</a>
 			</div>
 			<div class="collapse navbar-collapse" id="projectNavbar">
-					<div class="nav navbar-nav NavBar searchBar">
+					<div class="nav navbar-nav NavBar searchBar" data-ng-controller="QueryController">
 					<form class="form-inline" id="searchBar">
-          				<input class="form-control searchBox" type="text" placeholder="Ask me a question?" aria-label="Search">
-          				<button class="btn btn-outline-success searchBtn" type="submit">Search</button>
+          				<input class="form-control searchBox" type="text" placeholder="Ask me a question?" aria-label="Search" ng-model="search">
+          				<button class="btn btn-outline-success searchBtn" data-ng-click="query()" data-ui-sref="Query">Search</button>
         			</form>
         			</div>
 					<ul class="nav navbar-nav navbar-right NavBar">
