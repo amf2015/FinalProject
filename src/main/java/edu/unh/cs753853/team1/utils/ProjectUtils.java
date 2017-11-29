@@ -136,4 +136,8 @@ public class ProjectUtils {
 		System.out.println("\n(" + current + "/" + overall + "):\t" + descriptor);
 	}
 
+	public static void substatus(String descriptor) {
+		System.out.println(" ->\t" + descriptor);
+	}
+
 }

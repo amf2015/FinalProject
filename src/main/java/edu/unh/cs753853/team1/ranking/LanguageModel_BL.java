@@ -37,6 +37,7 @@ import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
 
 import edu.unh.cs753853.team1.utils.ProjectConfig;
+import edu.unh.cs753853.team1.utils.ProjectUtils;
 
 //Bigram Language Model with Laplace smoothing.
 public class LanguageModel_BL {
@@ -98,7 +99,7 @@ public class LanguageModel_BL {
             queryResults.put(pageQuery, rankedDocs);
         }
 
-        System.out.println(" ->\tWriting results to: " + runfile);
+        ProjectUtils.substatus("Writing results to: " + runfile);
         FileWriter runfileWriter = new FileWriter(new File(runfile));
         for (Map.Entry<String, ArrayList<DocumentResult>> results : queryResults
                 .entrySet()) {

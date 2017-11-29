@@ -16,6 +16,8 @@ import org.apache.lucene.index.IndexReader;
 import java.io.*;
 import java.util.*;
 
+import edu.unh.cs753853.team1.utils.ProjectUtils;
+
 public class TFIDF_bnn_bnn {
 
     private IndexSearcher searcher; // lucene IndexSearcher
@@ -164,7 +166,7 @@ public class TFIDF_bnn_bnn {
             queryResults.put(page, docResults);
         }
 
-        System.out.println(" ->\tWriting results to: " + runfile);
+        ProjectUtils.substatus("Writing results to: " + runfile);
         FileWriter runfileWriter = new FileWriter(new File(runfile));
         for (Map.Entry<String, ArrayList<DocumentResult>> results : queryResults
                 .entrySet()) {

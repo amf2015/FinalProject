@@ -16,6 +16,8 @@ import org.apache.lucene.store.FSDirectory;
 import java.io.*;
 import java.util.*;
 
+import edu.unh.cs753853.team1.utils.ProjectUtils;
+
 class ResultComparator implements Comparator<DocumentResult>
 {
     public int compare(DocumentResult d2, DocumentResult d1)
@@ -181,7 +183,7 @@ public class TFIDF_lnc_ltn {
         }
 
 
-        System.out.println(" ->\tWriting results to: " + runfile);
+        ProjectUtils.substatus("Writing results to: " + runfile);
         FileWriter runfileWriter = new FileWriter(new File(runfile));
         for(Map.Entry<String, ArrayList<DocumentResult>> results: queryResults.entrySet())
         {
