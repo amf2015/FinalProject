@@ -109,7 +109,7 @@ public class LanguageModel_BL {
                 DocumentResult dr = list.get(i);
                 runfileWriter.write(query.replace(" ", "-") + " Q0 " + dr.getId() + " "
                         + dr.getRank() + " " + dr.getScore()
-                        + " team1-TFIDF_bnn_bnn\n");
+                        + " team1-LM_BL\n");
             }
         }
         runfileWriter.close();
