@@ -213,6 +213,7 @@ public class QueryParagraphs {
 			ProjectUtils.status(5, 5, "Generate .qrels file (pseudo relevance)");
 			ProjectUtils.writeQrelsFile(queries, dmp, "tags");
 
+			System.out.println();
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
