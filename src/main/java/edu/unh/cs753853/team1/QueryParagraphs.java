@@ -32,6 +32,7 @@ import edu.unh.cs753853.team1.entities.Post;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
 import edu.unh.cs753853.team1.ranking.DocumentResult;
+import edu.unh.cs753853.team1.ranking.TFIDF_bnn_bnn;
 import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
@@ -205,13 +206,8 @@ public class QueryParagraphs {
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
 			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "-lnc-ltn.run");
 
-			ArrayList<Post> rankedPosts = new ArrayList<>();
-			for(DocumentResult result: tfidf_lnc_ltn.getResultsForQuery(queries.get(0))) {
-				int postId = result.getId();
-				Post post = dmp.getPostById(postId);
-				rankedPosts.add(post);
-			}
-
+			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(queries, 30);
+			tfidf_bnn_bnn.storeScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "-bnn-bnn.run");
 
 
 			// Generate relevance information based on tags
