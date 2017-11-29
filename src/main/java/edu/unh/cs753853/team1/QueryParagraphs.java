@@ -140,7 +140,7 @@ public class QueryParagraphs {
 					d = is.doc(retDocs[i].doc);
 					String runFileString = tmpQ.replace(" ", "-") + " Q0 "
 							+ d.getField("postid").stringValue() + " " + i + " "
-							+ tds.scoreDocs[i].score + " team1-" + "method";
+							+ tds.scoreDocs[i].score + " team1-" + "lucene-default";
 					runStrings.add(runFileString);
 				}
 			} catch (ParseException e) {
