@@ -127,8 +127,7 @@ public class QueryParagraphs {
 		ScoreDoc[] retDocs;
 		ArrayList<String> runStrings = new ArrayList<>();
 		
-		while(queries.size() > 0) {
-			String tmpQ = queries.remove(queries.size()-1);
+		for(String tmpQ: queries) {
 			try {
 				q = qp.parse(tmpQ);
 				tds = is.search(q, max);
@@ -181,7 +180,7 @@ public class QueryParagraphs {
 			if(args.length == 1)
 			{
 				indexDirectory += args[0];
-				ProjectConfig.set_OUTPUT_MODIFIER(args[0].replace("/",""));
+				ProjectConfig.set_OUTPUT_MODIFIER(args[0].replace("/","") + "-");
 			}
 
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
@@ -192,20 +191,20 @@ public class QueryParagraphs {
 			ArrayList<String> queries = dmp.getReadableTagNames();
 
 			ProjectUtils.status(1, 5, "Lucene Default ranking");
-            q.rankPosts(queries, 30, ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "-lucene.run");
+            q.rankPosts(queries, 30, ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lucene.run");
 
 			// Limit returned posts to 30
 			ProjectUtils.status(2, 5, "TFIDF(lnc.ltn) ranking");
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
-			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "-lnc-ltn.run");
+			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lnc-ltn.run");
 
 			ProjectUtils.status(3, 5, "TFIDF(bnn.bnn) ranking");
 			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(queries, 30);
-			tfidf_bnn_bnn.storeScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "-bnn-bnn.run");
+			tfidf_bnn_bnn.storeScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "bnn-bnn.run");
 
 			ProjectUtils.status(4, 5, "Language Model(BL) ranking");
 			LanguageModel_BL bigram = new LanguageModel_BL(queries, 30);
-			bigram.generateResults(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "-LM-BL.run");
+			bigram.generateResults(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "LM-BL.run");
 
 			// Generate relevance information based on tags
 			// 	all posts that have a specific tag should be marked as
