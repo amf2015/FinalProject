@@ -107,7 +107,7 @@ public class PostParser {
 			ProjectUtils.substatus("Starting parse of " + postsFile + "...");
 			postParser.parse(inputFile, handler);
 			posts = handler.getPosts();
-			ProjectUtils.substatus(" ->\tParsed " + posts.size() + " posts");
+			ProjectUtils.substatus("Parsed " + posts.size() + " posts");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
