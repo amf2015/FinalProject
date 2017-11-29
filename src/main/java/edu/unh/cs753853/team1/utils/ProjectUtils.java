@@ -131,4 +131,9 @@ public class ProjectUtils {
 		String jsonPosts = gson.toJson(rankedPosts, listType);
 		System.out.println(jsonPosts);
 	}
+
+	public static void status(int current, int overall, String descriptor) {
+		System.out.println("(" + current + "/" + overall + ") -> " + descriptor);
+	}
+
 }
