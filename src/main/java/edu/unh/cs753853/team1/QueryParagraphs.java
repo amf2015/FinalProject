@@ -154,7 +154,7 @@ public class QueryParagraphs {
 
 
 	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
-		String fullpath = OUTPUT_DIR + "/" + filename;
+		String fullpath = filename;
 		
 		PrintWriter writer;
 		try {
