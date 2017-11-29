@@ -46,7 +46,7 @@ public class Dump {
             for (String t : p.tagList) {
                 p.tagMap.put(t, tag.get(t));
                 if(!tagToPost.containsKey(t)) {
-                    tagToPost.put(t, new ArrayList<>());
+                    tagToPost.put(t, new ArrayList<String>());
                 }
                 ArrayList<String> posts = tagToPost.get(t);
                 posts.add(Integer.toString(p.postId));

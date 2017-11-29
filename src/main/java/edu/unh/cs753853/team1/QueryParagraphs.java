@@ -1,13 +1,20 @@
 package edu.unh.cs753853.team1;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -33,6 +40,7 @@ import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
 import edu.unh.cs753853.team1.ranking.DocumentResult;
 import edu.unh.cs753853.team1.ranking.LanguageModel_BL;
+import edu.unh.cs753853.team1.ranking.RankInfo;
 import edu.unh.cs753853.team1.ranking.TFIDF_bnn_bnn;
 import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
@@ -103,8 +111,6 @@ public class QueryParagraphs {
 		writer.addDocument(postdoc);
 	}
 	
-
-
 	/*
 	 * dump
 	 * max results per query
@@ -170,15 +176,13 @@ public class QueryParagraphs {
 			e.printStackTrace();
 		}
 	}
-
-
-
+	
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
 			// Default .xml dump directory ("stackoverflow/")
 		    String dumpDirectory = ProjectConfig.STACK_DIRECTORY;
-
+		    
 		    // Argument allows user to specify .xml dump directory, defaults to ProjectConfig.STACK_DIRECTORY ("stackoverflow/")
 			if(args.length == 1)
 			{
@@ -189,7 +193,19 @@ public class QueryParagraphs {
 				// were indexed from.
 				ProjectConfig.set_OUTPUT_MODIFIER(args[0].replace("/","") + "-");
 			}
+			
+            ArrayList<String> writeStringList = new ArrayList<String>();
 
+			HashMap<String, ArrayList<RankInfo>> result_bnn_bnn = new HashMap<>();
+
+			HashMap<String, ArrayList<RankInfo>> result_lnc_ltn = new HashMap<>();
+
+			HashMap<String, ArrayList<RankInfo>> result_BL = new HashMap<>();
+
+			HashMap<String, ArrayList<RankInfo>> result_Lucene = new HashMap<>();
+			
+			
+			
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
             ProjectUtils.status(0, 5, "Index .xml files");
 			Dump dmp = q.indexDump(dumpDirectory);
@@ -218,10 +234,167 @@ public class QueryParagraphs {
 			//  relevant given a search query which is that tag
 			ProjectUtils.status(5, 5, "Generate .qrels file (pseudo relevance)");
 			ProjectUtils.writeQrelsFile(queries, dmp, "tags");
+			
+			 for(String page : queries) {
+				System.out.println("Page="+page);
+					ArrayList<RankInfo> bnn_list = result_bnn_bnn.get(page);
+					ArrayList<RankInfo> lnc_list = result_lnc_ltn.get(page);
+					ArrayList<RankInfo> bl_list = result_BL.get(page);
+					ArrayList<RankInfo>lucene_list=result_Lucene.get(page);
+					
+			
+					
+					HashMap<String, HashMap<String, String>> relevance_data = read_dataFile(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "tags.qrels");
+					HashMap<String, String> relevantDocs = relevance_data.get(page);
+					
+					ArrayList<Integer> total_unique_docs = getAllUniqueDocumentId(bnn_list, lnc_list, bl_list,lucene_list);
+					
+					
+					
 
-			System.out.println();
-		} catch (IOException | ParseException e) {
+					System.out.println("Total :" + total_unique_docs.size() + " docs for Query: " + page);
+					 System.out.println(bnn_list.size() + " = " + lnc_list.size());
+					
+					
+					/*
+					 * bnn_bnn:1, lnc_ltn:2, UL:3, Lucene:4
+					 */
+					for (Integer id : total_unique_docs) {
+						RankInfo r1 = getRankInfoById(id, bnn_list);
+						RankInfo r2 = getRankInfoById(id, lnc_list);
+						RankInfo r3 = getRankInfoById(id, bl_list);
+						RankInfo r4 = getRankInfoById(id, lucene_list);
+					
+
+						float f1 = (float) ((r1 == null) ? 0.0 : (float) 1 / r1.getRank());
+						float f2 = (float) ((r2 == null) ? 0.0 : (float) 1 / r2.getRank());
+						float f3 = (float) ((r3 == null) ? 0.0 : (float) 1 / r3.getRank());
+						float f4 = (float) ((r4 == null) ? 0.0 : (float) 1 / r4.getRank());
+						
+						int relevant = 0;
+						if (relevantDocs.get(id) != null) {
+							if (Integer.parseInt(relevantDocs.get(id)) > 0) {
+								relevant = 1;
+							}
+						}
+
+						String line = relevant + " qid:" + page + " 1:" + f1 + " 2:" + f2 + " 3:" + f3 + " 4:" + f4 +" # DocId:" + id;
+						writeStringList.add(line);
+						
+			 }
+					
+			
+	}
+		}
+		catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
 	}
-}
+
+	public static ArrayList<Integer> getAllUniqueDocumentId(ArrayList<RankInfo> bnn_list, ArrayList<RankInfo> lnc_list,
+			ArrayList<RankInfo> bl_list,ArrayList<RankInfo>lucene_list) {
+
+		ArrayList<Integer> total_documents = new ArrayList<Integer>();
+		ArrayList<RankInfo> total_rankInfo = new ArrayList<RankInfo>();
+
+		total_rankInfo.addAll(bnn_list);
+		total_rankInfo.addAll(lnc_list);
+		total_rankInfo.addAll(bl_list);
+		total_rankInfo.addAll(lucene_list);
+	
+
+		for (RankInfo rank : total_rankInfo) {
+			//total_documents.add(rank.getParaId());
+			total_documents.add(rank.getDocId());
+		}
+
+		Set<Integer> hs = new HashSet<>();
+
+		hs.addAll(total_documents);
+		total_documents.clear();
+		total_documents.addAll(hs);
+
+		return total_documents;
+	}
+
+	// Function to read run file and store in hashmap inside HashMap
+		public static HashMap<String, HashMap<String, String>> read_dataFile(String file_name) {
+			HashMap<String, HashMap<String, String>> query = new HashMap<String, HashMap<String, String>>();
+
+			File f = new File(file_name);
+			BufferedReader br = null;
+			try {
+				br = new BufferedReader(new FileReader(f));
+				ArrayList<String> al = new ArrayList<>();
+				String text = null;
+				while ((text = br.readLine()) != null) {
+					String queryId = text.split(" ")[0];
+					String paraID = text.split(" ")[2];
+					String rank = text.split(" ")[3];
+
+					if (al.contains(queryId))
+						query.get(queryId).put(paraID, rank);
+					else {
+						HashMap<String, String> docs = new HashMap<String, String>();
+						docs.put(paraID, rank);
+						query.put(queryId, docs);
+						al.add(queryId);
+					}
+				}
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+			try {
+				if (br != null)
+					br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+			return query;
+		}
+
+		
+		public void writeDataFile(String filename, ArrayList<String> datafileString) {
+			String fullpath = OUTPUT_DIR + "/" + filename;
+			try (FileWriter runfile = new FileWriter(new File(fullpath))) {
+				for (String line : datafileString) {
+					runfile.write(line + "\n");
+				}
+
+				runfile.close();
+			} catch (IOException e) {
+				System.out.println("Could not open " + fullpath);
+			}
+		}
+
+
+		private static RankInfo getRankInfoById(Integer id, ArrayList<RankInfo> list) {
+			if (list == null || list.isEmpty()) {
+				return null;
+			}
+			for (RankInfo rank : list) {
+				 {
+					return rank;
+				}
+			}
+			return null;
+		}
+
+		private static ArrayList<String> getContentResult(ArrayList<RankInfo> list) {
+			ArrayList<String> result = new ArrayList<>();
+			if (list != null && list.size() > 0) {
+				for (RankInfo rank : list) {
+					String line = rank.getRank() + " : " + rank.getParaContent();
+					result.add(line);
+				}
+			}
+
+			return result;
+		}
+	}
+
+

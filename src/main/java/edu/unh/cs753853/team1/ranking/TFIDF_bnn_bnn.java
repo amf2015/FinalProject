@@ -65,6 +65,9 @@ public class TFIDF_bnn_bnn {
      * @throws IOException
      * @throws ParseException
      */
+    
+
+	//public HashMap<String, ArrayList<RankInfo>> getResult() throws ParseException, IOException {    
     public void storeScoresTo(String runfile) throws IOException,
             ParseException {
 
