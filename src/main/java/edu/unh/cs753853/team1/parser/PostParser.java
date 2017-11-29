@@ -103,10 +103,10 @@ public class PostParser {
 			SAXParser postParser = factory.newSAXParser();
 			PostHandler handler = new PostHandler();
 
-			System.out.println("\t-> Starting parse of " + postsFile + "...");
+			System.out.println(" ->\tStarting parse of " + postsFile + "...");
 			postParser.parse(inputFile, handler);
 			posts = handler.getPosts();
-			System.out.println("\t-> Parsed " + posts.size() + " posts");
+			System.out.println(" ->\tParsed " + posts.size() + " posts");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
