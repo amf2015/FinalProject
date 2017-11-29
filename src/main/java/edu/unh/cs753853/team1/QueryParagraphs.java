@@ -139,7 +139,7 @@ public class QueryParagraphs {
 				for (int i = 0; i < retDocs.length; i++) {
 					d = is.doc(retDocs[i].doc);
 					String runFileString = tmpQ.replace(" ", "-") + " Q0 "
-							+ d.getField("posttitle").stringValue() + " " + i + " "
+							+ d.getField("postid").stringValue() + " " + i + " "
 							+ tds.scoreDocs[i].score + " team1-" + "method";
 					runStrings.add(runFileString);
 				}
