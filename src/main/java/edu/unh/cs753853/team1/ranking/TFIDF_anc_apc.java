@@ -232,7 +232,7 @@ public class TFIDF_anc_apc {
 		return this.queryResults;
 	}
 
-	public void write() {
+	public void write() throws IOException {
 		System.out.println("TFIDF_anc_apc writing results to: " + ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "anc-apc.run");
 		FileWriter runfileWriter = new FileWriter(new File(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "anc-apc.run"));
 		for (Map.Entry<String, ArrayList<DocumentResult>> results :
@@ -241,8 +241,7 @@ public class TFIDF_anc_apc {
 			ArrayList<DocumentResult> list = results.getValue();
 			for (int i = 0; i < list.size(); i++) {
 				DocumentResult dr = list.get(i);
-				runfileWriter.write(query.replace(" ", "-") + " Q0 " + dr.getId() + "
-						" + dr.getRank() + " "
+				runfileWriter.write(query.replace(" ", "-") + " Q0 " + dr.getId() + " " + dr.getRank() + " "
 								+ dr.getScore() + " team1-TFIDF_anc_apc\n");
 			}
 		}
