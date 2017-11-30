@@ -172,6 +172,7 @@ public class QueryParagraphs {
 			ProjectUtils.status(1, 5, "TFIDF(anc.apc) ranking");
 			TFIDF_anc_apc tfidf_anc_apc = new TFIDF_anc_apc(queries, 30);
 			result_anc_apc = tfidf_anc_apc.getResults();
+			tfidf_anc_apc.write();
 
 			// Limit returned posts to 30
 			ProjectUtils.status(2, 5, "TFIDF(lnc.ltn) ranking");
