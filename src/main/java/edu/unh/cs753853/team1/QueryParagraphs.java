@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
@@ -23,8 +22,6 @@ import org.apache.lucene.index.IndexOptions;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.queryparser.classic.ParseException;
-import org.apache.lucene.queryparser.classic.QueryParser;
-import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
@@ -41,9 +38,6 @@ import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
 
 public class QueryParagraphs {
-
-	private IndexSearcher is = null;
-	private QueryParser qp = null;
 
 	// directory structure..
 	static final String INDEX_DIRECTORY = ProjectConfig.INDEX_DIRECTORY;
@@ -114,49 +108,6 @@ public class QueryParagraphs {
 
 		writer.addDocument(postdoc);
 	}
-
-	/*
-	 * dump max results per query write results to filename
-	 */
-	// private void rankPosts(ArrayList<String> queries, int max, String
-	// filename) throws IOException {
-	//
-	// if (is == null) {
-	// is = new IndexSearcher(DirectoryReader.open(FSDirectory.open((new
-	// File(INDEX_DIRECTORY).toPath()))));
-	// }
-	// if (qp == null) {
-	// qp = new QueryParser("postbody", new StandardAnalyzer());
-	// }
-	//
-	// Query q;
-	// TopDocs tds;
-	// ScoreDoc[] retDocs;
-	// ArrayList<String> runStrings = new ArrayList<>();
-	//
-	// for (String tmpQ : queries) {
-	// try {
-	// q = qp.parse(tmpQ);
-	// tds = is.search(q, max);
-	// retDocs = tds.scoreDocs;
-	//
-	// Document d;
-	//
-	// for (int i = 0; i < retDocs.length; i++) {
-	// d = is.doc(retDocs[i].doc);
-	// String runFileString = tmpQ.replace(" ", "-") + " Q0 " +
-	// d.getField("postid").stringValue() + " "
-	// + i + " " + tds.scoreDocs[i].score + " team1-" + "lucene-default";
-	// runStrings.add(runFileString);
-	// }
-	// } catch (ParseException e) {
-	// // TODO Auto-generated catch block
-	// e.printStackTrace();
-	// }
-	// }
-	// writeRunfile(filename, runStrings);
-	//
-	// }
 
 	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
 		String fullpath = filename;
@@ -272,10 +223,14 @@ public class QueryParagraphs {
 					float f4 = (float) ((r4 == null) ? 0.0 : (float) 1 / r4.getRank());
 
 					int relevant = 0;
-					if (relevantDocs.get(id) != null) {
-						if (Integer.parseInt(relevantDocs.get(id)) > 0) {
-							relevant = 1;
+					if (relevantDocs != null) {
+						if (relevantDocs.get(id) != null) {
+							if (Integer.parseInt(relevantDocs.get(id)) > 0) {
+								relevant = 1;
+							}
 						}
+					} else {
+						System.out.println("There is no relevant data for Query " + id);
 					}
 
 					String line = relevant + " qid:" + page + " 1:" + f1 + " 2:" + f2 + " 3:" + f3 + " 4:" + f4
@@ -283,6 +238,7 @@ public class QueryParagraphs {
 					writeStringList.add(line);
 
 				}
+				ProjectUtils.writeToFile("test_result.txt", writeStringList);
 
 			}
 		} catch (IOException | ParseException e) {
@@ -354,19 +310,6 @@ public class QueryParagraphs {
 		}
 
 		return query;
-	}
-
-	public void writeDataFile(String filename, ArrayList<String> datafileString) {
-		String fullpath = OUTPUT_DIR + "/" + filename;
-		try (FileWriter runfile = new FileWriter(new File(fullpath))) {
-			for (String line : datafileString) {
-				runfile.write(line + "\n");
-			}
-
-			runfile.close();
-		} catch (IOException e) {
-			System.out.println("Could not open " + fullpath);
-		}
 	}
 
 	private static DocumentResult getDocumentResultById(Integer id, ArrayList<DocumentResult> list) {
