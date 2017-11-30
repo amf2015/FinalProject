@@ -3,6 +3,7 @@ package edu.unh.cs753853.team1.utils;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import java.util.TimeZone;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 import edu.unh.cs753853.team1.entities.Dump;
 
@@ -113,4 +115,20 @@ public class ProjectUtils {
 		// Write all qrel-lines to the descriptor with .qrels extension
 		writeToFile(descriptor + ".qrels", qrelsOutput);
 	}
+
+	public static void generateJSON(ArrayList<Post> rankedPosts) {
+	    Type listType = new TypeToken<ArrayList<Post>>() {}.getType();
+		gson = new Gson();
+		String jsonPosts = gson.toJson(rankedPosts, listType);
+		System.out.println(jsonPosts);
+	}
+
+	public static void status(int current, int overall, String descriptor) {
+		System.out.println("\n(" + current + "/" + overall + "):\t" + descriptor);
+	}
+
+	public static void substatus(String descriptor) {
+		System.out.println(" ->\t" + descriptor);
+	}
+
 }

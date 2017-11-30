@@ -4,8 +4,8 @@ public class ProjectConfig {
 	public static String TEAM_NAME = "Team 1";
 	public static String INDEX_DIRECTORY = "index";
 	public static String OUTPUT_DIRECTORY = "output";
-	public static String STACK_DIRECTORY = "stackoverflow";
-	public static String CS_STACK_DIRECTORY = "stackoverflow/cs_stackoverflow/";
+	public static String OUTPUT_MODIFIER = "";
+	public static String STACK_DIRECTORY = "stackoverflow/";
 
 	// Method
 	public static String METHOD_BNN_BNN = "bnn_bnn";
@@ -39,6 +39,11 @@ public class ProjectConfig {
 
 	public static void setOUTPUT_DIRECTORY(String oUTPUT_DIRECTORY) {
 		OUTPUT_DIRECTORY = oUTPUT_DIRECTORY;
+	}
+
+	public static void set_OUTPUT_MODIFIER(String modifier)
+	{
+		OUTPUT_MODIFIER = modifier;
 	}
 
 	public static String getSTACK_DIRECTORY() {

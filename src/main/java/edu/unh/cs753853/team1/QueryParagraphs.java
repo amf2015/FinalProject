@@ -31,6 +31,12 @@ import edu.unh.cs753853.team1.entities.Dump;
 import edu.unh.cs753853.team1.entities.Post;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
+<<<<<<< HEAD
+=======
+import edu.unh.cs753853.team1.ranking.DocumentResult;
+import edu.unh.cs753853.team1.ranking.LanguageModel_BL;
+import edu.unh.cs753853.team1.ranking.TFIDF_bnn_bnn;
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
@@ -43,8 +49,11 @@ public class QueryParagraphs {
 	// directory structure..
 	static final String INDEX_DIRECTORY = ProjectConfig.INDEX_DIRECTORY;
 	static final private String OUTPUT_DIR = ProjectConfig.OUTPUT_DIRECTORY;
+<<<<<<< HEAD
 
 	private ArrayList<String> queries;
+=======
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 
 	private Dump indexDump(String dumpDir) throws IOException {
 		Dump dmp = new Dump();
@@ -96,6 +105,7 @@ public class QueryParagraphs {
 
 		writer.addDocument(postdoc);
 	}
+<<<<<<< HEAD
 
 	void addQuery(String s) {
 		if (queries == null) {
@@ -103,12 +113,22 @@ public class QueryParagraphs {
 		}
 		queries.add(s);
 	}
+=======
+	
+
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 
 	/*
 	 * dump max results per query write results to filename
 	 */
+<<<<<<< HEAD
 	private void rankPosts(Dump dump, int max, String filename) throws IOException {
 
+=======
+	private void rankPosts(ArrayList<String> queries, int max, String filename)
+			throws IOException {
+		
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 		if (is == null) {
 			is = new IndexSearcher(DirectoryReader.open(FSDirectory.open((new File(INDEX_DIRECTORY).toPath()))));
 		}
@@ -119,10 +139,16 @@ public class QueryParagraphs {
 		Query q;
 		TopDocs tds;
 		ScoreDoc[] retDocs;
+<<<<<<< HEAD
 		ArrayList<String> runStrings = new ArrayList<String>();
 
 		while (queries.size() > 0) {
 			String tmpQ = queries.remove(queries.size() - 1);
+=======
+		ArrayList<String> runStrings = new ArrayList<>();
+		
+		for(String tmpQ: queries) {
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 			try {
 				q = qp.parse(tmpQ);
 				tds = is.search(q, max);
@@ -132,8 +158,14 @@ public class QueryParagraphs {
 
 				for (int i = 0; i < retDocs.length; i++) {
 					d = is.doc(retDocs[i].doc);
+<<<<<<< HEAD
 					String runFileString = tmpQ + " Q0 " + d.getField("posttitle").stringValue() + " " + i + " "
 							+ tds.scoreDocs[i].score + " team1-" + "method";
+=======
+					String runFileString = tmpQ.replace(" ", "-") + " Q0 "
+							+ d.getField("postid").stringValue() + " " + i + " "
+							+ tds.scoreDocs[i].score + " team1-" + "lucene-default";
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 					runStrings.add(runFileString);
 				}
 			} catch (ParseException e) {
@@ -145,6 +177,7 @@ public class QueryParagraphs {
 
 	}
 
+<<<<<<< HEAD
 	/*
 	 * private ArrayList<Data.Page> getPageListFromPath(String path) {
 	 * ArrayList<Data.Page> pageList = new ArrayList<Data.Page>(); try {
@@ -183,6 +216,12 @@ public class QueryParagraphs {
 	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
 		String fullpath = OUTPUT_DIR + "/" + filename;
 
+=======
+
+	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
+		String fullpath = filename;
+		
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 		PrintWriter writer;
 		try {
 			writer = new PrintWriter(fullpath, "UTF-8");
@@ -199,28 +238,72 @@ public class QueryParagraphs {
 		}
 	}
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
+			// Default .xml dump directory ("stackoverflow/")
+		    String dumpDirectory = ProjectConfig.STACK_DIRECTORY;
+
+		    // Argument allows user to specify .xml dump directory, defaults to ProjectConfig.STACK_DIRECTORY ("stackoverflow/")
+			if(args.length == 1)
+			{
+			    // If we have an argument, add it to the end of the default directory
+				// 	e.g. "stackoverflow/" + arg[0]
+				dumpDirectory += args[0];
+				// Set a modifier so that we can label files and keep track of which directory they
+				// were indexed from.
+				ProjectConfig.set_OUTPUT_MODIFIER(args[0].replace("/","") + "-");
+			}
+
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
-			Dump cs_stackexchange = q.indexDump(ProjectConfig.CS_STACK_DIRECTORY);
+            ProjectUtils.status(0, 5, "Index .xml files");
+			Dump dmp = q.indexDump(dumpDirectory);
 
 			// Use our tags as test queries
+<<<<<<< HEAD
 			ArrayList<String> cs_queries = cs_stackexchange.getReadableTagNames();
 
 			// try {
 			// q.rankPosts(dmp, 20, "rankOutput");
 			// }
+=======
+			ArrayList<String> queries = dmp.getReadableTagNames();
+
+			ProjectUtils.status(1, 5, "Lucene Default ranking");
+            q.rankPosts(queries, 30, ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lucene.run");
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 
 			// Limit returned posts to 30
-			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(cs_queries, 30);
-			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/cs-lnc-ltn.run");
+			ProjectUtils.status(2, 5, "TFIDF(lnc.ltn) ranking");
+			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
+			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lnc-ltn.run");
+
+			ProjectUtils.status(3, 5, "TFIDF(bnn.bnn) ranking");
+			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(queries, 30);
+			tfidf_bnn_bnn.storeScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "bnn-bnn.run");
+
+			ProjectUtils.status(4, 5, "Language Model(BL) ranking");
+			LanguageModel_BL bigram = new LanguageModel_BL(queries, 30);
+			bigram.generateResults(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "LM-BL.run");
 
 			// Generate relevance information based on tags
+<<<<<<< HEAD
 			// all posts that have a specific tag should be marked as
 			// relevant given a search query which is that tag
 			ProjectUtils.writeQrelsFile(cs_queries, cs_stackexchange, "tags");
+=======
+			// 	all posts that have a specific tag should be marked as
+			//  relevant given a search query which is that tag
+			ProjectUtils.status(5, 5, "Generate .qrels file (pseudo relevance)");
+			ProjectUtils.writeQrelsFile(queries, dmp, "tags");
+>>>>>>> 7a047cc0192af26dc762b31750c3d8417a98e0d8
 
+			System.out.println();
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}

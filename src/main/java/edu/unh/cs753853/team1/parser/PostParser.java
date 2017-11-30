@@ -13,6 +13,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import edu.unh.cs753853.team1.entities.Post;
+import edu.unh.cs753853.team1.utils.ProjectUtils;
 
 class PostHandler extends DefaultHandler {
 	List<Post> posts;
@@ -61,10 +62,6 @@ class PostHandler extends DefaultHandler {
 				return;
 
 			posts.add(post);
-			if (posts.size() % 10000 == 0)
-				System.out.print(".");
-			if (posts.size() % 100000 == 0)
-				System.out.println(" # " + posts.size() + "");
 		}
 	}
 
@@ -107,10 +104,10 @@ public class PostParser {
 			SAXParser postParser = factory.newSAXParser();
 			PostHandler handler = new PostHandler();
 
-			System.out.println("Starting parse of " + postsFile + "...");
+			ProjectUtils.substatus("Starting parse of " + postsFile + "...");
 			postParser.parse(inputFile, handler);
 			posts = handler.getPosts();
-			System.out.println("\nParsing done.\n Parsed " + posts.size() + " posts");
+			ProjectUtils.substatus("Parsed " + posts.size() + " posts");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

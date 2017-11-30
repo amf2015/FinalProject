@@ -22,12 +22,16 @@ main.directive('clock', ['dateFilter', '$timeout', function(dateFilter, $timeout
 }]);
 
 
-
+//Router Configure.
 main.config(function($stateProvider,$urlRouterProvider){
 	
 	$urlRouterProvider.otherwise("/");
 	
 	$stateProvider
+		.state('/',{
+			url:'/',
+			templateUrl:'web/home-template.html'
+		})
 		.state('Query',{
 			url:"/query?q",
 			controller:"resultController as rc",
@@ -41,7 +45,7 @@ main.config(function($stateProvider,$urlRouterProvider){
 	
 })
 
-
+//Service for HTTTP calls.
 main.service('httpService',function($rootScope,$q,$http,$timeout){
 	this.queryResult = function(queryStr) {
 		var deferred = $q.defer();
@@ -57,13 +61,14 @@ main.service('httpService',function($rootScope,$q,$http,$timeout){
 })
 
 
+//Controller for get query.
 main.controller('QueryController', ['$state', '$scope', '$stateParams', function($state, $scope, $stateParams) {
 	
 	$scope.search = $stateParams.q;	
     $scope.query = function() {
-		console.log("Btn Clicked!")
-      console.log($scope.search)
-      $state.go('Query', { q: $scope.search });
+    console.log("Btn Clicked!")
+    console.log($scope.search)
+    $state.go('Query', { q: $scope.search });
     }
   }]);
 
@@ -73,6 +78,7 @@ main.controller('resultController',['$state', '$scope', '$stateParams','httpServ
 	$scope.query = $stateParams.q;
 	$scope.stackURL  = stackURL;
 	httpService.queryResult($stateParams.q).then(function(result){
+		console.log("Receive "+result.length+" ranked documents.")
 		$scope.resultsSize = result.length;
 		$scope.queryResults = result;
 	})

@@ -20,7 +20,7 @@
 </head>
 <body data-ng-app="main">
 <div class="app">
-	<nav class="navbar navbar-default header">
+	<nav class="navbar navbar-default appHeader">
 		<div class="container-fluid">
 			<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -33,7 +33,7 @@
 					<div class="nav navbar-nav NavBar searchBar" data-ng-controller="QueryController">
 					<form class="form-inline" id="searchBar">
           				<input class="form-control searchBox" type="text" placeholder="Ask me a question?" aria-label="Search" ng-model="search">
-          				<button class="btn btn-outline-success searchBtn" data-ng-click="query()" data-ui-sref="Query">Search</button>
+          				<button class="btn btn-outline-success searchBtn" data-ng-click="query()">Search</button>
         			</form>
         			</div>
 					<ul class="nav navbar-nav navbar-right NavBar">
@@ -43,12 +43,8 @@
 		</div>
 	</nav>
 
-	<div data-ui-view id="ContentContainer" class="ContentContainer">
-		<p>
-			Content Display Area.
-		</p>
-	</div>
-	<footer class="footer" id="footer">
+	<div data-ui-view id="ContentContainer" class="ContentContainer"></div>
+	<footer class="appFooter" id="footer">
 			<p>©Final Project - Team 1 | <a href="mailto:kz1021@wildcats.unh.edu">Bug Report</a></p>
 	</footer>
 </div>
