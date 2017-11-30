@@ -171,6 +171,7 @@ public class TFIDF_bnn_bnn {
         for (Map.Entry<String, ArrayList<DocumentResult>> results : queryResults
                 .entrySet()) {
             String query = results.getKey();
+            System.out.println(query);
             ArrayList<DocumentResult> list = results.getValue();
             for (int i = 0; i < list.size(); i++) {
                 DocumentResult dr = list.get(i);
