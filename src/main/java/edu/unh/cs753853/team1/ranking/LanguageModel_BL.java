@@ -209,7 +209,6 @@ public class LanguageModel_BL {
 				}
 
 				// Caculate score with log;
-				System.out.println(p_wt);
 				float score = getScoreByPListWithLog(p_wt);
 
 				if (doc_score.get(docId) != null) {
@@ -348,7 +347,7 @@ public class LanguageModel_BL {
 				bWriter.newLine();
 			}
 
-			System.out.println("Write all ranking result to run file: " + path);
+			ProjectUtils.substatus("Write all ranking result to run file: " + path);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
