@@ -1,7 +1,6 @@
 package edu.unh.cs753853.team1.ranking;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,8 +22,6 @@ import org.apache.lucene.search.similarities.BasicStats;
 import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
 
-import edu.unh.cs753853.team1.utils.ProjectUtils;
-
 public class TFIDF_bnn_bnn {
 
 	private IndexSearcher searcher; // lucene IndexSearcher
@@ -34,7 +31,7 @@ public class TFIDF_bnn_bnn {
 	private ArrayList<String> queryPageList; // List of pages to query
 
 	// Map of queries list to map of Documents list to scores for that query
-	private HashMap<String, ArrayList<DocumentResult>> queryResults;
+	public HashMap<String, ArrayList<DocumentResult>> queryResults;
 
 	public TFIDF_bnn_bnn(ArrayList<String> pl, int n) throws ParseException, IOException {
 
@@ -67,10 +64,14 @@ public class TFIDF_bnn_bnn {
 	 *
 	 * @param runfile
 	 *            The name of the runfile to output to
+	 * @return
 	 * @throws IOException
 	 * @throws ParseException
 	 */
-	public void storeScoresTo(String runfile) throws IOException, ParseException {
+
+	// public HashMap<String, ArrayList<RankInfo>> getResult() throws
+	// ParseException, IOException {
+	public HashMap<String, ArrayList<DocumentResult>> getResults() throws IOException, ParseException {
 
 		queryResults = new HashMap<>(); // Maps query to map of Documents with
 		// TF-IDF score
@@ -164,19 +165,7 @@ public class TFIDF_bnn_bnn {
 			queryResults.put(page, docResults);
 		}
 
-		ProjectUtils.substatus("Writing results to: " + runfile);
-		FileWriter runfileWriter = new FileWriter(new File(runfile));
-		for (Map.Entry<String, ArrayList<DocumentResult>> results : queryResults.entrySet()) {
-			String query = results.getKey();
-			System.out.println(query);
-			ArrayList<DocumentResult> list = results.getValue();
-			for (int i = 0; i < list.size(); i++) {
-				DocumentResult dr = list.get(i);
-				runfileWriter.write(query.replace(" ", "-") + " Q0 " + dr.getId() + " " + dr.getRank() + " "
-						+ dr.getScore() + " team1-TFIDF_bnn_bnn\n");
-			}
-		}
-		runfileWriter.close();
+		return queryResults;
 
 	}
 

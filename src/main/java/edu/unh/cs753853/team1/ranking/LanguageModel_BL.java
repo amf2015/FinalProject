@@ -76,6 +76,31 @@ public class LanguageModel_BL {
 		searcher.setSimilarity(bl_sim);
 	}
 
+	public HashMap<String, ArrayList<DocumentResult>> getReulst() {
+		queryResults = new HashMap<>();
+
+		for (String pageQuery : queryPageList) {
+			ArrayList<DocumentResult> rankedDocs = new ArrayList<DocumentResult>();
+			HashMap<Integer, Float> result_map = getRankedDocuments(pageQuery);
+
+			int rankCount = 0;
+			for (Map.Entry<Integer, Float> entry : result_map.entrySet()) {
+				int docId = entry.getKey();
+				Float score = entry.getValue();
+
+				DocumentResult docResult = new DocumentResult(docId, score);
+				docResult.setRank(rankCount);
+				rankCount++;
+
+				rankedDocs.add(docResult);
+			}
+
+			queryResults.put(pageQuery, rankedDocs);
+		}
+		return queryResults;
+
+	}
+
 	public void generateResults(String runfile) throws IOException, ParseException {
 
 		queryResults = new HashMap<>();

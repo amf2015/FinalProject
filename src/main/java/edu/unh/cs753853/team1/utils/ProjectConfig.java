@@ -6,6 +6,9 @@ public class ProjectConfig {
 	public static String OUTPUT_DIRECTORY = "output";
 	public static String OUTPUT_MODIFIER = "";
 	public static String STACK_DIRECTORY = "stackoverflow/";
+	static final private String Cbor_ARTICLE = "tags.qrels";
+	
+    
 
 	// Method
 	public static String METHOD_BNN_BNN = "bnn_bnn";
