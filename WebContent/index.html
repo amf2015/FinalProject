@@ -2,13 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Test Page</title>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js-lib/angular-ui-router.min.js"></script>
+<script src="./js-lib/projectControl.js"></script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+
+
+<title>Ask Me!</title>
+<link rel="shortcut icon" href="./css/favicon.ico">
+
 </head>
-<body>
+<body data-ng-app="main">
+<div class="app">
+	<nav class="navbar navbar-default appHeader">
+		<div class="container-fluid">
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">AskMe<sup>Beta</sup><br><clock format="HH:mm:ss"></clock>
+					</a>
+			</div>
+			<div class="collapse navbar-collapse" id="projectNavbar">
+					<div class="nav navbar-nav NavBar searchBar" data-ng-controller="QueryController">
+					<form class="form-inline" id="searchBar">
+          				<input class="form-control searchBox" type="text" placeholder="Ask me a question?" aria-label="Search" ng-model="search">
+          				<button class="btn btn-outline-success searchBtn" data-ng-click="query()">Search</button>
+        			</form>
+        			</div>
+					<ul class="nav navbar-nav navbar-right NavBar">
+						<li class="projectBtn"><a data-ui-sref="Help">HELP <i class="fa fa-question-circle"></i></a></li>
+					</ul>
+			</div>
+		</div>
+	</nav>
 
-<p>
-	index page
-</p>
-
+	<div data-ui-view id="ContentContainer" class="ContentContainer"></div>
+	<footer class="appFooter" id="footer">
+			<p>©Final Project - Team 1 | <a href="mailto:kz1021@wildcats.unh.edu">Bug Report</a></p>
+	</footer>
+</div>
 </body>
 </html>

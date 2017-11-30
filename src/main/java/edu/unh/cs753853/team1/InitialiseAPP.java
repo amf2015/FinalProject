@@ -3,13 +3,14 @@ package edu.unh.cs753853.team1;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-public class AppInitialise implements ServletContextListener {
+public class InitialiseAPP implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent servletContextEvent) {
 		System.out.println("Application Starting up!");
 
-		// Call function to initialize project.
+		// Call function to initialize project and index.
+		//
 	}
 
 	@Override
