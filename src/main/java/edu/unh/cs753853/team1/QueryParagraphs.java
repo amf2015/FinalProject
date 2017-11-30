@@ -133,36 +133,109 @@ public class QueryParagraphs {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
 			// Default .xml dump directory ("stackoverflow/")
-			String dumpDirectory = ProjectConfig.STACK_DIRECTORY + "cs_stackoverflow";
+			String dumpDirectory = ProjectConfig.STACK_DIRECTORY;
 
-			ArrayList<String> queries = new ArrayList<>();
-			queries.add(query);
+			ArrayList<String> writeStringList = new ArrayList<String>();
+			HashMap<String, ArrayList<DocumentResult>> result_lucene = new HashMap<>();
+
+			HashMap<String, ArrayList<DocumentResult>> result_anc_apc = new HashMap<>();
+
+			HashMap<String, ArrayList<DocumentResult>> result_bnn_bnn = new HashMap<>();
+
+			HashMap<String, ArrayList<DocumentResult>> result_lnc_ltn = new HashMap<>();
+
+			HashMap<String, ArrayList<DocumentResult>> result_BL = new HashMap<>();
 
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
+			ProjectUtils.status(0, 5, "Index .xml files");
 			Dump dmp = q.indexDump(dumpDirectory);
 
-			q.rankPosts(queries, 30,
-					ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lucene.run");
+			// Use our tags as test queries
+			ArrayList<String> queries = dmp.getReadableTagNames();
+
+			// ProjectUtils.status(1, 5, "Lucene Default ranking");
+			// LuceneDefault lucene = new LuceneDefault(queries, 30);
+			// result_lucene = lucene.getResults();
+
+			ProjectUtils.status(1, 5, "TFIDF(anc.apc) ranking");
+			TFIDF_anc_apc tfidf_anc_apc = new TFIDF_anc_apc(queries, 30);
+			result_anc_apc = tfidf_anc_apc.getResults();
+			tfidf_anc_apc.write();
 
 			// Limit returned posts to 30
+			ProjectUtils.status(2, 5, "TFIDF(lnc.ltn) ranking");
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
-			tfidf_lnc_ltn
-					.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lnc-ltn.run");
+			result_lnc_ltn = tfidf_lnc_ltn.getResult();
 
+			ArrayList<DocumentResult> results = tfidf_lnc_ltn.getResultsForQuery(queries.get(0));
+			json = ProjectUtils.generateJSON(ProjectUtils.getPostsFromResults(results, dmp));
+
+			ProjectUtils.status(3, 5, "TFIDF(bnn.bnn) ranking");
 			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(queries, 30);
-			tfidf_bnn_bnn.storeScoresTo(
-					ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "bnn-bnn.run");
+			result_bnn_bnn = tfidf_bnn_bnn.getResults();
 
+			ProjectUtils.status(4, 5, "Language Model(BL) ranking");
 			LanguageModel_BL bigram = new LanguageModel_BL(queries, 30);
-			bigram.generateResults(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "LM-BL.run");
+			result_BL = bigram.getReulst();
 
-			ArrayList<Post> posts = ProjectUtils.getPostsFromResults(tfidf_lnc_ltn.getResultsForQuery(query), dmp);
-			json = ProjectUtils.generateJSON(posts);
+			// Generate relevance information based on tags
+			// all posts that have a specific tag should be marked as
+			// relevant given a search query which is that tag
+			ProjectUtils.status(5, 5, "Generate .qrels file (pseudo relevance)");
+			ProjectUtils.writeQrelsFile(queries, dmp, ProjectConfig.OUTPUT_MODIFIER + "tags");
 
+			for (String page : queries) {
+				System.out.println("Page=" + page);
+				ArrayList<DocumentResult> bnn_list = result_bnn_bnn.get(page);
+				ArrayList<DocumentResult> lnc_list = result_lnc_ltn.get(page);
+				ArrayList<DocumentResult> bl_list = result_BL.get(page);
+				ArrayList<DocumentResult> anc_list = result_anc_apc.get(page);
+
+				HashMap<String, HashMap<String, String>> relevance_data = read_dataFile(
+						ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "tags.qrels");
+				HashMap<String, String> relevantDocs = relevance_data.get(page);
+
+				ArrayList<Integer> total_unique_docs = getAllUniqueDocumentId(bnn_list, lnc_list, bl_list, anc_list);
+
+				System.out.println("Total :" + total_unique_docs.size() + " docs for Query: " + page);
+				System.out.println(bnn_list.size() + " = " + lnc_list.size());
+
+				/*
+				 * bnn_bnn:1, lnc_ltn:2, BL:3, anc_apc:4
+				 */
+				for (Integer id : total_unique_docs) {
+					DocumentResult r1 = getDocumentResultById(id, bnn_list);
+					DocumentResult r2 = getDocumentResultById(id, lnc_list);
+					DocumentResult r3 = getDocumentResultById(id, bl_list);
+					DocumentResult r4 = getDocumentResultById(id, anc_list);
+
+					float f1 = (float) ((r1 == null) ? 0.0 : (float) 1 / r1.getRank());
+					float f2 = (float) ((r2 == null) ? 0.0 : (float) 1 / r2.getRank());
+					float f3 = (float) ((r3 == null) ? 0.0 : (float) 1 / r3.getRank());
+					float f4 = (float) ((r4 == null) ? 0.0 : (float) 1 / r4.getRank());
+
+					int relevant = 0;
+					if (relevantDocs != null) {
+						if (relevantDocs.get(id) != null) {
+							if (Integer.parseInt(relevantDocs.get(id)) > 0) {
+								relevant = 1;
+							}
+						}
+					} else {
+						System.out.println("There is no relevant data for Query " + id);
+					}
+
+					String line = relevant + " qid:" + page + " 1:" + f1 + " 2:" + f2 + " 3:" + f3 + " 4:" + f4
+							+ " # DocId:" + id;
+					writeStringList.add(line);
+
+				}
+				ProjectUtils.writeToFile("test_result.txt", writeStringList);
+
+			}
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();
 		}
-
 		return json;
 	}
 
