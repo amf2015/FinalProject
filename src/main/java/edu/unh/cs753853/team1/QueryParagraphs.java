@@ -31,16 +31,13 @@ import edu.unh.cs753853.team1.entities.Dump;
 import edu.unh.cs753853.team1.entities.Post;
 import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
-import edu.unh.cs753853.team1.ranking.DocumentResult;
 import edu.unh.cs753853.team1.ranking.LanguageModel_BL;
 import edu.unh.cs753853.team1.ranking.TFIDF_bnn_bnn;
 import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
 import edu.unh.cs753853.team1.utils.ProjectUtils;
 
-
 public class QueryParagraphs {
-
 
 	private IndexSearcher is = null;
 	private QueryParser qp = null;
@@ -82,8 +79,6 @@ public class QueryParagraphs {
 
 		return dmp;
 	}
-	
-	
 
 	private void indexPost(IndexWriter writer, Post postInfo) throws IOException {
 		Document postdoc = new Document();
@@ -99,47 +94,38 @@ public class QueryParagraphs {
 		postdoc.add(new Field("posttitle", postInfo.postTitle, indexType));
 		postdoc.add(new Field("postbody", postInfo.postBody, indexType));
 
-
 		writer.addDocument(postdoc);
 	}
-	
-
 
 	/*
-	 * dump
-	 * max results per query
-	 * write results to filename
+	 * dump max results per query write results to filename
 	 */
-	private void rankPosts(ArrayList<String> queries, int max, String filename)
-			throws IOException {
-		
+	private void rankPosts(ArrayList<String> queries, int max, String filename) throws IOException {
+
 		if (is == null) {
-			is = new IndexSearcher(DirectoryReader.open(FSDirectory
-					.open((new File(INDEX_DIRECTORY).toPath()))));
+			is = new IndexSearcher(DirectoryReader.open(FSDirectory.open((new File(INDEX_DIRECTORY).toPath()))));
 		}
 		if (qp == null) {
 			qp = new QueryParser("postbody", new StandardAnalyzer());
 		}
 
-		
 		Query q;
 		TopDocs tds;
 		ScoreDoc[] retDocs;
 		ArrayList<String> runStrings = new ArrayList<>();
-		
-		for(String tmpQ: queries) {
+
+		for (String tmpQ : queries) {
 			try {
 				q = qp.parse(tmpQ);
 				tds = is.search(q, max);
 				retDocs = tds.scoreDocs;
-				
+
 				Document d;
-				
+
 				for (int i = 0; i < retDocs.length; i++) {
 					d = is.doc(retDocs[i].doc);
-					String runFileString = tmpQ.replace(" ", "-") + " Q0 "
-							+ d.getField("postid").stringValue() + " " + i + " "
-							+ tds.scoreDocs[i].score + " team1-" + "lucene-default";
+					String runFileString = tmpQ.replace(" ", "-") + " Q0 " + d.getField("postid").stringValue() + " "
+							+ i + " " + tds.scoreDocs[i].score + " team1-" + "lucene-default";
 					runStrings.add(runFileString);
 				}
 			} catch (ParseException e) {
@@ -151,10 +137,9 @@ public class QueryParagraphs {
 
 	}
 
-
 	public void writeRunfile(String filename, ArrayList<String> runfileStrings) {
 		String fullpath = filename;
-		
+
 		PrintWriter writer;
 		try {
 			writer = new PrintWriter(fullpath, "UTF-8");
@@ -171,51 +156,54 @@ public class QueryParagraphs {
 		}
 	}
 
-
-
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
 			// Default .xml dump directory ("stackoverflow/")
-		    String dumpDirectory = ProjectConfig.STACK_DIRECTORY;
+			String dumpDirectory = ProjectConfig.STACK_DIRECTORY;
 
-		    // Argument allows user to specify .xml dump directory, defaults to ProjectConfig.STACK_DIRECTORY ("stackoverflow/")
-			if(args.length == 1)
-			{
-			    // If we have an argument, add it to the end of the default directory
-				// 	e.g. "stackoverflow/" + arg[0]
+			// Argument allows user to specify .xml dump directory, defaults to
+			// ProjectConfig.STACK_DIRECTORY ("stackoverflow/")
+			if (args.length == 1) {
+				// If we have an argument, add it to the end of the default
+				// directory
+				// e.g. "stackoverflow/" + arg[0]
 				dumpDirectory += args[0];
-				// Set a modifier so that we can label files and keep track of which directory they
+				// Set a modifier so that we can label files and keep track of
+				// which directory they
 				// were indexed from.
-				ProjectConfig.set_OUTPUT_MODIFIER(args[0].replace("/","") + "-");
+				ProjectConfig.set_OUTPUT_MODIFIER(args[0].replace("/", "") + "-");
 			}
 
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
-            ProjectUtils.status(0, 5, "Index .xml files");
+			ProjectUtils.status(0, 5, "Index .xml files");
 			Dump dmp = q.indexDump(dumpDirectory);
 
 			// Use our tags as test queries
 			ArrayList<String> queries = dmp.getReadableTagNames();
 
 			ProjectUtils.status(1, 5, "Lucene Default ranking");
-            q.rankPosts(queries, 30, ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lucene.run");
+			q.rankPosts(queries, 30,
+					ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lucene.run");
 
 			// Limit returned posts to 30
 			ProjectUtils.status(2, 5, "TFIDF(lnc.ltn) ranking");
 			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
-			tfidf_lnc_ltn.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lnc-ltn.run");
+			tfidf_lnc_ltn
+					.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lnc-ltn.run");
 
 			ProjectUtils.status(3, 5, "TFIDF(bnn.bnn) ranking");
 			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(queries, 30);
-			tfidf_bnn_bnn.storeScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "bnn-bnn.run");
+			tfidf_bnn_bnn.storeScoresTo(
+					ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "bnn-bnn.run");
 
 			ProjectUtils.status(4, 5, "Language Model(BL) ranking");
 			LanguageModel_BL bigram = new LanguageModel_BL(queries, 30);
 			bigram.generateResults(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "LM-BL.run");
 
 			// Generate relevance information based on tags
-			// 	all posts that have a specific tag should be marked as
-			//  relevant given a search query which is that tag
+			// all posts that have a specific tag should be marked as
+			// relevant given a search query which is that tag
 			ProjectUtils.status(5, 5, "Generate .qrels file (pseudo relevance)");
 			ProjectUtils.writeQrelsFile(queries, dmp, "tags");
 

@@ -1,0 +1,24 @@
+<html>
+<body>
+	<h1>Found {{resultsSize}} Results:</h1>
+	<p>Query: {{query}}</p>
+
+	<div ng-repeat="doc in queryResults" class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion"
+						data-target="#collapse{{$index}}"> {{$index+1}}. {{doc.postTitle}}</a>
+				</h4>
+				<small>{{doc.tags}}</small>
+			</div>
+			<div id="collapse{{$index}}" class="panel-collapse collapse">
+				<div class="panel-body">
+				<p><a href="{{stackURL}}{{doc.postId}}" target="_blank">{{doc.postBody}}</a>></p>
+				<small>Accept Answear: {{doc.favoriteCount}}     Answear Count: {{doc.answerCount}}</small>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
