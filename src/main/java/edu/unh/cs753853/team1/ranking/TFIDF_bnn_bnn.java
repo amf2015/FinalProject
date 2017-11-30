@@ -173,4 +173,8 @@ public class TFIDF_bnn_bnn {
 		return this.queryResults;
 	}
 
+	public ArrayList<DocumentResult> getResultsForQuery(String query) {
+		return this.queryResults.get(query);
+	}
+
 }

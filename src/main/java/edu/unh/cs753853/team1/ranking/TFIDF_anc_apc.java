@@ -1,6 +1,7 @@
 package edu.unh.cs753853.team1.ranking;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,6 +22,8 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.similarities.BasicStats;
 import org.apache.lucene.search.similarities.SimilarityBase;
 import org.apache.lucene.store.FSDirectory;
+
+import edu.unh.cs753853.team1.utils.ProjectConfig;
 
 //class ResultComparator implements Comparator<DocumentResult>
 //{
@@ -79,7 +82,6 @@ public class TFIDF_anc_apc {
 
 	/**
 	 *
-	 * @param runfile
 	 *            The name of the runfile to output to
 	 * @return
 	 * @throws IOException
@@ -223,28 +225,29 @@ public class TFIDF_anc_apc {
 			// Map our Documents and scores to the corresponding query
 			queryResults.put(page, docResults);
 		}
-
 		return queryResults;
-
-		// System.out.println("TFIDF_anc_apc writing results to: " + runfile);
-		// FileWriter runfileWriter = new FileWriter(new File(runfile));
-		// for (Map.Entry<String, ArrayList<DocumentResult>> results :
-		// queryResults.entrySet()) {
-		// String query = results.getKey();
-		// ArrayList<DocumentResult> list = results.getValue();
-		// for (int i = 0; i < list.size(); i++) {
-		// DocumentResult dr = list.get(i);
-		// runfileWriter.write(query.replace(" ", "-") + " Q0 " + dr.getId() + "
-		// " + dr.getRank() + " "
-		// + dr.getScore() + " team1-TFIDF_anc_apc\n");
-		// }
-		// }
-		// runfileWriter.close();
-
 	}
 
 	public HashMap<String, ArrayList<DocumentResult>> getQueryResults() {
 		return this.queryResults;
+	}
+
+	public void write() {
+		System.out.println("TFIDF_anc_apc writing results to: " + ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "anc-apc.run");
+		FileWriter runfileWriter = new FileWriter(new File(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "anc-apc.run"));
+		for (Map.Entry<String, ArrayList<DocumentResult>> results :
+				queryResults.entrySet()) {
+			String query = results.getKey();
+			ArrayList<DocumentResult> list = results.getValue();
+			for (int i = 0; i < list.size(); i++) {
+				DocumentResult dr = list.get(i);
+				runfileWriter.write(query.replace(" ", "-") + " Q0 " + dr.getId() + "
+						" + dr.getRank() + " "
+								+ dr.getScore() + " team1-TFIDF_anc_apc\n");
+			}
+		}
+		runfileWriter.close();
+
 	}
 
 }

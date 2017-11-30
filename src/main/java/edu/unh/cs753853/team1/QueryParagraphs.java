@@ -128,6 +128,44 @@ public class QueryParagraphs {
 		}
 	}
 
+	public static String getResults(String query) {
+	    String json = "";
+		QueryParagraphs q = new QueryParagraphs();
+		try {
+			// Default .xml dump directory ("stackoverflow/")
+			String dumpDirectory = ProjectConfig.STACK_DIRECTORY + "cs_stackoverflow";
+
+			ArrayList<String> queries = new ArrayList<>();
+			queries.add(query);
+
+			// Parse the .xml files from cs.stackexchange.com into a Dump Object
+			Dump dmp = q.indexDump(dumpDirectory);
+
+			q.rankPosts(queries, 30,
+					ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lucene.run");
+
+			// Limit returned posts to 30
+			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
+			tfidf_lnc_ltn
+					.dumpScoresTo(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "lnc-ltn.run");
+
+			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(queries, 30);
+			tfidf_bnn_bnn.storeScoresTo(
+					ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "bnn-bnn.run");
+
+			LanguageModel_BL bigram = new LanguageModel_BL(queries, 30);
+			bigram.generateResults(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "LM-BL.run");
+
+			ArrayList<Post> posts = ProjectUtils.getPostsFromResults(tfidf_lnc_ltn.getResultsForQuery(query), dmp);
+			json = ProjectUtils.generateJSON(posts);
+
+		} catch (IOException | ParseException e) {
+			e.printStackTrace();
+		}
+
+		return json;
+	}
+
 	public static void main(String[] args) {
 		QueryParagraphs q = new QueryParagraphs();
 		try {
@@ -172,6 +210,7 @@ public class QueryParagraphs {
 			ProjectUtils.status(1, 5, "TFIDF(anc.apc) ranking");
 			TFIDF_anc_apc tfidf_anc_apc = new TFIDF_anc_apc(queries, 30);
 			result_anc_apc = tfidf_anc_apc.getResults();
+			tfidf_anc_apc.write();
 
 			// Limit returned posts to 30
 			ProjectUtils.status(2, 5, "TFIDF(lnc.ltn) ranking");

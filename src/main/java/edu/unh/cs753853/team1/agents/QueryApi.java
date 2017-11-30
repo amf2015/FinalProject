@@ -5,6 +5,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 
+import edu.unh.cs753853.team1.QueryParagraphs;
+
 @Path("/query")
 public class QueryApi {
 
@@ -16,7 +18,7 @@ public class QueryApi {
 
 		// Call rank function to get result with query
 
-		String result = "Fake reuslt with Query:" + query;
+		String result = QueryParagraphs.getResults(query);
 
 		return Response.status(200).entity(result).build();
 
