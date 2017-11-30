@@ -243,7 +243,7 @@ public class QueryParagraphs {
 			// all posts that have a specific tag should be marked as
 			// relevant given a search query which is that tag
 			ProjectUtils.status(5, 5, "Generate .qrels file (pseudo relevance)");
-			ProjectUtils.writeQrelsFile(queries, dmp, "tags");
+			ProjectUtils.writeQrelsFile(queries, dmp, ProjectConfig.OUTPUT_MODIFIER + "tags");
 
 			System.out.println();
 		} catch (IOException | ParseException e) {
