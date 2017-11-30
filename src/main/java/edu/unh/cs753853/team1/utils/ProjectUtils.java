@@ -17,6 +17,7 @@ import com.google.gson.reflect.TypeToken;
 
 import edu.unh.cs753853.team1.entities.Dump;
 import edu.unh.cs753853.team1.entities.Post;
+import edu.unh.cs753853.team1.ranking.DocumentResult;
 
 public class ProjectUtils {
 	public static final String df = "yyyy-MM-dd";
@@ -117,12 +118,23 @@ public class ProjectUtils {
 		writeToFile(descriptor + ".qrels", qrelsOutput);
 	}
 
-	public static void generateJSON(ArrayList<Post> rankedPosts) {
+	public static String generateJSON(ArrayList<Post> rankedPosts) {
 		Type listType = new TypeToken<ArrayList<Post>>() {
 		}.getType();
 		gson = new Gson();
 		String jsonPosts = gson.toJson(rankedPosts, listType);
 		System.out.println(jsonPosts);
+		return jsonPosts;
+	}
+
+	public static ArrayList<Post> getPostsFromResults(ArrayList<DocumentResult> results, Dump dmp) {
+		ArrayList<Post> posts = new ArrayList<>();
+		for(DocumentResult result: results) {
+			Post post = dmp.getPostById(result.getId());
+			posts.add(post);
+		}
+
+		return posts;
 	}
 
 	public static void status(int current, int overall, String descriptor) {

@@ -365,4 +365,8 @@ public class LanguageModel_BL {
 
 	}
 
+	public ArrayList<DocumentResult> getResultsForQuery(String query) {
+		return this.queryResults.get(query);
+	}
+
 }
