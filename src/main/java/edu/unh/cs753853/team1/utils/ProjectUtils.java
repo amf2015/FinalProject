@@ -16,6 +16,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import edu.unh.cs753853.team1.entities.Dump;
+import edu.unh.cs753853.team1.entities.Post;
 
 public class ProjectUtils {
 	public static final String df = "yyyy-MM-dd";
@@ -117,7 +118,8 @@ public class ProjectUtils {
 	}
 
 	public static void generateJSON(ArrayList<Post> rankedPosts) {
-	    Type listType = new TypeToken<ArrayList<Post>>() {}.getType();
+		Type listType = new TypeToken<ArrayList<Post>>() {
+		}.getType();
 		gson = new Gson();
 		String jsonPosts = gson.toJson(rankedPosts, listType);
 		System.out.println(jsonPosts);
