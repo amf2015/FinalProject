@@ -34,7 +34,7 @@ import edu.unh.cs753853.team1.parser.PostParser;
 import edu.unh.cs753853.team1.parser.TagParser;
 import edu.unh.cs753853.team1.ranking.DocumentResult;
 import edu.unh.cs753853.team1.ranking.LanguageModel_BL;
-import edu.unh.cs753853.team1.ranking.LuceneDefault;
+import edu.unh.cs753853.team1.ranking.TFIDF_anc_apc;
 import edu.unh.cs753853.team1.ranking.TFIDF_bnn_bnn;
 import edu.unh.cs753853.team1.ranking.TFIDF_lnc_ltn;
 import edu.unh.cs753853.team1.utils.ProjectConfig;
@@ -90,12 +90,27 @@ public class QueryParagraphs {
 		indexType.setStored(true);
 		indexType.setStoreTermVectors(true);
 
+		// count max tf for each doc
+		HashMap<String, Integer> tf = new HashMap<>();
+		int maxTF = 0;
+		for (String cur : postInfo.postBody.split(" ")) {
+			if (tf.containsKey(cur)) {
+				tf.put(cur, tf.get(cur) + 1);
+			} else {
+				tf.put(cur, 1);
+			}
+			if (tf.get(cur) > maxTF) {
+				maxTF = tf.get(cur);
+			}
+		}
+
 		// Save post: Id, Score, AnswerCount, Title, Body
 		postdoc.add(new StringField("postid", Integer.toString(postInfo.postId), Field.Store.YES));
 		postdoc.add(new StringField("postscore", Integer.toString(postInfo.score), Field.Store.YES));
 		postdoc.add(new StringField("postanswers", Integer.toString(postInfo.answerCount), Field.Store.YES));
 		postdoc.add(new Field("posttitle", postInfo.postTitle, indexType));
 		postdoc.add(new Field("postbody", postInfo.postBody, indexType));
+		postdoc.add(new StringField("maxtf", Integer.toString(maxTF), Field.Store.YES));
 
 		writer.addDocument(postdoc);
 	}
@@ -184,13 +199,13 @@ public class QueryParagraphs {
 			ArrayList<String> writeStringList = new ArrayList<String>();
 			HashMap<String, ArrayList<DocumentResult>> result_lucene = new HashMap<>();
 
+			HashMap<String, ArrayList<DocumentResult>> result_anc_apc = new HashMap<>();
+
 			HashMap<String, ArrayList<DocumentResult>> result_bnn_bnn = new HashMap<>();
 
 			HashMap<String, ArrayList<DocumentResult>> result_lnc_ltn = new HashMap<>();
 
 			HashMap<String, ArrayList<DocumentResult>> result_BL = new HashMap<>();
-
-			HashMap<String, ArrayList<DocumentResult>> result_Lucene = new HashMap<>();
 
 			// Parse the .xml files from cs.stackexchange.com into a Dump Object
 			ProjectUtils.status(0, 5, "Index .xml files");
@@ -199,9 +214,13 @@ public class QueryParagraphs {
 			// Use our tags as test queries
 			ArrayList<String> queries = dmp.getReadableTagNames();
 
-			ProjectUtils.status(1, 5, "Lucene Default ranking");
-			LuceneDefault lucene = new LuceneDefault(queries, 30);
-			result_lucene = lucene.getResults();
+			// ProjectUtils.status(1, 5, "Lucene Default ranking");
+			// LuceneDefault lucene = new LuceneDefault(queries, 30);
+			// result_lucene = lucene.getResults();
+
+			ProjectUtils.status(1, 5, "TFIDF(anc.apc) ranking");
+			TFIDF_anc_apc tfidf_anc_apc = new TFIDF_anc_apc(queries, 30);
+			result_anc_apc = tfidf_anc_apc.getResults();
 
 			// Limit returned posts to 30
 			ProjectUtils.status(2, 5, "TFIDF(lnc.ltn) ranking");
@@ -227,25 +246,25 @@ public class QueryParagraphs {
 				ArrayList<DocumentResult> bnn_list = result_bnn_bnn.get(page);
 				ArrayList<DocumentResult> lnc_list = result_lnc_ltn.get(page);
 				ArrayList<DocumentResult> bl_list = result_BL.get(page);
-				ArrayList<DocumentResult> lucene_list = result_Lucene.get(page);
+				ArrayList<DocumentResult> anc_list = result_anc_apc.get(page);
 
 				HashMap<String, HashMap<String, String>> relevance_data = read_dataFile(
 						ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "tags.qrels");
 				HashMap<String, String> relevantDocs = relevance_data.get(page);
 
-				ArrayList<Integer> total_unique_docs = getAllUniqueDocumentId(bnn_list, lnc_list, bl_list, lucene_list);
+				ArrayList<Integer> total_unique_docs = getAllUniqueDocumentId(bnn_list, lnc_list, bl_list, anc_list);
 
 				System.out.println("Total :" + total_unique_docs.size() + " docs for Query: " + page);
 				System.out.println(bnn_list.size() + " = " + lnc_list.size());
 
 				/*
-				 * bnn_bnn:1, lnc_ltn:2, UL:3, Lucene:4
+				 * bnn_bnn:1, lnc_ltn:2, BL:3, anc_apc:4
 				 */
 				for (Integer id : total_unique_docs) {
 					DocumentResult r1 = getDocumentResultById(id, bnn_list);
 					DocumentResult r2 = getDocumentResultById(id, lnc_list);
 					DocumentResult r3 = getDocumentResultById(id, bl_list);
-					DocumentResult r4 = getDocumentResultById(id, lucene_list);
+					DocumentResult r4 = getDocumentResultById(id, anc_list);
 
 					float f1 = (float) ((r1 == null) ? 0.0 : (float) 1 / r1.getRank());
 					float f2 = (float) ((r2 == null) ? 0.0 : (float) 1 / r2.getRank());

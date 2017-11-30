@@ -49,12 +49,16 @@ public class LuceneDefault {
 					Document doc = searcher.doc(retDocs[i].doc);
 					int docId = Integer.parseInt(doc.get("postid"));
 					// String docBody = doc.get("postbody");
-
+					System.out.println(docId + " === " + retDocs[i].score);
 					DocumentResult ranked = new DocumentResult(docId, retDocs[i].score);
+					ranked.setRank(i);
 					rankedList.add(ranked);
 				}
-
-				queryResults.put(queryStr, rankedList);
+				if (rankedList.size() > 0) {
+					queryResults.put(queryStr, rankedList);
+				} else {
+					System.out.println("Empty result for " + queryStr);
+				}
 			}
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
