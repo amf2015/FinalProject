@@ -10,6 +10,7 @@ public class InitialiseAPP implements ServletContextListener {
 		System.out.println("Application Starting up!");
 
 		// Call function to initialize project and index.
+		QueryManager qm = QueryManager.getInstance();
 		//
 	}
 

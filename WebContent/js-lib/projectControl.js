@@ -1,6 +1,6 @@
 var main = angular.module("main", ["ui.router","ui.bootstrap"]);
 
-var agentURL = "http://localhost:8080"+"/FinalProject-Team1/rest";
+var agentURL = "http://localhost:8080/FinalProject-Team1/rest";
 var stackURL = "https://cs.stackexchange.com/questions/";
 
 //Clock on Index Page
@@ -50,7 +50,7 @@ main.config(function($stateProvider,$urlRouterProvider){
 main.service('httpService',function($rootScope,$q,$http,$timeout){
 	this.queryResult = function(queryStr) {
 		var deferred = $q.defer();
-		return $http.get('web/testResult.json')//(agentUrl+'/query'+queryStr)
+		return $http.get(agentURL+'/query/'+queryStr)
 				.then(function (response){
 				deferred.resolve(response.data);
 				return deferred.promise;

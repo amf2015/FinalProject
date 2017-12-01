@@ -129,11 +129,15 @@ public class QueryParagraphs {
 	}
 
 	public static String getResults(String query) {
-	    String json = "";
+		String json = "";
 		QueryParagraphs q = new QueryParagraphs();
 		try {
 			// Default .xml dump directory ("stackoverflow/")
 			String dumpDirectory = ProjectConfig.STACK_DIRECTORY;
+
+			ArrayList<String> queryList = new ArrayList<>();
+
+			queryList.add(query);
 
 			ArrayList<String> writeStringList = new ArrayList<String>();
 			HashMap<String, ArrayList<DocumentResult>> result_lucene = new HashMap<>();
@@ -158,24 +162,24 @@ public class QueryParagraphs {
 			// result_lucene = lucene.getResults();
 
 			ProjectUtils.status(1, 5, "TFIDF(anc.apc) ranking");
-			TFIDF_anc_apc tfidf_anc_apc = new TFIDF_anc_apc(queries, 30);
+			TFIDF_anc_apc tfidf_anc_apc = new TFIDF_anc_apc(queryList, 30);
 			result_anc_apc = tfidf_anc_apc.getResults();
 			tfidf_anc_apc.write();
 
 			// Limit returned posts to 30
 			ProjectUtils.status(2, 5, "TFIDF(lnc.ltn) ranking");
-			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queries, 30);
+			TFIDF_lnc_ltn tfidf_lnc_ltn = new TFIDF_lnc_ltn(queryList, 30);
 			result_lnc_ltn = tfidf_lnc_ltn.getResult();
 
-			ArrayList<DocumentResult> results = tfidf_lnc_ltn.getResultsForQuery(queries.get(0));
+			ArrayList<DocumentResult> results = tfidf_lnc_ltn.getResultsForQuery(queryList.get(0));
 			json = ProjectUtils.generateJSON(ProjectUtils.getPostsFromResults(results, dmp));
 
 			ProjectUtils.status(3, 5, "TFIDF(bnn.bnn) ranking");
-			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(queries, 30);
+			TFIDF_bnn_bnn tfidf_bnn_bnn = new TFIDF_bnn_bnn(queryList, 30);
 			result_bnn_bnn = tfidf_bnn_bnn.getResults();
 
 			ProjectUtils.status(4, 5, "Language Model(BL) ranking");
-			LanguageModel_BL bigram = new LanguageModel_BL(queries, 30);
+			LanguageModel_BL bigram = new LanguageModel_BL(queryList, 30);
 			result_BL = bigram.getReulst();
 
 			// Generate relevance information based on tags
@@ -184,62 +188,24 @@ public class QueryParagraphs {
 			ProjectUtils.status(5, 5, "Generate .qrels file (pseudo relevance)");
 			ProjectUtils.writeQrelsFile(queries, dmp, ProjectConfig.OUTPUT_MODIFIER + "tags");
 
-			for (String page : queries) {
-				System.out.println("Page=" + page);
-				ArrayList<DocumentResult> bnn_list = result_bnn_bnn.get(page);
-				ArrayList<DocumentResult> lnc_list = result_lnc_ltn.get(page);
-				ArrayList<DocumentResult> bl_list = result_BL.get(page);
-				ArrayList<DocumentResult> anc_list = result_anc_apc.get(page);
+		} catch (IOException |
 
-				HashMap<String, HashMap<String, String>> relevance_data = read_dataFile(
-						ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "tags.qrels");
-				HashMap<String, String> relevantDocs = relevance_data.get(page);
+		ParseException e)
 
-				ArrayList<Integer> total_unique_docs = getAllUniqueDocumentId(bnn_list, lnc_list, bl_list, anc_list);
-
-				System.out.println("Total :" + total_unique_docs.size() + " docs for Query: " + page);
-				System.out.println(bnn_list.size() + " = " + lnc_list.size());
-
-				/*
-				 * bnn_bnn:1, lnc_ltn:2, BL:3, anc_apc:4
-				 */
-				for (Integer id : total_unique_docs) {
-					DocumentResult r1 = getDocumentResultById(id, bnn_list);
-					DocumentResult r2 = getDocumentResultById(id, lnc_list);
-					DocumentResult r3 = getDocumentResultById(id, bl_list);
-					DocumentResult r4 = getDocumentResultById(id, anc_list);
-
-					float f1 = (float) ((r1 == null) ? 0.0 : (float) 1 / r1.getRank());
-					float f2 = (float) ((r2 == null) ? 0.0 : (float) 1 / r2.getRank());
-					float f3 = (float) ((r3 == null) ? 0.0 : (float) 1 / r3.getRank());
-					float f4 = (float) ((r4 == null) ? 0.0 : (float) 1 / r4.getRank());
-
-					int relevant = 0;
-					if (relevantDocs != null) {
-						if (relevantDocs.get(id) != null) {
-							if (Integer.parseInt(relevantDocs.get(id)) > 0) {
-								relevant = 1;
-							}
-						}
-					} else {
-						System.out.println("There is no relevant data for Query " + id);
-					}
-
-					String line = relevant + " qid:" + page + " 1:" + f1 + " 2:" + f2 + " 3:" + f3 + " 4:" + f4
-							+ " # DocId:" + id;
-					writeStringList.add(line);
-
-				}
-				ProjectUtils.writeToFile("test_result.txt", writeStringList);
-
-			}
-		} catch (IOException | ParseException e) {
+		{
 			e.printStackTrace();
 		}
 		return json;
+
 	}
 
 	public static void main(String[] args) {
+		// String testQuery = "bioanalyzer";
+		// String json = "";
+		// json = getResults(testQuery);
+		//
+		// System.out.println(json);
+
 		QueryParagraphs q = new QueryParagraphs();
 		try {
 			// Default .xml dump directory ("stackoverflow/")
@@ -313,8 +279,13 @@ public class QueryParagraphs {
 
 				HashMap<String, HashMap<String, String>> relevance_data = read_dataFile(
 						ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "tags.qrels");
-				HashMap<String, String> relevantDocs = relevance_data.get(page);
+				HashMap<String, String> relevantDocs = new HashMap<>();
+				relevantDocs = relevance_data.get(page.replaceAll("\\s+", "-"));
+				System.out.println(relevantDocs);
 
+				if (relevantDocs != null) {
+					System.out.println("Get Relevance Data Size: " + relevantDocs.size());
+				}
 				ArrayList<Integer> total_unique_docs = getAllUniqueDocumentId(bnn_list, lnc_list, bl_list, anc_list);
 
 				System.out.println("Total :" + total_unique_docs.size() + " docs for Query: " + page);
@@ -335,22 +306,23 @@ public class QueryParagraphs {
 					float f4 = (float) ((r4 == null) ? 0.0 : (float) 1 / r4.getRank());
 
 					int relevant = 0;
+
 					if (relevantDocs != null) {
-						if (relevantDocs.get(id) != null) {
-							if (Integer.parseInt(relevantDocs.get(id)) > 0) {
+						if (relevantDocs.get(id.toString()) != null) {
+							if (Integer.parseInt(relevantDocs.get(id.toString())) > 0) {
 								relevant = 1;
 							}
 						}
 					} else {
-						System.out.println("There is no relevant data for Query " + id);
+						System.out.println("There is no relevant data for Query: " + page + "  ====>DodId:  " + id);
 					}
 
-					String line = relevant + " qid:" + page + " 1:" + f1 + " 2:" + f2 + " 3:" + f3 + " 4:" + f4
-							+ " # DocId:" + id;
+					String line = relevant + " qid:" + page.replaceAll("\\s+", "-") + " 1:" + f1 + " 2:" + f2 + " 3:"
+							+ f3 + " 4:" + f4 + " # DocId:" + id;
 					writeStringList.add(line);
 
 				}
-				ProjectUtils.writeToFile("test_result.txt", writeStringList);
+				ProjectUtils.writeToFile(ProjectConfig.OUTPUT_MODIFIER + "_feature_vectors.txt", writeStringList);
 
 			}
 		} catch (IOException | ParseException e) {
