@@ -1,4 +1,4 @@
-var main = angular.module("main", ["ui.router"]);
+var main = angular.module("main", ["ui.router","ui.bootstrap"]);
 
 var agentURL = "http://localhost:8080"+"/FinalProject-Team1/rest";
 var stackURL = "https://cs.stackexchange.com/questions/";
@@ -25,11 +25,12 @@ main.directive('clock', ['dateFilter', '$timeout', function(dateFilter, $timeout
 //Router Configure.
 main.config(function($stateProvider,$urlRouterProvider){
 	
-	$urlRouterProvider.otherwise("/");
+	$urlRouterProvider.otherwise("/home");
 	
 	$stateProvider
-		.state('/',{
-			url:'/',
+		.state('Home',{
+			url:'/home',
+			controller:'QueryController',
 			templateUrl:'web/home-template.html'
 		})
 		.state('Query',{
@@ -38,7 +39,7 @@ main.config(function($stateProvider,$urlRouterProvider){
 			templateUrl:"web/display-template.html"
 		})
 		.state('Help',{
-			url:"help",
+			url:"/help",
 			templateUrl:"web/helppage.html",
 		});
 	
