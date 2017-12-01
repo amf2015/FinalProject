@@ -151,7 +151,7 @@ public class TFIDF_bnn_bnn {
 				docQueue.add(docResult);
 			}
 
-			int rankCount = 0;
+			int rankCount = 1;
 			DocumentResult current;
 			while ((current = docQueue.poll()) != null) {
 				current.setRank(rankCount);

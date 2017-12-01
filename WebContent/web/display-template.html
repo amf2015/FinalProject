@@ -10,12 +10,12 @@
 					<a data-toggle="collapse" data-parent="#accordion"
 						data-target="#collapse{{$index}}"> {{$index+1}}. {{doc.postTitle}}</a>
 				</h4>
-				<small>{{doc.tags}}</small>
+				<small>Tags: {{doc.tags}}</small>
+				<small>Accept Answear: {{doc.favoriteCount}}     Answear Count: {{doc.answerCount}}</small>
 			</div>
 			<div id="collapse{{$index}}" class="panel-collapse collapse">
 				<div class="panel-body">
 				<p><a href="{{stackURL}}{{doc.postId}}" target="_blank">{{doc.postBody}}</a>></p>
-				<small>Accept Answear: {{doc.favoriteCount}}     Answear Count: {{doc.answerCount}}</small>
 				</div>
 			</div>
 		</div>
