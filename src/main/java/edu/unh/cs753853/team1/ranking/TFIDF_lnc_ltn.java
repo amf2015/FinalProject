@@ -194,7 +194,7 @@ public class TFIDF_lnc_ltn {
 				docQueue.add(docResult);
 			}
 
-			int rankCount = 0;
+			int rankCount = 1;
 			DocumentResult current;
 			while ((current = docQueue.poll()) != null) {
 				current.setRank(rankCount);

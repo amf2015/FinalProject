@@ -82,7 +82,8 @@ public class TFIDF_anc_apc {
 
 	/**
 	 *
-	 *            The name of the runfile to output to
+	 * The name of the runfile to output to
+	 * 
 	 * @return
 	 * @throws IOException
 	 * @throws ParseException
@@ -212,7 +213,7 @@ public class TFIDF_anc_apc {
 				docQueue.add(docResult);
 			}
 
-			int rankCount = 0;
+			int rankCount = 1;
 			DocumentResult current;
 			while ((current = docQueue.poll()) != null) {
 				current.setRank(rankCount);
@@ -233,16 +234,17 @@ public class TFIDF_anc_apc {
 	}
 
 	public void write() throws IOException {
-		System.out.println("TFIDF_anc_apc writing results to: " + ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "anc-apc.run");
-		FileWriter runfileWriter = new FileWriter(new File(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "anc-apc.run"));
-		for (Map.Entry<String, ArrayList<DocumentResult>> results :
-				queryResults.entrySet()) {
+		System.out.println("TFIDF_anc_apc writing results to: " + ProjectConfig.OUTPUT_DIRECTORY + "/"
+				+ ProjectConfig.OUTPUT_MODIFIER + "anc-apc.run");
+		FileWriter runfileWriter = new FileWriter(
+				new File(ProjectConfig.OUTPUT_DIRECTORY + "/" + ProjectConfig.OUTPUT_MODIFIER + "anc-apc.run"));
+		for (Map.Entry<String, ArrayList<DocumentResult>> results : queryResults.entrySet()) {
 			String query = results.getKey();
 			ArrayList<DocumentResult> list = results.getValue();
 			for (int i = 0; i < list.size(); i++) {
 				DocumentResult dr = list.get(i);
 				runfileWriter.write(query.replace(" ", "-") + " Q0 " + dr.getId() + " " + dr.getRank() + " "
-								+ dr.getScore() + " team1-TFIDF_anc_apc\n");
+						+ dr.getScore() + " team1-TFIDF_anc_apc\n");
 			}
 		}
 		runfileWriter.close();

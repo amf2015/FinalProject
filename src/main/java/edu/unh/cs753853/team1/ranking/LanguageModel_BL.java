@@ -83,7 +83,7 @@ public class LanguageModel_BL {
 			ArrayList<DocumentResult> rankedDocs = new ArrayList<DocumentResult>();
 			HashMap<Integer, Float> result_map = getRankedDocuments(pageQuery);
 
-			int rankCount = 0;
+			int rankCount = 1;
 			for (Map.Entry<Integer, Float> entry : result_map.entrySet()) {
 				int docId = entry.getKey();
 				Float score = entry.getValue();
@@ -109,7 +109,7 @@ public class LanguageModel_BL {
 			ArrayList<DocumentResult> rankedDocs = new ArrayList<DocumentResult>();
 			HashMap<Integer, Float> result_map = getRankedDocuments(pageQuery);
 
-			int rankCount = 0;
+			int rankCount = 1;
 			for (Map.Entry<Integer, Float> entry : result_map.entrySet()) {
 				int docId = entry.getKey();
 				Float score = entry.getValue();
