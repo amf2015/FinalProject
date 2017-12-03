@@ -10,8 +10,7 @@ https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jst.server.ui.doc.u
 
 
 ## Run tomcat from terminal:
-1. Package project to .war file: mvn clean install    
-> .war file will be in \.m2\repository\edu\unh\cs753853\team1\FinalProject-Team1\0.0.1-SNAPSHOT
+1. Download the FinalProject-Team1.war file from Git repo.
 2. Move .war file into \apache-tomcat-8.0.47\webapps, and rename it to FinalProject-Team1.war
 3. Download the data dump (stackoverflow), move the data folder to apache-tomcat-8.0.47\bin
 4. Server startup:
