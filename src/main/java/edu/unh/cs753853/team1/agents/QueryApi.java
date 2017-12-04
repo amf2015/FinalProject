@@ -15,7 +15,7 @@ public class QueryApi {
 	@Path("/{param}")
 	public Response getResult(@PathParam("param") String param) {
 
-		String query = param;
+		String query = param.toLowerCase();
 
 		System.out.println("Receive query: " + query);
 		// Call rank function to get result with query
