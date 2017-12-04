@@ -13,6 +13,7 @@ https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jst.server.ui.doc.u
 1. Download the FinalProject-Team1.war file from Git repo.
 2. Move .war file into \apache-tomcat-8.0.47\webapps, and rename it to FinalProject-Team1.war
 3. Download the data dump (stackoverflow), move the data folder to apache-tomcat-8.0.47\bin
+	- Link: https://drive.google.com/open?id=16joNHojPRZfe2Oz9E7CYgIYcR6b3mLi4
 4. Server startup:
 	- Go to apache-tomcat-8.0.47\bin
         - windows: 	> startup.bat
